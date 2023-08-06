@@ -1,103 +1,118 @@
-<FrameLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent">
-	<de.markusfisch.android.binaryeye.widget.ConfinedScrollView
-		android:id="@+id/scroll_view"
-		android:clipToPadding="false"
-		android:layout_width="match_parent"
-		android:layout_height="match_parent">
-		<LinearLayout
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:orientation="vertical"
-			android:padding="16dp">
-			<TextView
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:layout_marginBottom="8dp"
-				android:text="@string/format"/>
-			<Spinner
-				android:id="@+id/format"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:layout_marginBottom="16dp"/>
-			<TextView
-				android:id="@+id/error_correction_label"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:layout_marginBottom="8dp"
-				android:text="@string/error_correction_level"/>
-			<Spinner
-				android:id="@+id/error_correction_level"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:layout_marginBottom="16dp"/>
-			<TextView
-				android:id="@+id/colors_label"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:layout_marginBottom="8dp"
-				android:text="@string/colors"/>
-			<Spinner
-				android:id="@+id/colors"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:layout_marginBottom="16dp"
-				android:entries="@array/colors"/>
-			<TextView
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:layout_marginBottom="8dp"
-				android:text="@string/size"/>
-			<TextView
-				android:id="@+id/size_display"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:layout_marginBottom="8dp"
-				android:gravity="center"/>
-			<SeekBar
-				style="@style/Widget.AppCompat.SeekBar.Discrete"
-				android:id="@+id/size_bar"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:layout_marginBottom="16dp"
-				android:progress="4"
-				android:max="7"/>
-			<TextView
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:layout_marginBottom="8dp"
-				android:text="@string/content"/>
-			<EditText
-				tools:targetApi="o"
-				android:id="@+id/content"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:layout_marginBottom="16dp"
-				android:gravity="start|top"
-				android:typeface="monospace"
-				android:imeOptions="flagNoExtractUi"
-				android:inputType="textMultiLine"
-				android:hint="@string/input_content_here"
-				android:importantForAutofill="no"/>
-			<CheckBox
-				android:id="@+id/unescape"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:layout_marginBottom="16dp"
-				android:text="@string/unescape"/>
-		</LinearLayout>
-	</de.markusfisch.android.binaryeye.widget.ConfinedScrollView>
-	<android.support.design.widget.CoordinatorLayout
-		android:id="@+id/inset_layout"
-		android:layout_width="match_parent"
-		android:layout_height="match_parent">
-		<android.support.design.widget.FloatingActionButton
-			style="@style/FAB"
-			android:id="@+id/encode"
-			android:contentDescription="@string/encode"
-			android:src="@drawable/ic_action_next"/>
-	</android.support.design.widget.CoordinatorLayout>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.roy.binaryeye.widget.ConfinedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/format" />
+
+            <Spinner
+                android:id="@+id/format"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/error_correction_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/error_correction_level" />
+
+            <Spinner
+                android:id="@+id/error_correction_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/colors_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/colors" />
+
+            <Spinner
+                android:id="@+id/colors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/colors" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/size" />
+
+            <TextView
+                android:id="@+id/size_display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center" />
+
+            <SeekBar
+                android:id="@+id/size_bar"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:max="7"
+                android:progress="4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/content" />
+
+            <EditText
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="start|top"
+                android:hint="@string/input_content_here"
+                android:imeOptions="flagNoExtractUi"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:typeface="monospace"
+                tools:targetApi="o" />
+
+            <CheckBox
+                android:id="@+id/unescape"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/unescape" />
+        </LinearLayout>
+    </com.roy.binaryeye.widget.ConfinedScrollView>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/inset_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/encode"
+            style="@style/FAB"
+            android:contentDescription="@string/encode"
+            android:src="@drawable/ic_action_next" />
+    </android.support.design.widget.CoordinatorLayout>
 </FrameLayout>
