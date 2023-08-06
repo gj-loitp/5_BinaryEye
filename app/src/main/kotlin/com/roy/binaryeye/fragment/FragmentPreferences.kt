@@ -143,7 +143,7 @@ class FragmentPreferences : PreferenceFragmentCompat() {
             val fm = fragmentManager
             FragmentUrlDialog.newInstance(preference.key).apply {
                 setTargetFragment(this@FragmentPreferences, 0)
-                show(fm, null)
+                fm?.let { show(it, null) }
             }
         } else if (preference.key == "send_scan_bluetooth_host") {
             val ac = activity ?: return
