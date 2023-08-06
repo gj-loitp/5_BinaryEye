@@ -9,15 +9,15 @@ import kotlin.coroutines.suspendCoroutine
 
 suspend inline fun <T : Any> alertDialog(
 	context: Context,
-	crossinline build: AlertDialog.Builder.(resume: (T?) -> Unit) -> Unit
+	crossinline build: AlertDialog.Builder.(resume: (T?) -> Unit) -> Unit,
 ): T? = withContext(Dispatchers.Main) {
-	suspendCoroutine { continuation ->
-		AlertDialog.Builder(context).apply {
-			setOnCancelListener {
-				continuation.resume(null)
-			}
-			build(continuation::resume)
-			show()
-		}
-	}
+    suspendCoroutine { continuation ->
+        AlertDialog.Builder(context).apply {
+            setOnCancelListener {
+                continuation.resume(null)
+            }
+            build(continuation::resume)
+            show()
+        }
+    }
 }

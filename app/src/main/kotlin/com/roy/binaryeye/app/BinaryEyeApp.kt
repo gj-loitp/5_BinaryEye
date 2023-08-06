@@ -8,9 +8,9 @@ val db = Db()
 val prefs = Preferences()
 
 class BinaryEyeApp : Application() {
-	override fun onCreate() {
-		super.onCreate()
-		db.open(this)
-		prefs.init(this)
-	}
+    override fun onCreate() {
+        super.onCreate()
+        db.open(this)
+        prefs.init(this)
+    }
 }

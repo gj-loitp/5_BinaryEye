@@ -6,14 +6,14 @@ import android.support.v4.app.FragmentManager
 import com.roy.binaryeye.R
 
 fun FragmentManager.setFragment(fragment: Fragment) {
-	getTransaction(fragment).commit()
+    getTransaction(fragment).commit()
 }
 
 fun FragmentManager.addFragment(fragment: Fragment) {
-	getTransaction(fragment).addToBackStack(null).commit()
+    getTransaction(fragment).addToBackStack(null).commit()
 }
 
 @SuppressLint("CommitTransaction")
 private fun FragmentManager.getTransaction(
-	fragment: Fragment
+	fragment: Fragment,
 ) = beginTransaction().replace(R.id.contentFrame, fragment)
