@@ -77,7 +77,7 @@ class BarcodeFragment : Fragment() {
 			message?.let {
 				ac.toast(message)
 			}
-			fragmentManager.popBackStack()
+			fragmentManager?.popBackStack()
 			return null
 		}
 
@@ -135,14 +135,14 @@ class BarcodeFragment : Fragment() {
 	override fun onOptionsItemSelected(item: MenuItem): Boolean {
 		return when (item.itemId) {
 			R.id.copy_to_clipboard -> {
-				context.apply {
+				context?.apply {
 					copyToClipboard(barcode.text())
 					toast(R.string.copied_to_clipboard)
 				}
 				true
 			}
 			R.id.export_to_file -> {
-				context.pickFileType(R.string.export_as) {
+				context?.pickFileType(R.string.export_as) {
 					askForFileNameAndSave(it)
 				}
 				true

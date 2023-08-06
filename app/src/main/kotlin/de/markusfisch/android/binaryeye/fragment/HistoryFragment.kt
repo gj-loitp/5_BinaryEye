@@ -218,7 +218,7 @@ class HistoryFragment : Fragment() {
 	override fun onOptionsItemSelected(item: MenuItem): Boolean {
 		return when (item.itemId) {
 			R.id.clear -> {
-				context.askToRemoveScans()
+				context?.askToRemoveScans()
 				true
 			}
 			R.id.export_history -> {
@@ -432,7 +432,7 @@ class HistoryFragment : Fragment() {
 			}
 			text?.let {
 				withContext(Dispatchers.Main) {
-					context.shareText(it)
+					context?.shareText(it)
 				}
 			}
 		}
