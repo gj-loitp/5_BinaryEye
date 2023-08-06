@@ -20,7 +20,7 @@
         android:shortcutShortLabel="@string/shortcut_encode">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetClass="com.roy.binaryeye.a.MainActivity"
+            android:targetClass="com.roy.binaryeye.a.ActivityMain"
             android:targetPackage="com.roy.binaryeye">
             <extra
                 android:name="encode"
@@ -35,7 +35,7 @@
         android:shortcutShortLabel="@string/shortcut_preferences">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetClass="com.roy.binaryeye.a.MainActivity"
+            android:targetClass="com.roy.binaryeye.a.ActivityMain"
             android:targetPackage="com.roy.binaryeye">
             <extra
                 android:name="preferences"

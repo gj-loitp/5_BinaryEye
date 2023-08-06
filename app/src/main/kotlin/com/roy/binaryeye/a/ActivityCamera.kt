@@ -12,7 +12,6 @@ import android.net.Uri
 import android.os.Bundle
 import android.support.design.widget.FloatingActionButton
 import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
 import android.view.MotionEvent
@@ -24,7 +23,6 @@ import com.roy.binaryeye.app.PERMISSION_CAMERA
 import com.roy.binaryeye.app.applyLocale
 import com.roy.binaryeye.app.hasBluetoothPermission
 import com.roy.binaryeye.app.hasCameraPermission
-import com.roy.binaryeye.prefs
 import com.roy.binaryeye.bluetooth.sendBluetoothAsync
 import com.roy.binaryeye.content.copyToClipboard
 import com.roy.binaryeye.content.execShareIntent
@@ -38,6 +36,7 @@ import com.roy.binaryeye.graphics.setFrameToView
 import com.roy.binaryeye.media.releaseToneGenerators
 import com.roy.binaryeye.net.sendAsync
 import com.roy.binaryeye.net.urlEncode
+import com.roy.binaryeye.prefs
 import com.roy.binaryeye.view.errorFeedback
 import com.roy.binaryeye.view.initSystemBars
 import com.roy.binaryeye.view.scanFeedback
@@ -77,7 +76,7 @@ class CameraActivity : AppCompatActivity() {
 	override fun onRequestPermissionsResult(
 		requestCode: Int,
 		permissions: Array<String>,
-		grantResults: IntArray
+		grantResults: IntArray,
 	) {
 		when (requestCode) {
 			PERMISSION_CAMERA -> if (grantResults.isNotEmpty() &&
@@ -91,12 +90,12 @@ class CameraActivity : AppCompatActivity() {
 	override fun onActivityResult(
 		requestCode: Int,
 		resultCode: Int,
-		resultData: Intent?
+		resultData: Intent?,
 	) {
 		when (requestCode) {
 			PICK_FILE_RESULT_CODE -> {
 				if (resultCode == Activity.RESULT_OK && resultData != null) {
-					val pick = Intent(this, PickActivity::class.java)
+					val pick = Intent(this, ActivityPick::class.java)
 					pick.action = Intent.ACTION_VIEW
 					pick.setDataAndType(resultData.data, "image/*")
 					startActivity(pick)
@@ -119,12 +118,12 @@ class CameraActivity : AppCompatActivity() {
 		setTitle(R.string.scan_code)
 
 		initSystemBars(this)
-		setSupportActionBar(findViewById(R.id.toolbar) as Toolbar)
+		setSupportActionBar(findViewById(R.id.toolbar))
 
-		cameraView = findViewById(R.id.cameraView) as CameraView
-		detectorView = findViewById(R.id.detectorView) as DetectorView
-		zoomBar = findViewById(R.id.zoom) as SeekBar
-		flashFab = findViewById(R.id.flash) as FloatingActionButton
+		cameraView = findViewById(R.id.cameraView)
+		detectorView = findViewById(R.id.detectorView)
+		zoomBar = findViewById(R.id.zoom)
+		flashFab = findViewById(R.id.flash)
 
 		initCameraView()
 		initZoomBar()
@@ -179,6 +178,7 @@ class CameraActivity : AppCompatActivity() {
 			intent?.action == "com.google.zxing.client.android.SCAN" -> {
 				returnResult = true
 			}
+
 			intent?.dataString?.isReturnUrl() == true -> {
 				finishAfterShowingResult = true
 				returnUrlTemplate = intent.data?.getQueryParameter("ret")
@@ -247,10 +247,12 @@ class CameraActivity : AppCompatActivity() {
 				createBarcode()
 				true
 			}
+
 			R.id.history -> {
-				startActivity(MainActivity.getHistoryIntent(this))
+				startActivity(ActivityMain.getHistoryIntent(this))
 				true
 			}
+
 			R.id.pickFile -> {
 				startActivityForResult(
 					Intent.createChooser(
@@ -263,34 +265,40 @@ class CameraActivity : AppCompatActivity() {
 				)
 				true
 			}
+
 			R.id.switchCamera -> {
 				switchCamera()
 				true
 			}
+
 			R.id.bulkMode -> {
 				bulkMode = bulkMode xor true
 				item.isChecked = bulkMode
 				ignoreNext = null
 				true
 			}
+
 			R.id.restrictFormat -> {
 				showRestrictionDialog()
 				true
 			}
+
 			R.id.preferences -> {
-				startActivity(MainActivity.getPreferencesIntent(this))
+				startActivity(ActivityMain.getPreferencesIntent(this))
 				true
 			}
+
 			R.id.info -> {
 				openReadme()
 				true
 			}
+
 			else -> super.onOptionsItemSelected(item)
 		}
 	}
 
 	private fun createBarcode() {
-		startActivity(MainActivity.getEncodeIntent(this))
+		startActivity(ActivityMain.getEncodeIntent(this))
 	}
 
 	private fun switchCamera() {
@@ -331,7 +339,7 @@ class CameraActivity : AppCompatActivity() {
 	private fun handleSendText(intent: Intent) {
 		val text = intent.getStringExtra(Intent.EXTRA_TEXT)
 		if (text?.isEmpty() == false) {
-			startActivity(MainActivity.getEncodeIntent(this, text, true))
+			startActivity(ActivityMain.getEncodeIntent(this, text, true))
 			finish()
 		}
 	}
@@ -353,6 +361,7 @@ class CameraActivity : AppCompatActivity() {
 						progress = zoomBar.progress
 						return true
 					}
+
 					MotionEvent.ACTION_MOVE -> {
 						if (prefs.zoomBySwiping) {
 							v ?: return false
@@ -366,6 +375,7 @@ class CameraActivity : AppCompatActivity() {
 							return true
 						}
 					}
+
 					MotionEvent.ACTION_UP -> {
 						// Stop calling focusTo() as soon as it returns false
 						// to avoid throwing and catching future exceptions.
@@ -384,7 +394,7 @@ class CameraActivity : AppCompatActivity() {
 		@Suppress("DEPRECATION")
 		cameraView.setOnCameraListener(object : CameraView.OnCameraListener {
 			override fun onConfigureParameters(
-				parameters: Camera.Parameters
+				parameters: Camera.Parameters,
 			) {
 				zoomBar.visibility = if (parameters.isZoomSupported) {
 					val max = parameters.maxZoom
@@ -437,12 +447,12 @@ class CameraActivity : AppCompatActivity() {
 					if (decoding) {
 						useLocalAverage = useLocalAverage xor true
 						ZxingCpp.readByteArray(
-							frameData,
-							frameMetrics.width,
-							frameRoi.left, frameRoi.top,
-							frameRoi.width(), frameRoi.height(),
-							frameMetrics.orientation,
-							decodeHints.apply {
+							yuvData = frameData,
+							rowStride = frameMetrics.width,
+							left = frameRoi.left, top = frameRoi.top,
+							width = frameRoi.width(), height = frameRoi.height(),
+							rotation = frameMetrics.orientation,
+							decodeHints = decodeHints.apply {
 								// By default, ZXing uses LOCAL_AVERAGE, but
 								// this does not work well with inverted
 								// barcodes on low-contrast backgrounds.
@@ -479,7 +489,7 @@ class CameraActivity : AppCompatActivity() {
 			override fun onProgressChanged(
 				seekBar: SeekBar,
 				progress: Int,
-				fromUser: Boolean
+				fromUser: Boolean,
 			) {
 				cameraView.camera?.setZoom(progress)
 			}
@@ -498,6 +508,7 @@ class CameraActivity : AppCompatActivity() {
 			params.zoom = zoom
 			parameters = params
 		} catch (e: RuntimeException) {
+			e.printStackTrace()
 			// Ignore. There's nothing we can do.
 		}
 	}
@@ -512,8 +523,8 @@ class CameraActivity : AppCompatActivity() {
 	private fun restoreZoom() {
 		zoomBar.max = prefs.preferences.getInt(ZOOM_MAX, zoomBar.max)
 		zoomBar.progress = prefs.preferences.getInt(
-			ZOOM_LEVEL,
-			zoomBar.progress
+			/* p0 = */ ZOOM_LEVEL,
+			/* p1 = */ zoomBar.progress
 		)
 	}
 
@@ -572,8 +583,8 @@ class CameraActivity : AppCompatActivity() {
 		cameraView.post {
 			detectorView.update(
 				matrix.mapPosition(
-					result.position,
-					detectorView.coordinates
+					position = result.position,
+					coords = detectorView.coordinates
 				)
 			)
 			scanFeedback()
@@ -592,9 +603,11 @@ class CameraActivity : AppCompatActivity() {
 					setResult(Activity.RESULT_OK, getReturnIntent(result))
 					finish()
 				}
+
 				returnUri != null -> execShareIntent(
 					Intent(Intent.ACTION_VIEW, returnUri)
 				)
+
 				else -> {
 					showResult(result, bulkMode)
 					// If this app was invoked via a deep link but without
@@ -654,7 +667,7 @@ fun Activity.showResult(
 			if (code == null || code < 200 || code > 299) {
 				errorFeedback()
 			}
-			if (body != null && body.isNotEmpty()) {
+			if (!body.isNullOrEmpty()) {
 				toast(body)
 			} else if (code == null || code > 299) {
 				toast(R.string.background_request_failed)
@@ -674,10 +687,12 @@ fun Activity.showResult(
 						errorFeedback()
 						R.string.bluetooth_connect_fail
 					}
+
 					!sent -> {
 						errorFeedback()
 						R.string.bluetooth_send_fail
 					}
+
 					else -> R.string.bluetooth_send_success
 				}
 			)
@@ -685,7 +700,7 @@ fun Activity.showResult(
 	}
 	if (!bulkMode) {
 		startActivity(
-			MainActivity.getDecodeIntent(this, scan)
+			ActivityMain.getDecodeIntent(this, scan)
 		)
 	}
 }

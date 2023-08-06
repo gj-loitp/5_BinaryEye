@@ -76,7 +76,7 @@
 			</intent-filter>
 		</activity>
 		<activity
-			android:name=".a.PickActivity"
+			android:name=".a.ActivityPick"
 			android:label="@string/pick_code_to_scan"
 			android:exported="true"
 			tools:ignore="AppLinkUrlError">
@@ -92,7 +92,7 @@
 			</intent-filter>
 		</activity>
 		<activity
-			android:name=".a.MainActivity"
+			android:name=".a.ActivityMain"
 			android:exported="true"/>
 		<service
 			android:name=".service.ScanTileService"

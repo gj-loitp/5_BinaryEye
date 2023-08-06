@@ -15,7 +15,7 @@ import com.roy.binaryeye.actions.ActionRegistry
 import com.roy.binaryeye.actions.IAction
 import com.roy.binaryeye.actions.wifi.WifiAction
 import com.roy.binaryeye.actions.wifi.WifiConnector
-import com.roy.binaryeye.a.MainActivity
+import com.roy.binaryeye.a.ActivityMain
 import com.roy.binaryeye.adapter.prettifyFormatName
 import com.roy.binaryeye.app.addFragment
 import com.roy.binaryeye.app.hasLocationPermission
@@ -78,7 +78,7 @@ class FragmentDecode : Fragment() {
         )
 
         closeAutomatically = prefs.closeAutomatically &&
-                activity?.intent?.hasExtra(MainActivity.DECODED) == true
+                activity?.intent?.hasExtra(ActivityMain.DECODED) == true
 
         val scan = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             arguments?.getParcelable(SCAN, Scan::class.java)
