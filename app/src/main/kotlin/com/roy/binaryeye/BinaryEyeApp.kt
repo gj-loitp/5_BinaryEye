@@ -4,22 +4,21 @@ import android.app.Application
 import com.roy.binaryeye.db.Db
 import com.roy.binaryeye.preference.Preferences
 
-
+//TODO ad applovin
 //TODO firebase
-//TODO animation
+
 //TODO rate app
 //TODO more app
 //TODO share app
 //TODO policy
-//TODO proguard
 //TODO app version
-//TODO leak canary
 //TODO keystore
-//TODO ad id
-//TODO ad applovin
 
 //done
 //ic_launcher
+//ad id
+//leak canary
+//proguard
 
 val db = Db()
 val prefs = Preferences()
