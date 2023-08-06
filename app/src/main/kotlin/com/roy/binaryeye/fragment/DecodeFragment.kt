@@ -72,7 +72,7 @@ class DecodeFragment : Fragment() {
 		activity?.setTitle(R.string.content)
 
 		val view = inflater.inflate(
-			R.layout.fragment_decode,
+			R.layout.f_decode,
 			container,
 			false
 		)
@@ -117,8 +117,8 @@ class DecodeFragment : Fragment() {
 
 		updateViewsAndFab(originalContent, originalBytes)
 
-		(view.findViewById(R.id.inset_layout) as View).setPaddingFromWindowInsets()
-		(view.findViewById(R.id.scroll_view) as View).setPaddingFromWindowInsets()
+		(view.findViewById(R.id.insetLayout) as View).setPaddingFromWindowInsets()
+		(view.findViewById(R.id.scrollView) as View).setPaddingFromWindowInsets()
 
 		return view
 	}

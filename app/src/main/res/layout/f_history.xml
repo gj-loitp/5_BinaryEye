@@ -1,0 +1,37 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/scans"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="multipleChoice"
+        android:clipToPadding="false"
+        android:divider="@color/separator"
+        android:dividerHeight="1px" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/insetLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/useHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:padding="16dp"
+            android:text="@string/use_history"
+            android:visibility="gone" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/share"
+            style="@style/FAB"
+            android:contentDescription="@string/share"
+            android:src="@drawable/ic_action_share"
+            android:visibility="gone" />
+    </android.support.design.widget.CoordinatorLayout>
+
+    <include layout="@layout/v_progress_view" />
+</FrameLayout>

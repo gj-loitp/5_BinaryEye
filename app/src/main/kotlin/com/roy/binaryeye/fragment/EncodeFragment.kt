@@ -51,7 +51,7 @@ class EncodeFragment : Fragment() {
 		ac.setTitle(R.string.compose_barcode)
 
 		val view = inflater.inflate(
-			R.layout.fragment_encode,
+			R.layout.f_encode,
 			container,
 			false
 		)
@@ -100,8 +100,8 @@ class EncodeFragment : Fragment() {
 			override fun onNothingSelected(parentView: AdapterView<*>?) {}
 		}
 
-		ecLabel = view.findViewById(R.id.error_correction_label)
-		ecSpinner = view.findViewById(R.id.error_correction_level)
+		ecLabel = view.findViewById(R.id.errorCorrectionLabel)
+		ecSpinner = view.findViewById(R.id.errorCorrectionLevel)
 		ecSpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
 			override fun onItemSelected(
 				parentView: AdapterView<*>?,
@@ -119,11 +119,11 @@ class EncodeFragment : Fragment() {
 			override fun onNothingSelected(parentView: AdapterView<*>?) {}
 		}
 
-		colorsLabel = view.findViewById(R.id.colors_label)
+		colorsLabel = view.findViewById(R.id.colorsLabel)
 		colorsSpinner = view.findViewById(R.id.colors)
 
-		sizeView = view.findViewById(R.id.size_display)
-		sizeBarView = view.findViewById(R.id.size_bar)
+		sizeView = view.findViewById(R.id.sizeDisplay)
+		sizeBarView = view.findViewById(R.id.sizeBar)
 		initSizeBar()
 
 		contentView = view.findViewById(R.id.content)
@@ -150,8 +150,8 @@ class EncodeFragment : Fragment() {
 			it.context.encode()
 		}
 
-		(view.findViewById(R.id.inset_layout) as View).setPaddingFromWindowInsets()
-		(view.findViewById(R.id.scroll_view) as View).setPaddingFromWindowInsets()
+		(view.findViewById(R.id.insetLayout) as View).setPaddingFromWindowInsets()
+		(view.findViewById(R.id.scrollView) as View).setPaddingFromWindowInsets()
 
 		return view
 	}

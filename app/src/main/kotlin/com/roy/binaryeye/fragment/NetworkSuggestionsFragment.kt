@@ -26,7 +26,7 @@ class NetworkSuggestionsFragment : Fragment() {
 		ac.setTitle(R.string.network_suggestions)
 
 		val view = inflater.inflate(
-			R.layout.fragment_network_suggestions,
+			R.layout.f_network_suggestions,
 			container,
 			false
 		)
@@ -46,10 +46,10 @@ class NetworkSuggestionsFragment : Fragment() {
 		)
 
 		val listView = view.findViewById<ListView>(R.id.suggestions)
-		listView.emptyView = view.findViewById(R.id.no_suggestions)
+		listView.emptyView = view.findViewById(R.id.noSuggestions)
 		listView.adapter = suggestionArrayAdapter
 		listView.setOnScrollListener(systemBarListViewScrollListener)
-		(view.findViewById(R.id.inset_layout) as View).setPaddingFromWindowInsets()
+		(view.findViewById(R.id.insetLayout) as View).setPaddingFromWindowInsets()
 		listView.setPaddingFromWindowInsets()
 
 		view.findViewById<View>(R.id.remove).setOnClickListener {

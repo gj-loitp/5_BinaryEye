@@ -4,71 +4,71 @@
     android:layout_height="match_parent">
 
     <com.roy.binaryeye.widget.ConfinedScrollView
-        android:id="@+id/scroll_view"
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clipToPadding="false">
 
-        <LinearLayout
+        <android.support.v7.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="16dp">
 
-            <TextView
+            <android.support.v7.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:text="@string/format" />
 
-            <Spinner
+            <android.support.v7.widget.AppCompatSpinner
                 android:id="@+id/format"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp" />
 
-            <TextView
-                android:id="@+id/error_correction_label"
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/errorCorrectionLabel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:text="@string/error_correction_level" />
 
-            <Spinner
-                android:id="@+id/error_correction_level"
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/errorCorrectionLevel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp" />
 
-            <TextView
-                android:id="@+id/colors_label"
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/colorsLabel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:text="@string/colors" />
 
-            <Spinner
+            <android.support.v7.widget.AppCompatSpinner
                 android:id="@+id/colors"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:entries="@array/colors" />
 
-            <TextView
+            <android.support.v7.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:text="@string/size" />
 
-            <TextView
-                android:id="@+id/size_display"
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/sizeDisplay"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:gravity="center" />
 
-            <SeekBar
-                android:id="@+id/size_bar"
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/sizeBar"
                 style="@style/Widget.AppCompat.SeekBar.Discrete"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -76,13 +76,13 @@
                 android:max="7"
                 android:progress="4" />
 
-            <TextView
+            <android.support.v7.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:text="@string/content" />
 
-            <EditText
+            <android.support.v7.widget.AppCompatEditText
                 android:id="@+id/content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -95,17 +95,17 @@
                 android:typeface="monospace"
                 tools:targetApi="o" />
 
-            <CheckBox
+            <android.support.v7.widget.AppCompatCheckBox
                 android:id="@+id/unescape"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:text="@string/unescape" />
-        </LinearLayout>
+        </android.support.v7.widget.LinearLayoutCompat>
     </com.roy.binaryeye.widget.ConfinedScrollView>
 
     <android.support.design.widget.CoordinatorLayout
-        android:id="@+id/inset_layout"
+        android:id="@+id/insetLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

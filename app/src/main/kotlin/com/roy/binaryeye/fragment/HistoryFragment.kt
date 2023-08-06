@@ -140,13 +140,13 @@ class HistoryFragment : Fragment() {
 		ac.setTitle(R.string.history)
 
 		val view = inflater.inflate(
-			R.layout.fragment_history,
+			R.layout.f_history,
 			container,
 			false
 		)
 
 		useHistorySwitch = view.findViewById(
-			R.id.use_history
+			R.id.useHistory
 		) as SwitchCompat
 		initHistorySwitch(useHistorySwitch)
 
@@ -172,7 +172,7 @@ class HistoryFragment : Fragment() {
 
 		progressView = view.findViewById(R.id.progressView)
 
-		(view.findViewById(R.id.inset_layout) as View).setPaddingFromWindowInsets()
+		(view.findViewById(R.id.insetLayout) as View).setPaddingFromWindowInsets()
 		listView.setPaddingFromWindowInsets()
 
 		update()
