@@ -5,6 +5,7 @@ android {
     namespace 'com.roy.binaryeye'
     compileSdk sdk_version
     defaultConfig {
+        applicationId "com.roy.binaryeye"
         minSdkVersion 16
         targetSdkVersion sdk_version
         versionCode 20230806
@@ -67,8 +68,8 @@ android {
         }
     }
 
-    android.applicationVariants.configureEach { variant ->
-        variant.outputs.configureEach {
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
             outputFileName = defaultConfig.applicationId + buildType.name + "_" + defaultConfig.versionName + "_" + defaultConfig.versionCode + ".apk"
         }
     }
