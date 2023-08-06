@@ -18,8 +18,8 @@ import com.roy.binaryeye.app.setFragment
 import com.roy.binaryeye.database.Scan
 import com.roy.binaryeye.fragment.DecodeFragment
 import com.roy.binaryeye.fragment.EncodeFragment
-import com.roy.binaryeye.fragment.HistoryFragment
-import com.roy.binaryeye.fragment.PreferencesFragment
+import com.roy.binaryeye.fragment.FragmentHistory
+import com.roy.binaryeye.fragment.FragmentPreferences
 import com.roy.binaryeye.view.colorSystemAndToolBars
 import com.roy.binaryeye.view.initSystemBars
 import com.roy.binaryeye.view.recordToolbarHeight
@@ -81,17 +81,17 @@ class MainActivity : AppCompatActivity() {
 		const val DECODED = "decoded"
 
 		private fun getFragmentForIntent(intent: Intent?): Fragment {
-			intent ?: return PreferencesFragment()
+			intent ?: return FragmentPreferences()
 			return when {
-				intent.hasExtra(PREFERENCES) -> PreferencesFragment()
-				intent.hasExtra(HISTORY) -> HistoryFragment()
+				intent.hasExtra(PREFERENCES) -> FragmentPreferences()
+				intent.hasExtra(HISTORY) -> FragmentHistory()
 				intent.hasExtra(ENCODE) -> EncodeFragment.newInstance(
 					intent.getStringExtra(ENCODE)
 				)
 				intent.hasExtra(DECODED) -> DecodeFragment.newInstance(
 					intent.getParcelableExtra(DECODED)!!
 				)
-				else -> PreferencesFragment()
+				else -> FragmentPreferences()
 			}
 		}
 
