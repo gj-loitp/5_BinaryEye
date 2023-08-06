@@ -2,68 +2,60 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 android {
-	namespace 'de.markusfisch.android.binaryeye'
-	compileSdkVersion sdk_version
-	defaultConfig {
-		minSdkVersion 9
-		targetSdkVersion sdk_version
+    namespace 'de.markusfisch.android.binaryeye'
+    compileSdk sdk_version
+    defaultConfig {
+        minSdkVersion 9
+        targetSdkVersion sdk_version
+        versionCode 20230806
+        versionName '2023.08.06'
+    }
 
-		versionCode 120
-		versionName '1.60.3'
-	}
+//    signingConfigs {
+//        release {
+//            keyAlias System.getenv('ANDROID_KEY_ALIAS')
+//            keyPassword System.getenv('ANDROID_KEY_PASSWORD')
+//            storePassword System.getenv('ANDROID_STORE_PASSWORD')
+//            def filePath = System.getenv('ANDROID_KEYFILE')
+//            storeFile filePath ? file(filePath) : null
+//        }
+//    }
 
-	signingConfigs {
-		release {
-			keyAlias System.getenv('ANDROID_KEY_ALIAS')
-			keyPassword System.getenv('ANDROID_KEY_PASSWORD')
-			storePassword System.getenv('ANDROID_STORE_PASSWORD')
-			def filePath = System.getenv('ANDROID_KEYFILE')
-			storeFile filePath ? file(filePath) : null
-		}
-	}
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        androidTest.java.srcDirs += 'src/androidTest/kotlin'
+        test.java.srcDirs += 'src/test/kotlin'
+    }
 
-	sourceSets {
-		main.java.srcDirs += 'src/main/kotlin'
-		androidTest.java.srcDirs += 'src/androidTest/kotlin'
-		test.java.srcDirs += 'src/test/kotlin'
-	}
+    buildTypes {
+        debug {
+            applicationIdSuffix '.debug'
+        }
 
-	buildTypes {
-		debug {
-			applicationIdSuffix '.debug'
-		}
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            minifyEnabled true
+            shrinkResources true
+//            signingConfig signingConfigs.release
+        }
+    }
 
-		release {
-			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-			minifyEnabled true
-			shrinkResources true
-			signingConfig signingConfigs.release
-		}
-	}
-
-	bundle {
-		language {
-			// To make the app bundle contain all language resources
-			// so the in-app language setting works. Another solution
-			// would be to use the PlayCore API to download language
-			// resources on demand, but it makes much more sense to
-			// simply include the ~60 kb than adding fragile code and
-			// dependencies.
-			enableSplit = false
-		}
-	}
+    bundle {
+        language {
+            enableSplit = false
+        }
+    }
 }
 
 dependencies {
-	testImplementation 'junit:junit:4.13.2'
-
-	implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-	implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1"
-	implementation "com.android.support:appcompat-v7:$support_version"
-	implementation "com.android.support:design:$support_version"
-	implementation "com.android.support:preference-v7:$support_version"
-	implementation "com.android.support:preference-v14:$support_version"
-	implementation 'com.github.markusfisch:CameraView:1.9.1'
-	implementation 'com.github.markusfisch:ScalingImageView:1.4.1'
-	implementation 'com.github.markusfisch:zxing-cpp:v2.1.0.0'
+//    testImplementation 'junit:junit:4.13.2'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3"
+    implementation "com.android.support:appcompat-v7:$support_version"
+    implementation "com.android.support:design:$support_version"
+    implementation "com.android.support:preference-v7:$support_version"
+    implementation "com.android.support:preference-v14:$support_version"
+    implementation 'com.github.markusfisch:CameraView:1.9.1'
+    implementation 'com.github.markusfisch:ScalingImageView:1.4.1'
+    implementation 'com.github.markusfisch:zxing-cpp:v2.1.0.0'
 }
