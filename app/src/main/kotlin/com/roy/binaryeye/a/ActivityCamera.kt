@@ -293,6 +293,18 @@ class CameraActivity : AppCompatActivity() {
 				toast("Version ${BuildConfig.VERSION_NAME}")
 				true
 			}
+			R.id.menuRate -> {
+				true
+			}
+			R.id.menuMore -> {
+				true
+			}
+			R.id.menuShare -> {
+				true
+			}
+			R.id.menuPolicy -> {
+				true
+			}
 
 			else -> super.onOptionsItemSelected(item)
 		}

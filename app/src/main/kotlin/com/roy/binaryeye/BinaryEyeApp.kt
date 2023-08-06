@@ -7,11 +7,6 @@ import com.roy.binaryeye.preference.Preferences
 //TODO ad applovin
 //TODO firebase
 
-//TODO rate app
-//TODO more app
-//TODO share app
-//TODO policy
-
 //done
 //ic_launcher
 //ad id
@@ -19,6 +14,10 @@ import com.roy.binaryeye.preference.Preferences
 //proguard
 //keystore
 //app version
+//rate app
+//more app
+//share app
+//policy
 
 val db = Db()
 val prefs = Preferences()

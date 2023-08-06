@@ -41,4 +41,24 @@
         android:icon="@drawable/ic_action_info"
         android:title="@string/info"
         material:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menuRate"
+        android:icon="@drawable/baseline_rate_review_24"
+        android:title="@string/rate_app"
+        material:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menuMore"
+        android:icon="@drawable/baseline_favorite_24"
+        android:title="@string/more_app"
+        material:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menuShare"
+        android:icon="@drawable/ic_action_share"
+        android:title="@string/share_app"
+        material:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menuPolicy"
+        android:icon="@drawable/baseline_local_police_24"
+        android:title="@string/term_policy"
+        material:showAsAction="ifRoom" />
 </menu>
