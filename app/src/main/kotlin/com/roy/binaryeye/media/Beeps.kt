@@ -2,7 +2,7 @@ package com.roy.binaryeye.media
 
 import android.media.AudioManager
 import android.media.ToneGenerator
-import com.roy.binaryeye.app.prefs
+import com.roy.binaryeye.prefs
 
 private var confirmToneGenerator: ToneGenerator? = null
 private var errorToneGenerator: ToneGenerator? = null

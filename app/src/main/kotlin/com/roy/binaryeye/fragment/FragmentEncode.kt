@@ -10,7 +10,7 @@ import android.widget.*
 import com.roy.binaryeye.R
 import com.roy.binaryeye.adapter.prettifyFormatName
 import com.roy.binaryeye.app.addFragment
-import com.roy.binaryeye.app.prefs
+import com.roy.binaryeye.prefs
 import com.roy.binaryeye.text.unescape
 import com.roy.binaryeye.view.hideSoftKeyboard
 import com.roy.binaryeye.view.setPaddingFromWindowInsets

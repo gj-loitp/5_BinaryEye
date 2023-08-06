@@ -13,7 +13,7 @@ import com.roy.binaryeye.app.PERMISSION_LOCATION
 import com.roy.binaryeye.app.PERMISSION_WRITE
 import com.roy.binaryeye.app.applyLocale
 import com.roy.binaryeye.app.permissionGrantedCallback
-import com.roy.binaryeye.app.prefs
+import com.roy.binaryeye.prefs
 import com.roy.binaryeye.app.setFragment
 import com.roy.binaryeye.db.Scan
 import com.roy.binaryeye.fragment.FragmentDecode

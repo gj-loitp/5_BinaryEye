@@ -1,4 +1,4 @@
-package com.roy.binaryeye.app
+package com.roy.binaryeye
 
 import android.app.Application
 import com.roy.binaryeye.db.Db

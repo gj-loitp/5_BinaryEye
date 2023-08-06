@@ -4,7 +4,7 @@ import android.content.Context
 import com.roy.binaryeye.R
 import com.roy.binaryeye.actions.IAction
 import com.roy.binaryeye.app.alertDialog
-import com.roy.binaryeye.app.prefs
+import com.roy.binaryeye.prefs
 import com.roy.binaryeye.content.openUrl
 import com.roy.binaryeye.net.urlEncode
 

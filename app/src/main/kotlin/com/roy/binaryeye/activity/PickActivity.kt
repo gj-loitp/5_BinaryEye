@@ -16,7 +16,7 @@ import android.view.MenuItem
 import android.view.View
 import com.roy.binaryeye.R
 import com.roy.binaryeye.app.applyLocale
-import com.roy.binaryeye.app.prefs
+import com.roy.binaryeye.prefs
 import com.roy.binaryeye.graphics.crop
 import com.roy.binaryeye.graphics.fixTransparency
 import com.roy.binaryeye.graphics.loadImageUri

@@ -18,11 +18,11 @@ import com.roy.binaryeye.actions.wifi.WifiConnector
 import com.roy.binaryeye.activity.MainActivity
 import com.roy.binaryeye.adapter.prettifyFormatName
 import com.roy.binaryeye.app.addFragment
-import com.roy.binaryeye.app.db
 import com.roy.binaryeye.app.hasLocationPermission
 import com.roy.binaryeye.app.hasWritePermission
-import com.roy.binaryeye.app.prefs
+import com.roy.binaryeye.prefs
 import com.roy.binaryeye.content.shareText
+import com.roy.binaryeye.db
 import com.roy.binaryeye.db.Recreation
 import com.roy.binaryeye.db.Scan
 import com.roy.binaryeye.db.toRecreation

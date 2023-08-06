@@ -5,7 +5,7 @@ import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
-import com.roy.binaryeye.app.prefs
+import com.roy.binaryeye.prefs
 
 class Db {
     private lateinit var db: SQLiteDatabase

@@ -23,11 +23,11 @@ import com.roy.binaryeye.R
 import com.roy.binaryeye.adapter.ScansAdapter
 import com.roy.binaryeye.app.addFragment
 import com.roy.binaryeye.app.alertDialog
-import com.roy.binaryeye.app.db
 import com.roy.binaryeye.app.hasWritePermission
-import com.roy.binaryeye.app.prefs
+import com.roy.binaryeye.prefs
 import com.roy.binaryeye.content.copyToClipboard
 import com.roy.binaryeye.content.shareText
+import com.roy.binaryeye.db
 import com.roy.binaryeye.db.Db
 import com.roy.binaryeye.db.exportCsv
 import com.roy.binaryeye.db.exportDatabase
@@ -53,7 +53,7 @@ class FragmentHistory : Fragment() {
     private val actionModeCallback = object : ActionMode.Callback {
         override fun onCreateActionMode(
             mode: ActionMode,
-            menu: Menu
+            menu: Menu,
         ): Boolean {
             mode.menuInflater.inflate(
                 R.menu.f_history_edit,
@@ -72,14 +72,14 @@ class FragmentHistory : Fragment() {
 
         override fun onPrepareActionMode(
             mode: ActionMode,
-            menu: Menu
+            menu: Menu,
         ): Boolean {
             return false
         }
 
         override fun onActionItemClicked(
             mode: ActionMode,
-            item: MenuItem
+            item: MenuItem,
         ): Boolean {
             val ac = activity ?: return false
             return when (item.itemId) {
@@ -138,7 +138,7 @@ class FragmentHistory : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
-        state: Bundle?
+        state: Bundle?,
     ): View? {
         val ac = activity ?: return null
         ac.setTitle(R.string.history)
@@ -196,9 +196,9 @@ class FragmentHistory : Fragment() {
     }
 
     override fun onCreateOptionsMenu(
-		menu: Menu,
-		inflater: MenuInflater
-	) {
+        menu: Menu,
+        inflater: MenuInflater,
+    ) {
         inflater.inflate(R.menu.f_history, menu)
         initSearchView(menu.findItem(R.id.search))
         menu.setGroupVisible(R.id.scansAvailable, scansAdapter?.count != 0)

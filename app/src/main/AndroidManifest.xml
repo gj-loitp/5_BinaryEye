@@ -33,7 +33,7 @@
 	</queries>
 	<application
 		tools:ignore="UnusedAttribute"
-		android:name=".app.BinaryEyeApp"
+		android:name=".BinaryEyeApp"
 		android:usesCleartextTraffic="true"
 		android:allowBackup="true"
 		android:fullBackupContent="@xml/backup_rules"

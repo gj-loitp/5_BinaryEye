@@ -22,14 +22,14 @@ import com.roy.binaryeye.R
 import com.roy.binaryeye.adapter.prettifyFormatName
 import com.roy.binaryeye.app.PERMISSION_CAMERA
 import com.roy.binaryeye.app.applyLocale
-import com.roy.binaryeye.app.db
 import com.roy.binaryeye.app.hasBluetoothPermission
 import com.roy.binaryeye.app.hasCameraPermission
-import com.roy.binaryeye.app.prefs
+import com.roy.binaryeye.prefs
 import com.roy.binaryeye.bluetooth.sendBluetoothAsync
 import com.roy.binaryeye.content.copyToClipboard
 import com.roy.binaryeye.content.execShareIntent
 import com.roy.binaryeye.content.openUrl
+import com.roy.binaryeye.db
 import com.roy.binaryeye.db.toScan
 import com.roy.binaryeye.graphics.FrameMetrics
 import com.roy.binaryeye.graphics.mapPosition

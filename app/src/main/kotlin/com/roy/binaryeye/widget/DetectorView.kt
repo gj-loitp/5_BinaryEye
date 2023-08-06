@@ -11,7 +11,7 @@ import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View
 import com.roy.binaryeye.R
-import com.roy.binaryeye.app.prefs
+import com.roy.binaryeye.prefs
 import com.roy.binaryeye.graphics.getBitmapFromDrawable
 import com.roy.binaryeye.graphics.getDashedBorderPaint
 import kotlin.math.abs

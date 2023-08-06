@@ -19,7 +19,7 @@ import com.roy.binaryeye.R
 import com.roy.binaryeye.activity.SplashActivity
 import com.roy.binaryeye.app.addFragment
 import com.roy.binaryeye.app.hasBluetoothPermission
-import com.roy.binaryeye.app.prefs
+import com.roy.binaryeye.prefs
 import com.roy.binaryeye.bluetooth.setBluetoothHosts
 import com.roy.binaryeye.media.beepConfirm
 import com.roy.binaryeye.preference.UrlPreference

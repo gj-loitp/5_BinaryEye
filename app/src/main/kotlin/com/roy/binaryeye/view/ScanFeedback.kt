@@ -2,7 +2,7 @@ package com.roy.binaryeye.view
 
 import android.content.Context
 import android.media.AudioManager
-import com.roy.binaryeye.app.prefs
+import com.roy.binaryeye.prefs
 import com.roy.binaryeye.media.beepConfirm
 import com.roy.binaryeye.media.beepError
 import com.roy.binaryeye.os.error
