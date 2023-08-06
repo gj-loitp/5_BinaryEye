@@ -15,7 +15,7 @@ import java.util.*
  * WIFI:S:[network SSID];T:<WPA|WEP|nopass|>;P:[network password];H:<true|false|>;;
  *
  * WPA2 enterprise (EAP):
- * WIFI:S:[network SSID];T:WPA2-EAP;H:<true|false|nopass|>;E:[EAP method];PH2:[Phase 2 method];AI:[anonymous identity];I:[identity];P:[password];;
+ * WIFI:S:[network SSID];T:WPA2-EAP;H:<true|false|nopass|>;E:[EAP method];PH2:[Phase 2 method];AI:[anonymous identity];I:];P:[];;
  *
  * EPA methods:
  *      "AKA",      "AKA_PRIME",
@@ -35,9 +35,9 @@ import java.util.*
  * The fields can appear in any order. Only "S:" is required.
  */
 object WifiConnector {
-	fun parse(
+    fun parse(
 		input: String,
-		passwordBlock: ((password: String?) -> Unit)? = null
+		passwordBlock: ((password: String?) -> Unit)? = null,
 	): Any? {
 		val inputMap = parseMap(input) ?: return null
 		val parsedData = SimpleDataAccessor.of(inputMap) ?: return null
@@ -48,8 +48,7 @@ object WifiConnector {
 			// WifiConfiguration is deprecated in Android Q but
 			// because it's only possible in R to query network
 			// suggestions, we still use the deprecated API on Q.
-			@Suppress("DEPRECATION")
-			WifiConfiguration().apply(parsedData)
+			@Suppress("DEPRECATION") WifiConfiguration().apply(parsedData)
 		} else {
 			WifiNetworkSuggestion.Builder().apply(parsedData)
 		}
@@ -60,14 +59,11 @@ object WifiConnector {
 			Context.WIFI_SERVICE
 		) as WifiManager
 		// WifiConfiguration is deprecated in Android Q.
-		@Suppress("DEPRECATION")
-		return if ((config is WifiConfiguration &&
-					wifiManager.enableWifi() &&
-					wifiManager.removeOldNetwork(config) &&
-					wifiManager.enableNewNetwork(config)) ||
-			(Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q &&
-					config is WifiNetworkSuggestion.Builder &&
-					wifiManager.addNetworkFromBuilder(config))
+		@Suppress("DEPRECATION") return if ((config is WifiConfiguration && wifiManager.enableWifi() && wifiManager.removeOldNetwork(
+				config
+			) && wifiManager.enableNewNetwork(config)) || (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q && config is WifiNetworkSuggestion.Builder && wifiManager.addNetworkFromBuilder(
+				config
+			))
 		) {
 			R.string.wifi_added
 		} else {
@@ -92,7 +88,7 @@ object WifiConnector {
 	}
 
 	internal class SimpleDataAccessor private constructor(
-		private val inputMap: Map<String, String>
+		private val inputMap: Map<String, String>,
 	) {
 		// This should be private but because of testing it isn't possible.
 		internal val ssid: String
@@ -152,23 +148,24 @@ object WifiConnector {
 
 	@RequiresApi(Build.VERSION_CODES.Q)
 	private fun WifiNetworkSuggestion.Builder.apply(
-		data: SimpleDataAccessor
+		data: SimpleDataAccessor,
 	): WifiNetworkSuggestion.Builder? {
 		fun WifiNetworkSuggestion.Builder.applyCommon(
-			data: SimpleDataAccessor
+			data: SimpleDataAccessor,
 		): WifiNetworkSuggestion.Builder {
 			setSsid(data.ssid)
 			return this
 		}
 
 		fun WifiNetworkSuggestion.Builder.applySecurity(
-			data: SimpleDataAccessor
+			data: SimpleDataAccessor,
 		): WifiNetworkSuggestion.Builder? {
 			try {
 				when (data.securityType.uppercase()) {
 					"WPA", "WPA2" -> {
 						data.password?.let { setWpa2Passphrase(it) }
 					}
+
 					"WPA2-EAP" -> {
 						setWpa2EnterpriseConfig(WifiEnterpriseConfig().apply {
 							identity = data.identity
@@ -178,9 +175,11 @@ object WifiConnector {
 							data.phase2Method?.let { phase2Method = it }
 						})
 					}
+
 					"WPA3" -> {
 						data.password?.let { setWpa3Passphrase(it) }
 					}
+
 					"WPA3-EAP" -> {
 						setWpa3EnterpriseConfig(WifiEnterpriseConfig().apply {
 							identity = data.identity
@@ -204,13 +203,13 @@ object WifiConnector {
 	// WifiConfiguration is deprecated in Android Q.
 	@Suppress("DEPRECATION")
 	private fun WifiConfiguration.apply(
-		data: SimpleDataAccessor
+		data: SimpleDataAccessor,
 	): WifiConfiguration? {
 		val ssidWithQuotes = data.ssid.quote
 		val passwordWithQuotes = data.password?.quoteUnlessHex
 
 		fun WifiConfiguration.applyCommon(
-			data: SimpleDataAccessor
+			data: SimpleDataAccessor,
 		): WifiConfiguration {
 			allowedAuthAlgorithms.clear()
 			allowedGroupCiphers.clear()
@@ -224,7 +223,7 @@ object WifiConnector {
 		}
 
 		fun WifiConfiguration.applySecurity(
-			data: SimpleDataAccessor
+			data: SimpleDataAccessor,
 		): WifiConfiguration? {
 			when (data.securityType.uppercase()) {
 				"", "NOPASS" -> allowedKeyManagement.set(WifiConfiguration.KeyMgmt.NONE)
@@ -240,6 +239,7 @@ object WifiConnector {
 					allowedGroupCiphers.set(WifiConfiguration.GroupCipher.WEP40)
 					allowedGroupCiphers.set(WifiConfiguration.GroupCipher.WEP104)
 				}
+
 				"WPA" -> {
 					passwordWithQuotes?.let {
 						preSharedKey = it
@@ -256,6 +256,7 @@ object WifiConnector {
 					allowedGroupCiphers.set(WifiConfiguration.GroupCipher.TKIP)
 					allowedGroupCiphers.set(WifiConfiguration.GroupCipher.CCMP)
 				}
+
 				"WPA2-EAP" -> requireSdk(Build.VERSION_CODES.JELLY_BEAN_MR2) {
 					passwordWithQuotes?.let {
 						preSharedKey = it
@@ -291,7 +292,7 @@ object WifiConnector {
 
 @RequiresApi(Build.VERSION_CODES.Q)
 private fun WifiManager.addNetworkFromBuilder(
-	builder: WifiNetworkSuggestion.Builder
+	builder: WifiNetworkSuggestion.Builder,
 ): Boolean {
 	val suggestion = builder.build()
 	val suggestions = listOf(suggestion)
@@ -338,19 +339,17 @@ private fun String.isHex() = length == 64 && matches(hexRegex)
 private fun WifiManager.enableWifi(): Boolean {
 	// setWifiEnabled() will always return false for Android Q
 	// because Q doesn't allow apps to enable/disable Wi-Fi anymore.
-	@Suppress("DEPRECATION")
-	return isWifiEnabled || setWifiEnabled(true)
+	@Suppress("DEPRECATION") return isWifiEnabled || setWifiEnabled(true)
 }
 
 // WifiConfiguration is deprecated in Android Q.
 @Suppress("DEPRECATION")
 private fun WifiManager.removeOldNetwork(
-	wifiConfig: WifiConfiguration
+	wifiConfig: WifiConfiguration,
 ): Boolean {
 	try {
 		configuredNetworks?.firstOrNull {
-			it.SSID == wifiConfig.SSID &&
-					it.allowedKeyManagement == wifiConfig.allowedKeyManagement
+			it.SSID == wifiConfig.SSID && it.allowedKeyManagement == wifiConfig.allowedKeyManagement
 		}?.networkId?.also {
 			removeNetwork(it)
 		}
@@ -364,7 +363,7 @@ private fun WifiManager.removeOldNetwork(
 // WifiConfiguration is deprecated in Android Q.
 @Suppress("DEPRECATION")
 private fun WifiManager.enableNewNetwork(
-	wifiConfig: WifiConfiguration
+	wifiConfig: WifiConfiguration,
 ): Boolean {
 	val id = addNetwork(wifiConfig)
 	if (id == -1) {

@@ -1,4 +1,4 @@
-package com.roy.binaryeye.activity
+package com.roy.binaryeye.a
 
 import android.content.Context
 import android.content.Intent

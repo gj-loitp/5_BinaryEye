@@ -15,7 +15,7 @@ import com.roy.binaryeye.actions.ActionRegistry
 import com.roy.binaryeye.actions.IAction
 import com.roy.binaryeye.actions.wifi.WifiAction
 import com.roy.binaryeye.actions.wifi.WifiConnector
-import com.roy.binaryeye.activity.MainActivity
+import com.roy.binaryeye.a.MainActivity
 import com.roy.binaryeye.adapter.prettifyFormatName
 import com.roy.binaryeye.app.addFragment
 import com.roy.binaryeye.app.hasLocationPermission

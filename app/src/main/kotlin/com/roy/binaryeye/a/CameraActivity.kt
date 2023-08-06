@@ -1,4 +1,4 @@
-package com.roy.binaryeye.activity
+package com.roy.binaryeye.a
 
 import android.app.Activity
 import android.app.AlertDialog

@@ -44,7 +44,7 @@
 		android:icon="@mipmap/ic_launcher"
 		android:theme="@style/AppTheme">
 		<activity
-			android:name=".activity.SplashActivity"
+			android:name=".a.SplashActivity"
 			android:theme="@style/SplashTheme"
 			android:exported="true">
 			<intent-filter>
@@ -56,7 +56,7 @@
 				android:resource="@xml/shortcuts"/>
 		</activity>
 		<activity
-			android:name=".activity.CameraActivity"
+			android:name=".a.CameraActivity"
 			android:label="@string/scan_code"
 			android:exported="true">
 			<intent-filter android:label="@string/compose_barcode">
@@ -76,7 +76,7 @@
 			</intent-filter>
 		</activity>
 		<activity
-			android:name=".activity.PickActivity"
+			android:name=".a.PickActivity"
 			android:label="@string/pick_code_to_scan"
 			android:exported="true"
 			tools:ignore="AppLinkUrlError">
@@ -92,7 +92,7 @@
 			</intent-filter>
 		</activity>
 		<activity
-			android:name=".activity.MainActivity"
+			android:name=".a.MainActivity"
 			android:exported="true"/>
 		<service
 			android:name=".service.ScanTileService"

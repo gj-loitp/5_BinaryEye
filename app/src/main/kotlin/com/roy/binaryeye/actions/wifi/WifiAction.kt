@@ -8,26 +8,26 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
 object WifiAction : IAction {
-	override val iconResId = R.drawable.ic_action_wifi
-	override val titleResId = R.string.connect_to_wifi
+    override val iconResId = R.drawable.ic_action_wifi
+    override val titleResId = R.string.connect_to_wifi
 
-	var password: String? = null
+    var password: String? = null
 
-	override fun canExecuteOn(data: ByteArray): Boolean =
-		WifiConnector.parse(String(data)) {
-			password = it
-		} != null
+    override fun canExecuteOn(data: ByteArray): Boolean =
+        WifiConnector.parse(String(data)) {
+            password = it
+        } != null
 
-	override suspend fun execute(
+    override suspend fun execute(
 		context: Context,
-		data: ByteArray
+		data: ByteArray,
 	) = withContext(Dispatchers.IO) {
-		val wifiConfig = WifiConnector.parse(
-			String(data)
-		) ?: return@withContext
-		val message = WifiConnector.addNetwork(context, wifiConfig)
-		withContext(Dispatchers.Main) {
-			context.toast(message)
-		}
-	}
+        val wifiConfig = WifiConnector.parse(
+            String(data)
+        ) ?: return@withContext
+        val message = WifiConnector.addNetwork(context, wifiConfig)
+        withContext(Dispatchers.Main) {
+            context.toast(message)
+        }
+    }
 }
