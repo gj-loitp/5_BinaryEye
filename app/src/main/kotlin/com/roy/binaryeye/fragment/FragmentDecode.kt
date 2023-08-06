@@ -20,6 +20,7 @@ import com.roy.binaryeye.adapter.prettifyFormatName
 import com.roy.binaryeye.app.addFragment
 import com.roy.binaryeye.app.hasLocationPermission
 import com.roy.binaryeye.app.hasWritePermission
+import com.roy.binaryeye.content.copyToClipboard
 import com.roy.binaryeye.prefs
 import com.roy.binaryeye.content.shareText
 import com.roy.binaryeye.db
@@ -373,7 +374,7 @@ class FragmentDecode : Fragment() {
 
     private fun copyToClipboard(text: String, isSensitive: Boolean = false) {
         activity?.apply {
-            copyToClipboard(text, isSensitive)
+            this.copyToClipboard(text, isSensitive)
             toast(R.string.copied_to_clipboard)
         }
     }
