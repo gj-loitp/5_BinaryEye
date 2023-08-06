@@ -1,8 +1,8 @@
 package com.roy.binaryeye.app
 
 import android.annotation.SuppressLint
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import com.roy.binaryeye.R
 
 fun FragmentManager.setFragment(fragment: Fragment) {
@@ -15,5 +15,5 @@ fun FragmentManager.addFragment(fragment: Fragment) {
 
 @SuppressLint("CommitTransaction")
 private fun FragmentManager.getTransaction(
-	fragment: Fragment,
+    fragment: Fragment,
 ) = beginTransaction().replace(R.id.contentFrame, fragment)

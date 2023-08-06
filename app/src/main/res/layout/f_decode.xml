@@ -9,13 +9,13 @@
         android:layout_height="match_parent"
         android:clipToPadding="false">
 
-        <android.support.v7.widget.LinearLayoutCompat
+        <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="16dp">
 
-            <android.support.v7.widget.AppCompatEditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
                 android:typeface="monospace"
                 tools:ignore="UnusedAttribute" />
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/format"
                 style="@style/SecondaryText"
                 android:layout_width="match_parent"
@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp" />
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/hex"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
                 android:typeface="monospace"
                 tools:text="54 65 73 74 20 51 52 20  Test QR\n43 6F 64 65              Code" />
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/stamp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
                 android:textSize="12sp"
                 android:typeface="monospace" />
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/recreation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -72,18 +72,18 @@
                 android:layout_marginBottom="16dp"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/view_barcode" />
-        </android.support.v7.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
     </com.roy.binaryeye.widget.ConfinedScrollView>
 
-    <android.support.design.widget.CoordinatorLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/insetLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <android.support.design.widget.FloatingActionButton
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/open"
             style="@style/FAB"
             android:contentDescription="@string/open_url"
             android:src="@drawable/ic_action_open" />
-    </android.support.design.widget.CoordinatorLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </FrameLayout>

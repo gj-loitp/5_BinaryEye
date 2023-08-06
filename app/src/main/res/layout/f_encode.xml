@@ -9,65 +9,65 @@
         android:layout_height="match_parent"
         android:clipToPadding="false">
 
-        <android.support.v7.widget.LinearLayoutCompat
+        <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="16dp">
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:text="@string/format" />
 
-            <android.support.v7.widget.AppCompatSpinner
+            <androidx.appcompat.widget.AppCompatSpinner
                 android:id="@+id/format"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp" />
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/errorCorrectionLabel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:text="@string/error_correction_level" />
 
-            <android.support.v7.widget.AppCompatSpinner
+            <androidx.appcompat.widget.AppCompatSpinner
                 android:id="@+id/errorCorrectionLevel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp" />
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/colorsLabel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:text="@string/colors" />
 
-            <android.support.v7.widget.AppCompatSpinner
+            <androidx.appcompat.widget.AppCompatSpinner
                 android:id="@+id/colors"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:entries="@array/colors" />
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:text="@string/size" />
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/sizeDisplay"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:gravity="center" />
 
-            <android.support.v7.widget.AppCompatSeekBar
+            <androidx.appcompat.widget.AppCompatSeekBar
                 android:id="@+id/sizeBar"
                 style="@style/Widget.AppCompat.SeekBar.Discrete"
                 android:layout_width="match_parent"
@@ -76,13 +76,13 @@
                 android:max="7"
                 android:progress="4" />
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:text="@string/content" />
 
-            <android.support.v7.widget.AppCompatEditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -95,24 +95,24 @@
                 android:typeface="monospace"
                 tools:targetApi="o" />
 
-            <android.support.v7.widget.AppCompatCheckBox
+            <androidx.appcompat.widget.AppCompatCheckBox
                 android:id="@+id/unescape"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:text="@string/unescape" />
-        </android.support.v7.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
     </com.roy.binaryeye.widget.ConfinedScrollView>
 
-    <android.support.design.widget.CoordinatorLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/insetLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <android.support.design.widget.FloatingActionButton
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/encode"
             style="@style/FAB"
             android:contentDescription="@string/encode"
             android:src="@drawable/ic_action_next" />
-    </android.support.design.widget.CoordinatorLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </FrameLayout>

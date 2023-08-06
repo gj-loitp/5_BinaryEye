@@ -6,7 +6,7 @@ import android.content.Context
 import android.os.Build
 import android.os.Environment
 import android.provider.MediaStore
-import android.support.annotation.MainThread
+import androidx.annotation.MainThread
 import android.widget.EditText
 import com.roy.binaryeye.R
 import com.roy.binaryeye.app.alertDialog

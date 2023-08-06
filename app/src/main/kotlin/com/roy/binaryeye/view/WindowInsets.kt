@@ -2,10 +2,10 @@ package com.roy.binaryeye.view
 
 import android.graphics.Rect
 import android.os.Build
-import android.support.annotation.RequiresApi
-import android.support.v4.view.ViewCompat
-import android.support.v4.view.WindowInsetsCompat
-import android.support.v7.widget.Toolbar
+import androidx.annotation.RequiresApi
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.appcompat.widget.Toolbar
 import android.view.View
 
 private var toolbarHeight = 0

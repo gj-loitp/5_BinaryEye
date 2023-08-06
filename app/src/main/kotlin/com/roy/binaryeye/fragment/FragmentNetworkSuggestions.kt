@@ -5,8 +5,8 @@ import android.net.wifi.WifiManager
 import android.net.wifi.WifiNetworkSuggestion
 import android.os.Build
 import android.os.Bundle
-import android.support.annotation.RequiresApi
-import android.support.v4.app.Fragment
+import androidx.annotation.RequiresApi
+import androidx.fragment.app.Fragment
 import android.view.*
 import android.widget.ArrayAdapter
 import android.widget.ListView

@@ -2,8 +2,8 @@ package com.roy.binaryeye.fragment
 
 import android.os.Build
 import android.os.Bundle
-import android.support.design.widget.FloatingActionButton
-import android.support.v4.app.Fragment
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import androidx.fragment.app.Fragment
 import android.text.Editable
 import android.text.Html
 import android.text.TextWatcher

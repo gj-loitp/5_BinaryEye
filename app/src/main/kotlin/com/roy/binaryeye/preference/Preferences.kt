@@ -5,7 +5,7 @@ import android.content.SharedPreferences
 import android.media.ToneGenerator
 import android.os.Build
 import android.preference.PreferenceManager
-import android.support.annotation.RequiresApi
+import androidx.annotation.RequiresApi
 import de.markusfisch.android.zxingcpp.ZxingCpp.Format
 
 class Preferences {

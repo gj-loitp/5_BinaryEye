@@ -11,12 +11,12 @@
         android:divider="@color/separator"
         android:dividerHeight="1px" />
 
-    <android.support.design.widget.CoordinatorLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/insetLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <android.support.v7.widget.SwitchCompat
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/useHistory"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -25,13 +25,13 @@
             android:text="@string/use_history"
             android:visibility="gone" />
 
-        <android.support.design.widget.FloatingActionButton
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/share"
             style="@style/FAB"
             android:contentDescription="@string/share"
             android:src="@drawable/ic_action_share"
             android:visibility="gone" />
-    </android.support.design.widget.CoordinatorLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     <include layout="@layout/v_progress_view" />
 </FrameLayout>

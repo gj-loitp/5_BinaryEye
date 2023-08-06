@@ -4,7 +4,7 @@
     android:background="@drawable/selector_list"
     android:padding="16dp">
 
-    <android.support.v7.widget.AppCompatTextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/time"
         style="@style/SecondaryText"
         android:layout_width="wrap_content"
@@ -13,7 +13,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true" />
 
-    <android.support.v7.widget.AppCompatTextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/format"
         style="@style/SecondaryText"
         android:layout_width="wrap_content"
@@ -25,7 +25,7 @@
         android:layout_toRightOf="@+id/time"
         android:gravity="end" />
 
-    <android.support.v7.widget.AppCompatTextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -1,16 +1,16 @@
-<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="16dp">
 
-    <android.support.v7.widget.AppCompatTextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/enter_name"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-    <android.support.v7.widget.AppCompatEditText
+    <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,4 +20,4 @@
         android:inputType="textShortMessage|textAutoCorrect|textCapSentences"
         android:maxLength="1024"
         android:maxLines="1" />
-</android.support.v7.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

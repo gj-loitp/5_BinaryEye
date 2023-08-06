@@ -11,12 +11,12 @@
         android:divider="@color/separator"
         android:dividerHeight="1px" />
 
-    <android.support.design.widget.CoordinatorLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/insetLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <android.support.v7.widget.AppCompatTextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/noSuggestions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -26,10 +26,10 @@
             android:text="@string/clear_network_suggestions_nothing_to_remove"
             android:visibility="gone" />
 
-        <android.support.design.widget.FloatingActionButton
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/remove"
             style="@style/FAB"
             android:contentDescription="@string/remove_suggestion"
             android:src="@drawable/ic_action_remove" />
-    </android.support.design.widget.CoordinatorLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </FrameLayout>
