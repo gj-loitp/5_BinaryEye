@@ -6,30 +6,30 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
 suspend inline fun View.useVisibility(
-	whileExecuting: Int = View.VISIBLE,
-	otherwise: Int = View.GONE,
-	crossinline block: suspend () -> Unit
+    whileExecuting: Int = View.VISIBLE,
+    otherwise: Int = View.GONE,
+    crossinline block: suspend () -> Unit
 ) {
-	if (visibility == whileExecuting) {
-		return
-	}
-	withContext(Dispatchers.Main) {
-		visibility = whileExecuting
-	}
-	try {
-		block()
-	} finally {
-		withContext(Dispatchers.Main) {
-			visibility = otherwise
-		}
-	}
+    if (visibility == whileExecuting) {
+        return
+    }
+    withContext(Dispatchers.Main) {
+        visibility = whileExecuting
+    }
+    try {
+        block()
+    } finally {
+        withContext(Dispatchers.Main) {
+            visibility = otherwise
+        }
+    }
 }
 
 fun View.setPadding(rect: Rect) {
-	this.setPadding(
-		rect.left,
-		rect.top,
-		rect.right,
-		rect.bottom
-	)
+    this.setPadding(
+		/* left = */ rect.left,
+		/* top = */ rect.top,
+		/* right = */ rect.right,
+		/* bottom = */ rect.bottom
+    )
 }
