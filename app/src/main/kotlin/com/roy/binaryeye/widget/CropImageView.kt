@@ -9,26 +9,26 @@ import com.roy.binaryeye.widget.ConfinedScalingImageView
 import kotlin.math.roundToInt
 
 class CropImageView(context: Context, attr: AttributeSet) :
-	ConfinedScalingImageView(context, attr) {
-	var onScan: (() -> Unit)? = null
+    ConfinedScalingImageView(context, attr) {
+    var onScan: (() -> Unit)? = null
 
-	private val lastMappedRect = RectF()
-	private val onScanRunnable = Runnable { onScan?.invoke() }
+    private val lastMappedRect = RectF()
+    private val onScanRunnable = Runnable { onScan?.invoke() }
 
-	fun getBoundsRect() = Rect(
-		bounds.left.roundToInt(),
-		bounds.top.roundToInt(),
-		bounds.right.roundToInt(),
-		bounds.bottom.roundToInt()
-	)
+    fun getBoundsRect() = Rect(
+        bounds.left.roundToInt(),
+        bounds.top.roundToInt(),
+        bounds.right.roundToInt(),
+        bounds.bottom.roundToInt()
+    )
 
-	override fun onDraw(canvas: Canvas) {
-		super.onDraw(canvas)
-		val mr = mappedRect ?: return
-		if (mr != lastMappedRect) {
-			removeCallbacks(onScanRunnable)
-			postDelayed(onScanRunnable, 300)
-			lastMappedRect.set(mr)
-		}
-	}
+    override fun onDraw(canvas: Canvas) {
+        super.onDraw(canvas)
+        val mr = mappedRect ?: return
+        if (mr != lastMappedRect) {
+            removeCallbacks(onScanRunnable)
+            postDelayed(onScanRunnable, 300)
+            lastMappedRect.set(mr)
+        }
+    }
 }
