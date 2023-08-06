@@ -1,6 +1,6 @@
 package com.roy.binaryeye.net
 
-import com.roy.binaryeye.database.Scan
+import com.roy.binaryeye.db.Scan
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

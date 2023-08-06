@@ -15,7 +15,7 @@ import com.roy.binaryeye.app.applyLocale
 import com.roy.binaryeye.app.permissionGrantedCallback
 import com.roy.binaryeye.app.prefs
 import com.roy.binaryeye.app.setFragment
-import com.roy.binaryeye.database.Scan
+import com.roy.binaryeye.db.Scan
 import com.roy.binaryeye.fragment.FragmentDecode
 import com.roy.binaryeye.fragment.FragmentEncode
 import com.roy.binaryeye.fragment.FragmentHistory

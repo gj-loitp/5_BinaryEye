@@ -30,7 +30,7 @@ import com.roy.binaryeye.bluetooth.sendBluetoothAsync
 import com.roy.binaryeye.content.copyToClipboard
 import com.roy.binaryeye.content.execShareIntent
 import com.roy.binaryeye.content.openUrl
-import com.roy.binaryeye.database.toScan
+import com.roy.binaryeye.db.toScan
 import com.roy.binaryeye.graphics.FrameMetrics
 import com.roy.binaryeye.graphics.mapPosition
 import com.roy.binaryeye.graphics.setFrameRoi

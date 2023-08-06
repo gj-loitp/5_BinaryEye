@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.CursorAdapter
 import android.widget.TextView
 import com.roy.binaryeye.R
-import com.roy.binaryeye.database.Database
+import com.roy.binaryeye.db.Db
 import java.text.DateFormat
 import java.text.ParseException
 import java.text.SimpleDateFormat
@@ -17,11 +17,11 @@ import java.util.*
 
 class ScansAdapter(context: Context, cursor: Cursor) :
 	CursorAdapter(context, cursor, false) {
-	private val idIndex = cursor.getColumnIndex(Database.SCANS_ID)
-	private val timeIndex = cursor.getColumnIndex(Database.SCANS_DATETIME)
-	private val nameIndex = cursor.getColumnIndex(Database.SCANS_NAME)
-	private val contentIndex = cursor.getColumnIndex(Database.SCANS_CONTENT)
-	private val formatIndex = cursor.getColumnIndex(Database.SCANS_FORMAT)
+	private val idIndex = cursor.getColumnIndex(Db.SCANS_ID)
+	private val timeIndex = cursor.getColumnIndex(Db.SCANS_DATETIME)
+	private val nameIndex = cursor.getColumnIndex(Db.SCANS_NAME)
+	private val contentIndex = cursor.getColumnIndex(Db.SCANS_CONTENT)
+	private val formatIndex = cursor.getColumnIndex(Db.SCANS_FORMAT)
 	private val selections = mutableMapOf<Long, Int>()
 	private val selectedColor = ContextCompat.getColor(
 		context, R.color.selected_row

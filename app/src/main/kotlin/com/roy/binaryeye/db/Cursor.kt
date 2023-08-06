@@ -1,4 +1,4 @@
-package com.roy.binaryeye.database
+package com.roy.binaryeye.db
 
 import android.database.Cursor
 

@@ -6,7 +6,7 @@ import android.view.View
 import android.widget.TextView
 import com.roy.binaryeye.R
 import com.roy.binaryeye.app.prefs
-import com.roy.binaryeye.database.Scan
+import com.roy.binaryeye.db.Scan
 import com.roy.binaryeye.net.sendAsync
 import com.roy.binaryeye.preference.UrlPreference
 

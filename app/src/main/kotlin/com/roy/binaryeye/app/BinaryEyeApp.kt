@@ -1,10 +1,10 @@
 package com.roy.binaryeye.app
 
 import android.app.Application
-import com.roy.binaryeye.database.Database
+import com.roy.binaryeye.db.Db
 import com.roy.binaryeye.preference.Preferences
 
-val db = Database()
+val db = Db()
 val prefs = Preferences()
 
 class BinaryEyeApp : Application() {

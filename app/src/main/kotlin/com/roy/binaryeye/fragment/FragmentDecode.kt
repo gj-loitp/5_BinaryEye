@@ -23,9 +23,9 @@ import com.roy.binaryeye.app.hasLocationPermission
 import com.roy.binaryeye.app.hasWritePermission
 import com.roy.binaryeye.app.prefs
 import com.roy.binaryeye.content.shareText
-import com.roy.binaryeye.database.Recreation
-import com.roy.binaryeye.database.Scan
-import com.roy.binaryeye.database.toRecreation
+import com.roy.binaryeye.db.Recreation
+import com.roy.binaryeye.db.Scan
+import com.roy.binaryeye.db.toRecreation
 import com.roy.binaryeye.io.askForFileName
 import com.roy.binaryeye.io.toSaveResult
 import com.roy.binaryeye.io.writeExternalFile

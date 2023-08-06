@@ -28,10 +28,10 @@ import com.roy.binaryeye.app.hasWritePermission
 import com.roy.binaryeye.app.prefs
 import com.roy.binaryeye.content.copyToClipboard
 import com.roy.binaryeye.content.shareText
-import com.roy.binaryeye.database.Database
-import com.roy.binaryeye.database.exportCsv
-import com.roy.binaryeye.database.exportDatabase
-import com.roy.binaryeye.database.exportJson
+import com.roy.binaryeye.db.Db
+import com.roy.binaryeye.db.exportCsv
+import com.roy.binaryeye.db.exportDatabase
+import com.roy.binaryeye.db.exportJson
 import com.roy.binaryeye.io.askForFileName
 import com.roy.binaryeye.io.toSaveResult
 import com.roy.binaryeye.view.lockStatusBarColor
@@ -463,7 +463,7 @@ class FragmentHistory : Fragment() {
 
 private fun Cursor.exportText(separator: String): String {
     val sb = StringBuilder()
-    val contentIndex = getColumnIndex(Database.SCANS_CONTENT)
+    val contentIndex = getColumnIndex(Db.SCANS_CONTENT)
     if (contentIndex > -1 && moveToFirst()) {
         do {
             val content = getString(contentIndex)
