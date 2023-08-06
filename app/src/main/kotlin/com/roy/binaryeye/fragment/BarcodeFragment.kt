@@ -57,7 +57,7 @@ class BarcodeFragment : Fragment() {
 		ac.setTitle(R.string.view_barcode)
 
 		val view = inflater.inflate(
-			R.layout.fragment_barcode,
+			R.layout.f_barcode,
 			container,
 			false
 		)
@@ -174,8 +174,8 @@ class BarcodeFragment : Fragment() {
 		) {
 			return
 		}
-		val view = ac.layoutInflater.inflate(R.layout.dialog_save_file, null)
-		val editText = view.findViewById<EditText>(R.id.file_name)
+		val view = ac.layoutInflater.inflate(R.layout.dlg_save_file, null)
+		val editText = view.findViewById<EditText>(R.id.fileName)
 		editText.setText(
 			encodeFileName("${barcode.format}_${barcode.content}")
 		)

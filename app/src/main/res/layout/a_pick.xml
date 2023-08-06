@@ -7,7 +7,7 @@
         android:contentDescription="@string/view_barcode" />
 
     <com.roy.binaryeye.widget.DetectorView
-        android:id="@+id/detector_view"
+        android:id="@+id/detectorView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

@@ -28,8 +28,8 @@ fun addSuffixIfNotGiven(name: String, suffix: String): String {
 @Suppress("InflateParams")
 @MainThread
 suspend fun Activity.askForFileName(suffix: String = ""): String? {
-	val view = layoutInflater.inflate(R.layout.dialog_save_file, null)
-	val editText = view.findViewById<EditText>(R.id.file_name)
+	val view = layoutInflater.inflate(R.layout.dlg_save_file, null)
+	val editText = view.findViewById<EditText>(R.id.fileName)
 	return alertDialog<String>(this as Context) { resume ->
 		setView(view)
 		setPositiveButton(android.R.string.ok) { _, _ ->

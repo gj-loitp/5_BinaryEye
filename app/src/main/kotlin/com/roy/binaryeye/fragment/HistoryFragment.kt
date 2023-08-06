@@ -312,7 +312,7 @@ class HistoryFragment : Fragment() {
 	@SuppressLint("InflateParams")
 	private fun Context.askForName(id: Long, text: String?, content: String?) {
 		val view = LayoutInflater.from(this).inflate(
-			R.layout.dialog_enter_name, null
+			R.layout.dlg_enter_name, null
 		)
 		val nameView = view.findViewById<EditText>(R.id.name)
 		nameView.setText(text)

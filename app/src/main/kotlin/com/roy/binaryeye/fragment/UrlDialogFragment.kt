@@ -17,7 +17,7 @@ class UrlDialogFragment : PreferenceDialogFragmentCompat() {
 	override fun onBindDialogView(view: View?) {
 		super.onBindDialogView(view)
 		urlView = view?.findViewById(R.id.url)
-		testButton = view?.findViewById(R.id.test_url)
+		testButton = view?.findViewById(R.id.testUrl)
 		testButton?.setOnClickListener {
 			testUrl(testButton)
 		}

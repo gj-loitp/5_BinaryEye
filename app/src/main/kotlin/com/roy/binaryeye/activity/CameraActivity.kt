@@ -122,7 +122,7 @@ class CameraActivity : AppCompatActivity() {
 		setSupportActionBar(findViewById(R.id.toolbar) as Toolbar)
 
 		cameraView = findViewById(R.id.camera_view) as CameraView
-		detectorView = findViewById(R.id.detector_view) as DetectorView
+		detectorView = findViewById(R.id.detectorView) as DetectorView
 		zoomBar = findViewById(R.id.zoom) as SeekBar
 		flashFab = findViewById(R.id.flash) as FloatingActionButton
 

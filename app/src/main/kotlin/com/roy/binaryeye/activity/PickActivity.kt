@@ -65,7 +65,7 @@ class PickActivity : AppCompatActivity() {
 
 	override fun onCreate(state: Bundle?) {
 		super.onCreate(state)
-		setContentView(R.layout.activity_pick)
+		setContentView(R.layout.a_pick)
 
 		// Necessary to get the right translation after setting a custom
 		// locale.
@@ -95,7 +95,7 @@ class PickActivity : AppCompatActivity() {
 			scanWithinBounds(bitmap)
 		}
 
-		detectorView = findViewById(R.id.detector_view) as DetectorView
+		detectorView = findViewById(R.id.detectorView) as DetectorView
 		detectorView.onRoiChanged = {
 			scanWithinBounds(bitmap)
 		}
