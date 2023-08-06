@@ -16,8 +16,8 @@ import com.roy.binaryeye.app.permissionGrantedCallback
 import com.roy.binaryeye.app.prefs
 import com.roy.binaryeye.app.setFragment
 import com.roy.binaryeye.database.Scan
-import com.roy.binaryeye.fragment.DecodeFragment
-import com.roy.binaryeye.fragment.EncodeFragment
+import com.roy.binaryeye.fragment.FragmentDecode
+import com.roy.binaryeye.fragment.FragmentEncode
 import com.roy.binaryeye.fragment.FragmentHistory
 import com.roy.binaryeye.fragment.FragmentPreferences
 import com.roy.binaryeye.view.colorSystemAndToolBars
@@ -85,10 +85,10 @@ class MainActivity : AppCompatActivity() {
 			return when {
 				intent.hasExtra(PREFERENCES) -> FragmentPreferences()
 				intent.hasExtra(HISTORY) -> FragmentHistory()
-				intent.hasExtra(ENCODE) -> EncodeFragment.newInstance(
+				intent.hasExtra(ENCODE) -> FragmentEncode.newInstance(
 					intent.getStringExtra(ENCODE)
 				)
-				intent.hasExtra(DECODED) -> DecodeFragment.newInstance(
+				intent.hasExtra(DECODED) -> FragmentDecode.newInstance(
 					intent.getParcelableExtra(DECODED)!!
 				)
 				else -> FragmentPreferences()
