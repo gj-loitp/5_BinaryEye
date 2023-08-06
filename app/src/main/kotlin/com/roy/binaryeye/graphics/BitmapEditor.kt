@@ -12,85 +12,85 @@ import kotlin.math.min
 import kotlin.math.roundToInt
 
 fun ContentResolver.loadImageUri(uri: Uri): Bitmap? = try {
-	val options = BitmapFactory.Options()
-	openInputStream(uri)?.use {
-		options.inJustDecodeBounds = true
-		BitmapFactory.decodeStream(it, null, options)
-		options.inSampleSize = calculateInSampleSize(
-			options.outWidth,
-			options.outHeight
-		)
-		options.inJustDecodeBounds = false
-	}
-	openInputStream(uri)?.use {
-		BitmapFactory.decodeStream(it, null, options)
-	}
+    val options = BitmapFactory.Options()
+    openInputStream(uri)?.use {
+        options.inJustDecodeBounds = true
+        BitmapFactory.decodeStream(it, null, options)
+        options.inSampleSize = calculateInSampleSize(
+			width = options.outWidth,
+			height = options.outHeight
+        )
+        options.inJustDecodeBounds = false
+    }
+    openInputStream(uri)?.use {
+        BitmapFactory.decodeStream(it, null, options)
+    }
 } catch (e: IOException) {
-	null
+    null
 }
 
 private fun calculateInSampleSize(
-	width: Int,
-	height: Int,
-	reqWidth: Int = 1024,
-	reqHeight: Int = 1024
+    width: Int,
+    height: Int,
+    reqWidth: Int = 1024,
+    reqHeight: Int = 1024
 ): Int {
-	var inSampleSize = 1
-	if (height > reqHeight || width > reqWidth) {
-		val halfHeight = height / 2
-		val halfWidth = width / 2
-		while (
-			halfHeight / inSampleSize >= reqHeight ||
-			halfWidth / inSampleSize >= reqWidth
-		) {
-			inSampleSize *= 2
-		}
-	}
-	return inSampleSize
+    var inSampleSize = 1
+    if (height > reqHeight || width > reqWidth) {
+        val halfHeight = height / 2
+        val halfWidth = width / 2
+        while (
+            halfHeight / inSampleSize >= reqHeight ||
+            halfWidth / inSampleSize >= reqWidth
+        ) {
+            inSampleSize *= 2
+        }
+    }
+    return inSampleSize
 }
 
 fun Bitmap.crop(
-	rect: RectF,
-	rotation: Float,
-	pivotX: Float,
-	pivotY: Float
+    rect: RectF,
+    rotation: Float,
+    pivotX: Float,
+    pivotY: Float
 ) = try {
-	val erected = erect(rotation, pivotX, pivotY)
-	val w = erected.width
-	val h = erected.height
-	val x = max(0, (rect.left * w).roundToInt())
-	val y = max(0, (rect.top * h).roundToInt())
-	Bitmap.createBitmap(
-		erected,
-		x,
-		y,
-		min(w - x, (rect.right * w).roundToInt() - x),
-		min(h - y, (rect.bottom * h).roundToInt() - y)
-	)
+    val erected = erect(rotation, pivotX, pivotY)
+    val w = erected.width
+    val h = erected.height
+    val x = max(0, (rect.left * w).roundToInt())
+    val y = max(0, (rect.top * h).roundToInt())
+    Bitmap.createBitmap(
+		/* source = */ erected,
+		/* x = */ x,
+		/* y = */ y,
+		/* width = */ min(w - x, (rect.right * w).roundToInt() - x),
+		/* height = */ min(h - y, (rect.bottom * h).roundToInt() - y)
+    )
 } catch (e: OutOfMemoryError) {
-	null
+    null
 } catch (e: IllegalArgumentException) {
-	null
+    null
 }
 
 private fun Bitmap.erect(
-	rotation: Float,
-	pivotX: Float,
-	pivotY: Float
+    rotation: Float,
+    pivotX: Float,
+    pivotY: Float
 ): Bitmap = if (
-	rotation % 360f != 0f
+    rotation % 360f != 0f
 ) {
-	Bitmap.createBitmap(
-		this,
-		0,
-		0,
-		width,
-		height,
-		Matrix().apply {
-			setRotate(rotation, pivotX, pivotY)
-		},
-		true
-	)
+    Bitmap.createBitmap(
+		/* source = */ this,
+		/* x = */ 0,
+		/* y = */ 0,
+		/* width = */ width,
+		/* height = */ height,
+		/* m = */ Matrix().apply {
+            setRotate(rotation, pivotX, pivotY)
+        },
+		/* filter = */ true
+    )
 } else {
-	this
+    this
 }

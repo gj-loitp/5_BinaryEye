@@ -16,70 +16,69 @@ import java.io.IOException
 import java.io.OutputStream
 
 fun addSuffixIfNotGiven(name: String, suffix: String): String {
-	val trimmed = name.trim()
-	return if (suffix.isNotEmpty() && !trimmed.endsWith(suffix)) {
-		"$trimmed$suffix"
-	} else {
-		trimmed
-	}
+    val trimmed = name.trim()
+    return if (suffix.isNotEmpty() && !trimmed.endsWith(suffix)) {
+        "$trimmed$suffix"
+    } else {
+        trimmed
+    }
 }
 
 // Dialogs doesn't have any root layout, need to be inflated with null root
 @Suppress("InflateParams")
 @MainThread
 suspend fun Activity.askForFileName(suffix: String = ""): String? {
-	val view = layoutInflater.inflate(R.layout.dlg_save_file, null)
-	val editText = view.findViewById<EditText>(R.id.fileName)
-	return alertDialog<String>(this as Context) { resume ->
-		setView(view)
-		setPositiveButton(android.R.string.ok) { _, _ ->
-			resume(editText.text.toString())
-		}
-	}?.let { name ->
-		addSuffixIfNotGiven(name, suffix)
-	}
+    val view = layoutInflater.inflate(R.layout.dlg_save_file, null)
+    val editText = view.findViewById<EditText>(R.id.fileName)
+    return alertDialog<String>(this as Context) { resume ->
+        setView(view)
+        setPositiveButton(android.R.string.ok) { _, _ ->
+            resume(editText.text.toString())
+        }
+    }?.let { name ->
+        addSuffixIfNotGiven(name, suffix)
+    }
 }
 
 fun Boolean.toSaveResult() = if (this) {
-	R.string.saved_in_downloads
+    R.string.saved_in_downloads
 } else {
-	R.string.error_saving_file
+    R.string.error_saving_file
 }
 
 fun Context.writeExternalFile(
-	fileName: String,
-	mimeType: String,
-	write: (outputStream: OutputStream) -> Unit
+    fileName: String,
+    mimeType: String,
+    write: (outputStream: OutputStream) -> Unit
 ): Boolean = try {
-	openExternalOutputStream(fileName, mimeType).use { write(it) }
-	true
+    openExternalOutputStream(fileName, mimeType).use { write(it) }
+    true
 } catch (e: IOException) {
-	false
+    false
 }
 
 private fun Context.openExternalOutputStream(
-	fileName: String,
-	mimeType: String
+    fileName: String,
+    mimeType: String
 ): OutputStream = if (Build.VERSION.SDK_INT < Build.VERSION_CODES.Q) {
-	@Suppress("DEPRECATION")
-	val file = File(
-		Environment.getExternalStoragePublicDirectory(
-			Environment.DIRECTORY_DOWNLOADS
-		),
-		fileName
-	)
-	if (file.exists()) {
-		throw IOException()
-	}
-	FileOutputStream(file)
+    val file = File(
+        Environment.getExternalStoragePublicDirectory(
+            Environment.DIRECTORY_DOWNLOADS
+        ),
+        fileName
+    )
+    if (file.exists()) {
+        throw IOException()
+    }
+    FileOutputStream(file)
 } else {
-	val resolver = contentResolver
-	val uri = resolver.insert(
-		MediaStore.Downloads.EXTERNAL_CONTENT_URI,
-		ContentValues().apply {
-			put(MediaStore.Downloads.DISPLAY_NAME, fileName)
-			put(MediaStore.Downloads.MIME_TYPE, mimeType)
-		}
-	) ?: throw IOException()
-	resolver.openOutputStream(uri) ?: throw IOException()
+    val resolver = contentResolver
+    val uri = resolver.insert(
+        MediaStore.Downloads.EXTERNAL_CONTENT_URI,
+        ContentValues().apply {
+            put(/* key = */ MediaStore.Downloads.DISPLAY_NAME, /* value = */ fileName)
+            put(MediaStore.Downloads.MIME_TYPE, mimeType)
+        }
+    ) ?: throw IOException()
+    resolver.openOutputStream(uri) ?: throw IOException()
 }

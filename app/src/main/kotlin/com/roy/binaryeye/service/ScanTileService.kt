@@ -8,10 +8,10 @@ import com.roy.binaryeye.activity.CameraActivity
 
 @RequiresApi(Build.VERSION_CODES.N)
 class ScanTileService : TileService() {
-	override fun onClick() {
-		super.onClick()
-		val intent = Intent(applicationContext, CameraActivity::class.java)
-		intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
-		startActivityAndCollapse(intent)
-	}
+    override fun onClick() {
+        super.onClick()
+        val intent = Intent(applicationContext, CameraActivity::class.java)
+        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+        startActivityAndCollapse(intent)
+    }
 }
