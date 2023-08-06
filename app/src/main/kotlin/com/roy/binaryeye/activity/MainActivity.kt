@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
 
 	override fun onCreate(state: Bundle?) {
 		super.onCreate(state)
-		setContentView(R.layout.activity_main)
+		setContentView(R.layout.a_main)
 
 		initSystemBars(this)
 		val toolbar = findViewById(R.id.toolbar) as Toolbar

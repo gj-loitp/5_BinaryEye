@@ -16,4 +16,4 @@ fun FragmentManager.addFragment(fragment: Fragment) {
 @SuppressLint("CommitTransaction")
 private fun FragmentManager.getTransaction(
 	fragment: Fragment
-) = beginTransaction().replace(R.id.content_frame, fragment)
+) = beginTransaction().replace(R.id.contentFrame, fragment)

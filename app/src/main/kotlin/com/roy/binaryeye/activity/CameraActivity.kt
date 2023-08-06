@@ -112,7 +112,7 @@ class CameraActivity : AppCompatActivity() {
 
 	override fun onCreate(state: Bundle?) {
 		super.onCreate(state)
-		setContentView(R.layout.activity_camera)
+		setContentView(R.layout.a_camera)
 
 		// Necessary to get the right translation after setting a
 		// custom locale.
@@ -121,7 +121,7 @@ class CameraActivity : AppCompatActivity() {
 		initSystemBars(this)
 		setSupportActionBar(findViewById(R.id.toolbar) as Toolbar)
 
-		cameraView = findViewById(R.id.camera_view) as CameraView
+		cameraView = findViewById(R.id.cameraView) as CameraView
 		detectorView = findViewById(R.id.detectorView) as DetectorView
 		zoomBar = findViewById(R.id.zoom) as SeekBar
 		flashFab = findViewById(R.id.flash) as FloatingActionButton
