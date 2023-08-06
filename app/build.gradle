@@ -5,7 +5,7 @@ android {
     namespace 'com.roy.binaryeye'
     compileSdk sdk_version
     defaultConfig {
-        minSdkVersion 14
+        minSdkVersion 16
         targetSdkVersion sdk_version
         versionCode 20230806
         versionName '2023.08.06'
@@ -66,6 +66,6 @@ dependencies {
     implementation 'com.github.markusfisch:CameraView:1.9.1'
     implementation 'com.github.markusfisch:ScalingImageView:1.4.1'
     implementation 'com.github.markusfisch:zxing-cpp:v2.1.0.0'
-//    implementation 'com.applovin:applovin-sdk:11.11.1'
+    implementation 'com.applovin:applovin-sdk:11.11.1'
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.10'
 }
