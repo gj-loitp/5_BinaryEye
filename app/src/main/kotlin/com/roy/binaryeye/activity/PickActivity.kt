@@ -197,8 +197,8 @@ class PickActivity : AppCompatActivity() {
 	}
 
 	override fun onCreateOptionsMenu(menu: Menu): Boolean {
-		menuInflater.inflate(R.menu.activity_pick, menu)
-		freeRotationItem = menu.findItem(R.id.toggle_free).apply {
+		menuInflater.inflate(R.menu.a_pick, menu)
+		freeRotationItem = menu.findItem(R.id.toggleFree).apply {
 			updateFreeRotationIcon()
 		}
 		return true
@@ -210,7 +210,7 @@ class PickActivity : AppCompatActivity() {
 				rotateClockwise()
 				true
 			}
-			R.id.toggle_free -> {
+			R.id.toggleFree -> {
 				prefs.freeRotation = prefs.freeRotation xor true
 				cropImageView.freeRotation = prefs.freeRotation
 				freeRotationItem.updateFreeRotationIcon()

@@ -129,19 +129,19 @@ class BarcodeFragment : Fragment() {
 	}
 
 	override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-		inflater.inflate(R.menu.fragment_barcode, menu)
+		inflater.inflate(R.menu.f_barcode, menu)
 	}
 
 	override fun onOptionsItemSelected(item: MenuItem): Boolean {
 		return when (item.itemId) {
-			R.id.copy_to_clipboard -> {
+			R.id.copyToClipboard -> {
 				context?.apply {
 					copyToClipboard(barcode.text())
 					toast(R.string.copied_to_clipboard)
 				}
 				true
 			}
-			R.id.export_to_file -> {
+			R.id.exportToFile -> {
 				context?.pickFileType(R.string.export_as) {
 					askForFileNameAndSave(it)
 				}

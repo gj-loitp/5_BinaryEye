@@ -55,7 +55,7 @@ class HistoryFragment : Fragment() {
 			menu: Menu
 		): Boolean {
 			mode.menuInflater.inflate(
-				R.menu.fragment_history_edit,
+				R.menu.f_history_edit,
 				menu
 			)
 			if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -82,7 +82,7 @@ class HistoryFragment : Fragment() {
 		): Boolean {
 			val ac = activity ?: return false
 			return when (item.itemId) {
-				R.id.copy_scan -> {
+				R.id.copyScan -> {
 					scansAdapter?.getSelectedContent("\n")?.let {
 						ac.copyToClipboard(it)
 						ac.toast(R.string.copied_to_clipboard)
@@ -90,7 +90,7 @@ class HistoryFragment : Fragment() {
 					closeActionMode()
 					true
 				}
-				R.id.edit_scan -> {
+				R.id.editScan -> {
 					scansAdapter?.forSelection { id, position ->
 						ac.askForName(
 							id,
@@ -101,7 +101,7 @@ class HistoryFragment : Fragment() {
 					closeActionMode()
 					true
 				}
-				R.id.remove_scan -> {
+				R.id.removeScan -> {
 					scansAdapter?.getSelectedIds()?.let {
 						if (it.isNotEmpty()) {
 							ac.askToRemoveScans(it)
@@ -192,11 +192,11 @@ class HistoryFragment : Fragment() {
 	}
 
 	override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-		inflater.inflate(R.menu.fragment_history, menu)
+		inflater.inflate(R.menu.f_history, menu)
 		initSearchView(menu.findItem(R.id.search))
-		menu.setGroupVisible(R.id.scans_available, scansAdapter?.count != 0)
+		menu.setGroupVisible(R.id.scansAvailable, scansAdapter?.count != 0)
 		clearListMenuItem = menu.findItem(R.id.clear)
-		exportHistoryMenuItem = menu.findItem(R.id.export_history)
+		exportHistoryMenuItem = menu.findItem(R.id.exportHistory)
 	}
 
 	private fun initSearchView(item: MenuItem?) {
@@ -232,7 +232,7 @@ class HistoryFragment : Fragment() {
 				context?.askToRemoveScans()
 				true
 			}
-			R.id.export_history -> {
+			R.id.exportHistory -> {
 				askToExportToFile()
 				true
 			}

@@ -1,0 +1,44 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:material="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/history"
+        android:icon="@drawable/ic_action_history"
+        android:title="@string/history"
+        material:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/create"
+        android:icon="@drawable/ic_action_create"
+        android:title="@string/compose_barcode"
+        material:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/pickFile"
+        android:icon="@drawable/ic_action_pick_file"
+        android:title="@string/pick_file"
+        material:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/switchCamera"
+        android:icon="@drawable/ic_action_switch_camera"
+        android:title="@string/switch_camera"
+        material:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/bulkMode"
+        android:checkable="true"
+        android:icon="@drawable/ic_action_bulk_mode"
+        android:title="@string/bulk_mode"
+        material:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/restrictFormat"
+        android:icon="@drawable/ic_action_restrict_format"
+        android:title="@string/restrict_format"
+        material:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/preferences"
+        android:icon="@drawable/ic_action_preferences"
+        android:title="@string/preferences"
+        material:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/info"
+        android:icon="@drawable/ic_action_info"
+        android:title="@string/info"
+        material:showAsAction="ifRoom" />
+</menu>

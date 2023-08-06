@@ -300,27 +300,27 @@ class DecodeFragment : Fragment() {
 	}
 
 	override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-		inflater.inflate(R.menu.fragment_decode, menu)
+		inflater.inflate(R.menu.f_decode, menu)
 		if (isBinary) {
-			menu.findItem(R.id.copy_to_clipboard).isVisible = false
+			menu.findItem(R.id.copyToClipboard).isVisible = false
 			menu.findItem(R.id.create).isVisible = false
 		}
 		if (id > 0L) {
 			menu.findItem(R.id.remove).isVisible = true
 		}
 		if (action is WifiAction) {
-			menu.findItem(R.id.copy_password).isVisible = true
+			menu.findItem(R.id.copyPassword).isVisible = true
 		}
 	}
 
 	override fun onOptionsItemSelected(item: MenuItem): Boolean {
 		return when (item.itemId) {
-			R.id.copy_password -> {
+			R.id.copyPassword -> {
 				copyPasswordToClipboard()
 				maybeBackOrFinish()
 				true
 			}
-			R.id.copy_to_clipboard -> {
+			R.id.copyToClipboard -> {
 				copyToClipboard(textOrHex())
 				maybeBackOrFinish()
 				true

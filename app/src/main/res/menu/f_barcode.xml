@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:material="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/copyToClipboard"
+        android:icon="@drawable/ic_action_copy"
+        android:title="@string/copy_to_clipboard"
+        material:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/exportToFile"
+        android:icon="@drawable/ic_action_save"
+        android:title="@string/export_to_file"
+        material:showAsAction="ifRoom" />
+</menu>

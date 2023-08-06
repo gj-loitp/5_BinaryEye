@@ -236,8 +236,8 @@ class CameraActivity : AppCompatActivity() {
 	}
 
 	override fun onCreateOptionsMenu(menu: Menu): Boolean {
-		menuInflater.inflate(R.menu.activity_camera, menu)
-		menu.findItem(R.id.bulk_mode).isChecked = bulkMode
+		menuInflater.inflate(R.menu.a_camera, menu)
+		menu.findItem(R.id.bulkMode).isChecked = bulkMode
 		return true
 	}
 
@@ -251,7 +251,7 @@ class CameraActivity : AppCompatActivity() {
 				startActivity(MainActivity.getHistoryIntent(this))
 				true
 			}
-			R.id.pick_file -> {
+			R.id.pickFile -> {
 				startActivityForResult(
 					Intent.createChooser(
 						Intent(Intent.ACTION_GET_CONTENT).apply {
@@ -263,17 +263,17 @@ class CameraActivity : AppCompatActivity() {
 				)
 				true
 			}
-			R.id.switch_camera -> {
+			R.id.switchCamera -> {
 				switchCamera()
 				true
 			}
-			R.id.bulk_mode -> {
+			R.id.bulkMode -> {
 				bulkMode = bulkMode xor true
 				item.isChecked = bulkMode
 				ignoreNext = null
 				true
 			}
-			R.id.restrict_format -> {
+			R.id.restrictFormat -> {
 				showRestrictionDialog()
 				true
 			}
