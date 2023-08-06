@@ -30,6 +30,10 @@ import com.roy.binaryeye.content.execShareIntent
 import com.roy.binaryeye.content.openUrl
 import com.roy.binaryeye.db
 import com.roy.binaryeye.db.toScan
+import com.roy.binaryeye.ext.moreApp
+import com.roy.binaryeye.ext.openBrowserPolicy
+import com.roy.binaryeye.ext.rateApp
+import com.roy.binaryeye.ext.shareApp
 import com.roy.binaryeye.graphics.FrameMetrics
 import com.roy.binaryeye.graphics.mapPosition
 import com.roy.binaryeye.graphics.setFrameRoi
@@ -294,15 +298,19 @@ class CameraActivity : AppCompatActivity() {
 				true
 			}
 			R.id.menuRate -> {
+				rateApp(packageName)
 				true
 			}
 			R.id.menuMore -> {
+				moreApp()
 				true
 			}
 			R.id.menuShare -> {
+				shareApp()
 				true
 			}
 			R.id.menuPolicy -> {
+				openBrowserPolicy()
 				true
 			}
 
