@@ -170,7 +170,7 @@ class HistoryFragment : Fragment() {
 			v.context.pickListSeparatorAndShare()
 		}
 
-		progressView = view.findViewById(R.id.progress_view)
+		progressView = view.findViewById(R.id.progressView)
 
 		(view.findViewById(R.id.inset_layout) as View).setPaddingFromWindowInsets()
 		listView.setPaddingFromWindowInsets()

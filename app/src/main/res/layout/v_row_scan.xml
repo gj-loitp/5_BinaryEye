@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_selector"
+    android:padding="16dp">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/time"
+        style="@style/SecondaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/format"
+        style="@style/SecondaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/time"
+        android:layout_toRightOf="@+id/time"
+        android:gravity="end" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time"
+        android:layout_marginTop="4dp"
+        android:drawablePadding="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="?android:attr/textColorPrimary"
+        android:typeface="monospace" />
+</RelativeLayout>

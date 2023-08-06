@@ -29,5 +29,5 @@
 			android:contentDescription="@string/share"
 			android:src="@drawable/ic_action_share"/>
 	</android.support.design.widget.CoordinatorLayout>
-	<include layout="@layout/progress_view"/>
+	<include layout="@layout/v_progress_view"/>
 </FrameLayout>

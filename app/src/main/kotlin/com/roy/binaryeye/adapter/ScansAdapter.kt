@@ -81,7 +81,7 @@ class ScansAdapter(context: Context, cursor: Cursor) :
 		cursor: Cursor,
 		parent: ViewGroup
 	): View? = LayoutInflater.from(parent.context).inflate(
-		R.layout.row_scan, parent, false
+		R.layout.v_row_scan, parent, false
 	)
 
 	override fun bindView(
