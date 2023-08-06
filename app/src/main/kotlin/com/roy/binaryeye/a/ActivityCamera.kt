@@ -17,6 +17,7 @@ import android.view.MenuItem
 import android.view.MotionEvent
 import android.view.View
 import android.widget.SeekBar
+import com.roy.binaryeye.BuildConfig
 import com.roy.binaryeye.R
 import com.roy.binaryeye.adapter.prettifyFormatName
 import com.roy.binaryeye.app.PERMISSION_CAMERA
@@ -289,7 +290,7 @@ class CameraActivity : AppCompatActivity() {
 			}
 
 			R.id.info -> {
-				openReadme()
+				toast("Version ${BuildConfig.VERSION_NAME}")
 				true
 			}
 
@@ -328,13 +329,13 @@ class CameraActivity : AppCompatActivity() {
 		}
 	}
 
-	private fun openReadme() {
-		val intent = Intent(
-			Intent.ACTION_VIEW,
-			Uri.parse(getString(R.string.project_url))
-		)
-		execShareIntent(intent)
-	}
+//	private fun openReadme() {
+//		val intent = Intent(
+//			Intent.ACTION_VIEW,
+//			Uri.parse(getString(R.string.project_url))
+//		)
+//		execShareIntent(intent)
+//	}
 
 	private fun handleSendText(intent: Intent) {
 		val text = intent.getStringExtra(Intent.EXTRA_TEXT)

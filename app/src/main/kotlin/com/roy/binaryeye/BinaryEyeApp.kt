@@ -11,14 +11,14 @@ import com.roy.binaryeye.preference.Preferences
 //TODO more app
 //TODO share app
 //TODO policy
-//TODO app version
-//TODO keystore
 
 //done
 //ic_launcher
 //ad id
 //leak canary
 //proguard
+//keystore
+//app version
 
 val db = Db()
 val prefs = Preferences()
