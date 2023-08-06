@@ -16,7 +16,7 @@ import android.support.v7.preference.Preference
 import android.support.v7.preference.PreferenceFragmentCompat
 import android.support.v7.preference.PreferenceGroup
 import com.roy.binaryeye.R
-import com.roy.binaryeye.a.SplashActivity
+import com.roy.binaryeye.a.ActivitySplash
 import com.roy.binaryeye.app.addFragment
 import com.roy.binaryeye.app.hasBluetoothPermission
 import com.roy.binaryeye.prefs
@@ -189,7 +189,7 @@ class FragmentPreferences : PreferenceFragmentCompat() {
 }
 
 private fun Activity.restartApp() {
-    val intent = Intent(this, SplashActivity::class.java)
+    val intent = Intent(this, ActivitySplash::class.java)
     intent.addFlags(
         Intent.FLAG_ACTIVITY_NEW_TASK or
                 Intent.FLAG_ACTIVITY_CLEAR_TASK
