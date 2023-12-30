@@ -31,7 +31,7 @@ class FragmentPreferences : PreferenceFragmentCompat() {
     private val changeListener = object : OnSharedPreferenceChangeListener {
         override fun onSharedPreferenceChanged(
             sharedPreferences: SharedPreferences,
-            key: String
+            key: String?,
         ) {
             val preference = findPreference(key) ?: return
             prefs.update()
