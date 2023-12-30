@@ -1,1 +1,0 @@
-* Keep proguard from messing with renderscript

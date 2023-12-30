@@ -1,7 +1,0 @@
-* Fix saving custom language
-* Update Brazilian Portuguese translation
-* Update Chinese translation
-* Update Czech localisation
-* Update Russian translation
-* Update Italian language
-

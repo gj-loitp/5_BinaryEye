@@ -1,2 +1,0 @@
-* Fix tap to focus on some devices
-

@@ -1,3 +1,0 @@
-* Add OTP support
-* Update Indonesian translation
-

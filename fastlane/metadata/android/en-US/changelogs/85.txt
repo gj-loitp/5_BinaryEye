@@ -1,4 +1,0 @@
-* Update Spanish translation
-* Update Japanese translation
-* Fix in-app language switching for App Bundles
-

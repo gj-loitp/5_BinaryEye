@@ -1,2 +1,0 @@
-* Fix support for 64 bit architectures
-

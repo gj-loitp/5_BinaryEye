@@ -1,3 +1,0 @@
-* Recreate and show barcode from read contents if possible
-* Add ebay, Amazon and barcodelookup.com to search engines
-

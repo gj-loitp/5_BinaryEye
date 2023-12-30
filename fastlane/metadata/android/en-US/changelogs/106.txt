@@ -1,4 +1,0 @@
-* Add an action item to lock/unlock free rotation
-* Support setting fore and background colors when creating barcodes
-* Fix creating barcodes with UTF-8 content
-

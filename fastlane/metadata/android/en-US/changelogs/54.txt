@@ -1,2 +1,0 @@
-* Fix getting window insets for Android Lollipop and above
-

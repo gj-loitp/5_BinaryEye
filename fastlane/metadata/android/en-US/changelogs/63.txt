@@ -1,3 +1,0 @@
-* Update Russian translation
-* Force compat mode if native RenderScript crashed
-

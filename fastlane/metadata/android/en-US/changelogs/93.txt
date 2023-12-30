@@ -1,2 +1,0 @@
-* Fix broken detection of binary content
-

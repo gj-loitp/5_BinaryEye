@@ -1,6 +1,0 @@
-* Share history as CSV and JSON too
-* Export history in JSON format
-* Update Indonesian translation
-* Fix initializing of RenderScript automatically
-* Fix highlighting after landscape to landscape rotations
-

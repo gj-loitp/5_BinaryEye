@@ -1,3 +1,0 @@
-* Update design of app icon
-* Update pt-br translation
-

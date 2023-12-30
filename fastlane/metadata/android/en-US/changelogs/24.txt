@@ -1,3 +1,0 @@
-* Add a fallback for RenderScript
-* Add italian translation
-

@@ -1,2 +1,0 @@
-* Fixed crash when going back very fast
-

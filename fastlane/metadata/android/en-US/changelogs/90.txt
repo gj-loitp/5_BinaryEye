@@ -1,5 +1,0 @@
-* Fix cropping still images
-* Improve usability of zoom slider
-* Update Dutch translation
-* Update Chinese translation
-
