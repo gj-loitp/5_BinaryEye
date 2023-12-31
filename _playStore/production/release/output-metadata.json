@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.roy.binaryeye",
+  "variantName": "productionRelease",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 20240101,
+      "versionName": "2024.01.01",
+      "outputFile": "com.roy.binaryeyerelease_2024.01.01_20240101.apk"
+    }
+  ],
+  "elementType": "File"
+}
