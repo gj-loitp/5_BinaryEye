@@ -45,10 +45,10 @@ object OpenOrSearchAction : IAction {
             return
         }
         val names = context.resources.getStringArray(
-            R.array.search_engines_names
+            R.array.searchEnginesNames
         ).toMutableList()
         val urls = context.resources.getStringArray(
-            R.array.search_engines_values
+            R.array.searchEnginesValues
         ).toMutableList()
         // Remove the "Always ask" entry. The arrays search_engines_*
         // are used in the preferences too.

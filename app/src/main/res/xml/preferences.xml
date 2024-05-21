@@ -125,8 +125,8 @@
             android:title="@string/close_automatically" />
         <ListPreference
             android:defaultValue=""
-            android:entries="@array/search_engines_names"
-            android:entryValues="@array/search_engines_values"
+            android:entries="@array/searchEnginesNames"
+            android:entryValues="@array/searchEnginesValues"
             android:key="default_search_url"
             android:title="@string/default_search_engine" />
         <com.mckimquyen.binaryeye.preference.UrlPreference

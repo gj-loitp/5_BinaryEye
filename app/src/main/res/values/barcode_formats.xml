@@ -1,5 +1,5 @@
 <resources>
-    <string-array name="barcode_formats_names">
+    <string-array name="barcodeFormatsNames">
         <item>AZTEC</item>
         <item>CODABAR</item>
         <item>CODE 39</item>
@@ -18,7 +18,7 @@
         <item>UPC A</item>
         <item>UPC E</item>
     </string-array>
-    <string-array name="barcode_formats_values">
+    <string-array name="barcodeFormatsValues">
         <item>AZTEC</item>
         <item>CODABAR</item>
         <item>CODE_39</item>

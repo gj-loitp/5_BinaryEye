@@ -330,10 +330,10 @@ class CameraActivity : AppCompatActivity() {
 
 	private fun showRestrictionDialog() {
 		val names = resources.getStringArray(
-			R.array.barcode_formats_names
+			R.array.barcodeFormatsNames
 		).toMutableList()
 		val formats = resources.getStringArray(
-			R.array.barcode_formats_values
+			R.array.barcodeFormatsValues
 		).toMutableList()
 		if (restrictFormat != null) {
 			names.add(0, getString(R.string.remove_restriction))

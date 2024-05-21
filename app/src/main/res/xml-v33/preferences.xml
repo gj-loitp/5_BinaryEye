@@ -3,8 +3,8 @@
     android:title="@string/preferences">
     <PreferenceCategory android:title="@string/scan_category">
         <MultiSelectListPreference
-            android:entries="@array/barcode_formats_names"
-            android:entryValues="@array/barcode_formats_values"
+            android:entries="@array/barcodeFormatsNames"
+            android:entryValues="@array/barcodeFormatsValues"
             android:key="barcode_formats"
             android:title="@string/barcode_formats" />
         <androidx.preference.SwitchPreferenceCompat
@@ -130,8 +130,8 @@
             android:title="@string/close_automatically" />
         <ListPreference
             android:defaultValue=""
-            android:entries="@array/search_engines_names"
-            android:entryValues="@array/search_engines_values"
+            android:entries="@array/searchEnginesNames"
+            android:entryValues="@array/searchEnginesValues"
             android:key="default_search_url"
             android:title="@string/default_search_engine" />
         <com.mckimquyen.binaryeye.preference.UrlPreference

@@ -1,5 +1,5 @@
 <resources>
-	<string-array name="search_engines_names">
+	<string-array name="searchEnginesNames">
 		<item>@string/always_ask</item>
 		<item>Google</item>
 		<item>DuckDuckGo</item>
@@ -13,7 +13,7 @@
 		<item>OpenPetFoodFacts.org</item>
 		<item>Barcode Lookup</item>
 	</string-array>
-	<string-array name="search_engines_values">
+	<string-array name="searchEnginesValues">
 		<item></item>
 		<item>https://www.google.com/search?q=</item>
 		<item>https://duckduckgo.com/?q=</item>
