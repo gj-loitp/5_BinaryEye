@@ -8,8 +8,8 @@
     <plurals name="barcode_info">
         <item quantity="other">%1$s, %2$d karakter</item>
     </plurals>
-    <string name="error_correction_level">Level koreksi kesalahan</string>
-    <string name="error_correction_level_l" formatted="false">Rendah (~7&#37; koreksi)</string>
+    <string name="errorCorrectionLevel">Level koreksi kesalahan</string>
+    <string name="errorCorrectionLevell" formatted="false">Rendah (~7&#37; koreksi)</string>
     <string name="error_correction_level_m" formatted="false">Medium (~15&#37; koreksi)</string>
     <string name="error_correction_level_q" formatted="false">Kuartil (~25&#37; koreksi)</string>
     <string name="error_correction_level_h" formatted="false">Tinggi (~30&#37; koreksi)</string>
@@ -41,7 +41,7 @@
     <string name="format">Format</string>
     <string name="size">Ukuran dalam piksel</string>
     <string name="width_by_height">%1$d×%2$d</string>
-    <string name="input_content_here">Masukkan konten di sini</string>
+    <string name="inputContentHere">Masukkan konten di sini</string>
     <string name="unescape">Expand escape sequences</string>
     <string name="encode">ENKODE</string>
     <string name="error_no_content">Tidak ada konten</string>
@@ -68,7 +68,7 @@
     <string name="custom_locale">Bahasa lainnya</string>
     <string name="follow_system_settings">Ikuti pengaturan sistem</string>
     <string name="show_crop_handle">Tampilkan pembatas pemotongan</string>
-    <string name="show_crop_handle_summary">Batasi pemindaian ke batas area tertentu.</string>
+    <string name="showCropHandleSummary">Batasi pemindaian ke batas area tertentu.</string>
     <string name="barcode_formats">Format barcode</string>
     <string name="zoom_by_swiping">Geser ke atas/bawah untuk memperbesar</string>
     <string name="zoom_by_swiping_summary">Geser layar kamera ke atas atau ke bawah untuk mengontrol perbesaran gambar.</string>
@@ -106,7 +106,7 @@
     <string name="close_automatically">Kembali setelah Salin/Berbagi</string>
     <string name="close_automatically_summary">Otomatis kembali ke layar pemindaian setelah menyalin atau berbagi isi konten.</string>
     <string name="default_search_engine">Buka data tak dikenal di</string>
-    <string name="always_ask">Selalu tanya</string>
+    <string name="alwaysAsk">Selalu tanya</string>
     <string name="open_with_url">Buka data tak dikenal dengan URL</string>
     <string name="clear_network_suggestions">Hapus saran jaringan</string>
     <string name="clear_network_suggestions_summary">Hapus semua saran jaringan yang sebelumnya disediakan oleh aplikasi ini.</string>

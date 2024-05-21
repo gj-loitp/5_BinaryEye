@@ -11,8 +11,8 @@
         <item quantity="many">%2$d znaků, %1$s</item>
         <item quantity="other">%2$d znaků, %1$s</item>
     </plurals>
-    <string name="error_correction_level">Stupeň korekce chyb</string>
-    <string name="error_correction_level_l" formatted="false">Nízký (~7&#37; korekce)</string>
+    <string name="errorCorrectionLevel">Stupeň korekce chyb</string>
+    <string name="errorCorrectionLevell" formatted="false">Nízký (~7&#37; korekce)</string>
     <string name="error_correction_level_m" formatted="false">Střední (~15&#37; korekce)</string>
     <string name="error_correction_level_q" formatted="false">Čtvrtinový (~25&#37; korekce)</string>
     <string name="error_correction_level_h" formatted="false">Vysoký (~30&#37; korekce)</string>
@@ -44,7 +44,7 @@
     <string name="format">Formát</string>
     <string name="size">Velikost v pixelech</string>
     <string name="width_by_height">%1$d×%2$d</string>
-    <string name="input_content_here">Sem vložte obsah</string>
+    <string name="inputContentHere">Sem vložte obsah</string>
     <string name="unescape">Rozšířit escape sekvence</string>
     <string name="encode">ZAKÓDOVAT</string>
     <string name="error_no_content">Chybí obsah</string>
@@ -71,7 +71,7 @@
     <string name="custom_locale">Nastavit jazyk</string>
     <string name="follow_system_settings">Podle systému</string>
     <string name="show_crop_handle">Zobrazovat hrany výřezu</string>
-    <string name="show_crop_handle_summary">Omezí skenování na zvolenou oblast.</string>
+    <string name="showCropHandleSummary">Omezí skenování na zvolenou oblast.</string>
     <string name="barcode_formats">Formáty čárových kódů</string>
     <string name="zoom_by_swiping">Potáhnutím nahoru/dolů přiblížit</string>
     <string name="zoom_by_swiping_summary">Přetáhnutím nahoru nebo dolů se zvětší / zmenší úroveň přiblížení.</string>
@@ -109,7 +109,7 @@
     <string name="close_automatically">Vrátit se po zkopírování/sdílení</string>
     <string name="close_automatically_summary">Po zkopírovaní či sdílení se automaticky vrátí na skenovací obrazovku.</string>
     <string name="default_search_engine">Nerozpoznaná data otevřít v</string>
-    <string name="always_ask">Vždy se zeptat</string>
+    <string name="alwaysAsk">Vždy se zeptat</string>
     <string name="open_with_url">Otevřít nerozpoznaná data pomocí URL</string>
     <string name="clear_network_suggestions">Smazat navrhované sítě</string>
     <string name="clear_network_suggestions_summary">Smazat všechny sítě, které byly navrženy touto aplikací.</string>

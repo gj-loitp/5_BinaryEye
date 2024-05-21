@@ -10,8 +10,8 @@
         <item quantity="many">%2$d caractères, %1$s</item>
         <item quantity="other">%2$d caractères, %1$s</item>
     </plurals>
-    <string name="error_correction_level">Niveau de correction d\'erreur</string>
-    <string name="error_correction_level_l" formatted="false">Faible (~7% de correction)</string>
+    <string name="errorCorrectionLevel">Niveau de correction d\'erreur</string>
+    <string name="errorCorrectionLevell" formatted="false">Faible (~7% de correction)</string>
     <string name="error_correction_level_m" formatted="false">Moyen (~15% de correction)</string>
     <string name="error_correction_level_q" formatted="false">Quartile (~25% de correction)</string>
     <string name="error_correction_level_h" formatted="false">Élevé (~30% de correction)</string>
@@ -43,7 +43,7 @@
     <string name="format">Format</string>
     <string name="size">Taille en pixels</string>
     <string name="width_by_height">%1$d×%2$d</string>
-    <string name="input_content_here">Votre contenu ici</string>
+    <string name="inputContentHere">Votre contenu ici</string>
     <string name="unescape">Expand escape sequences</string>
     <string name="encode">ENCODER</string>
     <string name="error_no_content">Contenu manquant</string>
@@ -70,7 +70,7 @@
     <string name="custom_locale">Langue personnalisée</string>
     <string name="follow_system_settings">Suivre les réglages du système</string>
     <string name="show_crop_handle">Afficher le bouton de rognage</string>
-    <string name="show_crop_handle_summary">Restreint le scan à une région personnalisée.</string>
+    <string name="showCropHandleSummary">Restreint le scan à une région personnalisée.</string>
     <string name="barcode_formats">Formats de codes-barres</string>
     <string name="zoom_by_swiping">Balayage haut/bas pour zoomer</string>
     <string name="zoom_by_swiping_summary">Balayez vers le haut ou vers le bas dans l’écran de la caméra pour contrôler le zoom de la caméra.</string>
@@ -108,7 +108,7 @@
     <string name="close_automatically">Revenir après une copie/partage</string>
     <string name="close_automatically_summary">Revient automatiquement sur l\'écran de scan après avoir copié ou partagé le contenu lu.</string>
     <string name="default_search_engine">Ouvrir les données inconnues dans</string>
-    <string name="always_ask">Toujours demander</string>
+    <string name="alwaysAsk">Toujours demander</string>
     <string name="open_with_url">Ouvrir des données inconnues avec l’URL</string>
     <string name="clear_network_suggestions">Supprimer les suggestions de réseau</string>
     <string name="clear_network_suggestions_summary">Supprime toutes les suggestions de réseau précédemment fournies par cette application.</string>

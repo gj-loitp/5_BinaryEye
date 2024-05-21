@@ -9,8 +9,8 @@
         <item quantity="one">%2$dটি অক্ষর, %1$s</item>
         <item quantity="other">%2$dটি অক্ষর, %1$s</item>
     </plurals>
-    <string name="error_correction_level">ত্রুটি ঠিককরণ পরিমাণ</string>
-    <string name="error_correction_level_l" formatted="false">কম (~৭&#37; ঠিককরণ)</string>
+    <string name="errorCorrectionLevel">ত্রুটি ঠিককরণ পরিমাণ</string>
+    <string name="errorCorrectionLevell" formatted="false">কম (~৭&#37; ঠিককরণ)</string>
     <string name="error_correction_level_m" formatted="false">মধ্যম (~১৫&#37; ঠিককরণ)</string>
     <string name="error_correction_level_q" formatted="false">বেশি (~২৫&#37; ঠিককরণ)</string>
     <string name="error_correction_level_h" formatted="false">অনেক বেশি (~৩০&#37; ঠিককরণ)</string>
@@ -42,7 +42,7 @@
     <string name="format">ধরণ</string>
     <string name="size">পিক্সেলে আকার</string>
     <string name="width_by_height">%1$d×%2$d</string>
-    <string name="input_content_here">এখানে তথ্য দাও</string>
+    <string name="inputContentHere">এখানে তথ্য দাও</string>
     <string name="unescape">Expand escape sequences</string>
     <string name="encode">সংকেতকরণ</string>
     <string name="error_no_content">তথ্য নেই</string>
@@ -69,7 +69,7 @@
     <string name="custom_locale">আলাদা ভাষা</string>
     <string name="follow_system_settings">ব্যবস্থার পছন্দসমূহ অনুসরণ করো</string>
     <string name="show_crop_handle">ছাটার সীমা দেখাও</string>
-    <string name="show_crop_handle_summary">পরিবর্তনযোগ্য জায়গায়ই শুধু খুঁজো।</string>
+    <string name="showCropHandleSummary">পরিবর্তনযোগ্য জায়গায়ই শুধু খুঁজো।</string>
     <string name="barcode_formats">Barcode formats</string>
     <string name="zoom_by_swiping">ওপরে/নিচে টানো বড়ো করার জন্য</string>
     <string name="zoom_by_swiping_summary">ক্যামেরার ছোটো-বড় নিয়ন্ত্রণের জন্য উপরে-নিচে টানো।</string>
@@ -107,7 +107,7 @@
     <string name="close_automatically">অনুলিপি/ভাগ করার পরে পিছনে যাও</string>
     <string name="close_automatically_summary">তথ্য অনুলিপি/ভাগ করার পরে স্বয়ংক্রিয়ভাবে পিছনে যাও।</string>
     <string name="default_search_engine">Open unknown data in</string>
-    <string name="always_ask">Always ask</string>
+    <string name="alwaysAsk">Always ask</string>
     <string name="open_with_url">অজানা ইউআরএল খুলো</string>
     <string name="clear_network_suggestions">Clear network suggestions</string>
     <string name="clear_network_suggestions_summary">Remove all of the network suggestions that were previously provided by this app.</string>

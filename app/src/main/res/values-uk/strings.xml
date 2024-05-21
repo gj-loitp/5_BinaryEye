@@ -10,8 +10,8 @@
         <item quantity="few">%2$d символи, %1$s</item>
         <item quantity="many">%2$d символів, %1$s</item>
     </plurals>
-    <string name="error_correction_level">Рівень виправлення помилок</string>
-    <string name="error_correction_level_l" formatted="false">Низький (~7&#37; виправлення)</string>
+    <string name="errorCorrectionLevel">Рівень виправлення помилок</string>
+    <string name="errorCorrectionLevell" formatted="false">Низький (~7&#37; виправлення)</string>
     <string name="error_correction_level_m" formatted="false">Середній (~15&#37; виправлення)</string>
     <string name="error_correction_level_q" formatted="false">Квартиль (~25&#37; виправлення)</string>
     <string name="error_correction_level_h" formatted="false">Високий (~30&#37; виправлення)</string>
@@ -43,7 +43,7 @@
     <string name="format">Формат</string>
     <string name="size">Розмір у пікселях</string>
     <string name="width_by_height">%1$d×%2$d</string>
-    <string name="input_content_here">Введіть вміст сюди</string>
+    <string name="inputContentHere">Введіть вміст сюди</string>
     <string name="unescape">Expand escape sequences</string>
     <string name="encode">КОДУВАТИ</string>
     <string name="error_no_content">Відсутній вміст</string>
@@ -70,7 +70,7 @@
     <string name="custom_locale">Вибрати мову</string>
     <string name="follow_system_settings">Дотримуватись системних налаштувань</string>
     <string name="show_crop_handle">Обмежити область сканування</string>
-    <string name="show_crop_handle_summary">Обмежити сканування до налаштованої області.</string>
+    <string name="showCropHandleSummary">Обмежити сканування до налаштованої області.</string>
     <string name="barcode_formats">Формати штрих-коду</string>
     <string name="zoom_by_swiping">Проведіть пальцем вгору/вниз, для масштабування</string>
     <string name="zoom_by_swiping_summary">Проведіть пальцем вгору або вниз по екрану камери, щоб керувати масштабуванням камери.</string>
@@ -108,7 +108,7 @@
     <string name="close_automatically">Повернутися після копіювання/поширення</string>
     <string name="close_automatically_summary">Автоматично повернутися на екран сканування після копіювання або поширення прочитаного вмісту.</string>
     <string name="default_search_engine">Відкривати невідомі дані в</string>
-    <string name="always_ask">Завжди запитувати</string>
+    <string name="alwaysAsk">Завжди запитувати</string>
     <string name="open_with_url">Відкривати невідомі дані за допомогою URL</string>
     <string name="clear_network_suggestions">Очистити мережеві пропозиції</string>
     <string name="clear_network_suggestions_summary">Видалити усі мережеві пропозиції, які раніше надавала ця програма.</string>

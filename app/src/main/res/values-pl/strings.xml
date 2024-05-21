@@ -25,8 +25,8 @@
     <string name="saved_in_downloads">Zapisano w pobranych</string>
     <string name="separator_ruler">Linijka</string>
     <string name="scan_code">Skanuj kod</string>
-    <string name="error_correction_level">Poziom korekcji błędów</string>
-    <string name="error_correction_level_l" formatted="false">Niski (~7&#37; korekcji)</string>
+    <string name="errorCorrectionLevel">Poziom korekcji błędów</string>
+    <string name="errorCorrectionLevell" formatted="false">Niski (~7&#37; korekcji)</string>
     <string name="error_correction_level_m" formatted="false">Średni (~15&#37; korekcji)</string>
     <string name="error_correction_level_q" formatted="false">Kwartyl (~25&#37; korekcji)</string>
     <string name="error_correction_level_h" formatted="false">Wysoki (~30&#37; korekcji)</string>
@@ -118,7 +118,7 @@
     <string name="copy_immediately">Automatycznie skopiuj zawartość do schowka</string>
     <string name="copy_immediately_summary">Automatycznie skopiuj zeskanowaną zawartość do schowka. Pamiętaj, że inne aplikacje mogą szpiegować Twój schowek w tle.</string>
     <string name="show_crop_handle">Pokazuj ogranicznik przycinania</string>
-    <string name="show_crop_handle_summary">Ogranicz skanowanie do konfigurowalnego regionu.</string>
+    <string name="showCropHandleSummary">Ogranicz skanowanie do konfigurowalnego regionu.</string>
     <string name="barcode_formats">Formaty kodów</string>
     <string name="search_web">Szukaj w sieci</string>
     <string name="search_scan">Szukaj skanu</string>
@@ -126,7 +126,7 @@
     <string name="ignore_consecutive_duplicates">Nie zapisuj kolejnych duplikatów</string>
     <string name="ignore_consecutive_duplicates_summary">Nie zapisuj kolejnych duplikatów w historii skanowania.</string>
     <string name="default_search_engine">Otwórz nieznane dane w</string>
-    <string name="always_ask">Zawsze pytaj</string>
+    <string name="alwaysAsk">Zawsze pytaj</string>
     <string name="open_with_url">Otwieraj nieznane dane za pomocą adresu URL</string>
     <string name="clear_network_suggestions">Wyczyść sugestie z sieci</string>
     <string name="clear_network_suggestions_summary">Usuń wszystkie sugestie z sieci, które były wcześniej dostarczane przez tę aplikację.</string>
@@ -173,7 +173,7 @@
     <string name="show_toast_in_bulk_mode_summary">Zwięźle pokazuje zeskanowane dane podczas skanowania ciągłego.</string>
     <string name="cannot_resolve_action">Żadna aplikacja nie może tego otworzyć</string>
     <string name="width_by_height">%1$d×%2$d</string>
-    <string name="input_content_here">Wprowadź zawartość tutaj</string>
+    <string name="inputContentHere">Wprowadź zawartość tutaj</string>
     <string name="unescape">Expand escape sequences</string>
     <string name="pick_list_separator">Jak oddzielić elementy listy?</string>
     <string name="enter_name">Wprowadź nazwę opisującą skan</string>

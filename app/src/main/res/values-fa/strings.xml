@@ -9,8 +9,8 @@
         <item quantity="one">%2$d نویسه، %1$s</item>
         <item quantity="other">%2$d نویسه، %1$s</item>
     </plurals>
-    <string name="error_correction_level">سطح تصحیح خطا</string>
-    <string name="error_correction_level_l" formatted="false">کم (⁦~۷٪⁩ تصحیح)</string>
+    <string name="errorCorrectionLevel">سطح تصحیح خطا</string>
+    <string name="errorCorrectionLevell" formatted="false">کم (⁦~۷٪⁩ تصحیح)</string>
     <string name="error_correction_level_m" formatted="false">متوسط (⁦~۱۵٪⁩ تصحیح)</string>
     <string name="error_correction_level_q" formatted="false">یک‌چهارم (⁦~۲۵٪⁩ تصحیح)</string>
     <string name="error_correction_level_h" formatted="false">زیاد (⁦~۳۰٪⁩ تصحیح)</string>
@@ -42,7 +42,7 @@
     <string name="format">قالب</string>
     <string name="size">اندازه به پیکسل</string>
     <string name="width_by_height">%1$d×%2$d</string>
-    <string name="input_content_here">محتویات ورودی را اینجا بنویسید</string>
+    <string name="inputContentHere">محتویات ورودی را اینجا بنویسید</string>
     <string name="unescape">Expand escape sequences</string>
     <string name="encode">رمزگذاری</string>
     <string name="error_no_content">محتویاتی نیست</string>
@@ -69,7 +69,7 @@
     <string name="custom_locale">زبان سفارشی</string>
     <string name="follow_system_settings">پیروی از زبان سامانه</string>
     <string name="show_crop_handle">نمایش محدود کننده برش</string>
-    <string name="show_crop_handle_summary">پویش را به یک منطقه قابل تنظیم محدود می‌کند.</string>
+    <string name="showCropHandleSummary">پویش را به یک منطقه قابل تنظیم محدود می‌کند.</string>
     <string name="barcode_formats">قالب‌های بارکد</string>
     <string name="zoom_by_swiping">برای بزرگنمایی به بالا یا پایین بکشید</string>
     <string name="zoom_by_swiping_summary">برای کنترل بزرگنمایی دوربین، در صفحهٔ دوربین به بالا یا پایین بکشید.</string>
@@ -107,7 +107,7 @@
     <string name="close_automatically">بازگشت پس از رونوشت یا هم‌رسانی</string>
     <string name="close_automatically_summary">پس از رونوشت یا هم‌رسانی مطالب خوانده شده، به طور خودکار به صفحهٔ پویش بازگردید.</string>
     <string name="default_search_engine">گشودن دادهٔ نامشخص در</string>
-    <string name="always_ask">همیشه بپرس</string>
+    <string name="alwaysAsk">همیشه بپرس</string>
     <string name="open_with_url">داده‌های ناشناخته را با URL باز کنید</string>
     <string name="clear_network_suggestions">پاک کردن پیشنهادات شبکه</string>
     <string name="clear_network_suggestions_summary">همه پیشنهادات شبکه را که قبلاً توسط این برنامه ارائه شده است حذف کنید.</string>

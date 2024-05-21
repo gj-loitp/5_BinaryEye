@@ -9,8 +9,8 @@
         <item quantity="one">%2$d caractere, %1$s</item>
         <item quantity="other">%2$d caracteres, %1$s</item>
     </plurals>
-    <string name="error_correction_level">Nível de correção de erros</string>
-    <string name="error_correction_level_l" formatted="false">Baixo (~7&#37; correção)</string>
+    <string name="errorCorrectionLevel">Nível de correção de erros</string>
+    <string name="errorCorrectionLevell" formatted="false">Baixo (~7&#37; correção)</string>
     <string name="error_correction_level_m" formatted="false">Médio (~15&#37; correção)</string>
     <string name="error_correction_level_q" formatted="false">Quartil (~25&#37; correção)</string>
     <string name="error_correction_level_h" formatted="false">Alto (~30&#37; correção)</string>
@@ -42,7 +42,7 @@
     <string name="format">Formato</string>
     <string name="size">Tamanho em píxeis</string>
     <string name="width_by_height">%1$d×%2$d</string>
-    <string name="input_content_here">Digite algum conteúdo aqui</string>
+    <string name="inputContentHere">Digite algum conteúdo aqui</string>
     <string name="unescape">Expandir sequências de escape</string>
     <string name="encode">CODIFICAR</string>
     <string name="error_no_content">Digite algum conteúdo acima</string>
@@ -69,7 +69,7 @@
     <string name="custom_locale">Idioma da interface</string>
     <string name="follow_system_settings">Adaptar do sistema</string>
     <string name="show_crop_handle">Mostrar limitador customizável</string>
-    <string name="show_crop_handle_summary">Permite limitar a uma área específica.</string>
+    <string name="showCropHandleSummary">Permite limitar a uma área específica.</string>
     <string name="barcode_formats">Tipo de código</string>
     <string name="zoom_by_swiping">Deslize para ajustar zoom</string>
     <string name="zoom_by_swiping_summary">Deslize para baixo/cima na tela para ajustar zoom da câmera.</string>
@@ -107,7 +107,7 @@
     <string name="close_automatically">Voltar após copiar/compartilhar</string>
     <string name="close_automatically_summary">Voltar automaticamente à tela de digitalização após copiar ou compartilhar um código examinado.</string>
     <string name="default_search_engine">Abrir dados desconhecidos em</string>
-    <string name="always_ask">Sempre perguntar</string>
+    <string name="alwaysAsk">Sempre perguntar</string>
     <string name="open_with_url">Abrir dados desconhecidos via URL</string>
     <string name="clear_network_suggestions">Remover sugestões da rede</string>
     <string name="clear_network_suggestions_summary">Remover todas as sugestões da rede que foram anteriormente fornecidas pelo app.</string>

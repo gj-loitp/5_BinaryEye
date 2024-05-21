@@ -9,8 +9,8 @@
         <item quantity="one">%2$d karakter, %1$s</item>
         <item quantity="other">%2$d karakter, %1$s</item>
     </plurals>
-    <string name="error_correction_level">Hibajavítási szint</string>
-    <string name="error_correction_level_l" formatted="false">Alacsony (~7&#37; javítás)</string>
+    <string name="errorCorrectionLevel">Hibajavítási szint</string>
+    <string name="errorCorrectionLevell" formatted="false">Alacsony (~7&#37; javítás)</string>
     <string name="error_correction_level_m" formatted="false">Közepes (~15&#37; javítás)</string>
     <string name="error_correction_level_q" formatted="false">Kvartilis (~25&#37; javítás)</string>
     <string name="error_correction_level_h" formatted="false">Magas (~30&#37; javítás)</string>
@@ -42,7 +42,7 @@
     <string name="format">Formátum</string>
     <string name="size">Méret képpontban</string>
     <string name="width_by_height">%1$d×%2$d</string>
-    <string name="input_content_here">Itt adja meg a tartalmat</string>
+    <string name="inputContentHere">Itt adja meg a tartalmat</string>
     <string name="unescape">Expand escape sequences</string>
     <string name="encode">KÓDOLÁS</string>
     <string name="error_no_content">Hiányzó tartalom</string>
@@ -69,7 +69,7 @@
     <string name="custom_locale">Egyéni nyelv</string>
     <string name="follow_system_settings">Rendszerbeállítások követése</string>
     <string name="show_crop_handle">Levágási korlátozó megjelenítése</string>
-    <string name="show_crop_handle_summary">Beolvasás korlátozása egy személyre szabható területre.</string>
+    <string name="showCropHandleSummary">Beolvasás korlátozása egy személyre szabható területre.</string>
     <string name="barcode_formats">Vonalkód formátumok</string>
     <string name="zoom_by_swiping">Kamera nagyítása fel/le pöccintéssel</string>
     <string name="zoom_by_swiping_summary">Pöccintsen fel vagy le a kamera képernyőjén a kamera nagyításának vezérléséhez.</string>
@@ -107,7 +107,7 @@
     <string name="close_automatically">Ugrás vissza másolás vagy megosztás után</string>
     <string name="close_automatically_summary">Automatikus visszatérés a beolvasási képernyőre a beolvasott tartalom másolása vagy megosztása után.</string>
     <string name="default_search_engine">Ismeretlen adatok megnyitása ebben</string>
-    <string name="always_ask">Mindig kérdezzen</string>
+    <string name="alwaysAsk">Mindig kérdezzen</string>
     <string name="open_with_url">Ismeretlen adat megnyitása URL-lel</string>
     <string name="clear_network_suggestions">Hálózati javaslatok törlése</string>
     <string name="clear_network_suggestions_summary">Az alkalmazás által korábban biztosított összes hálózati javaslat eltávolítása.</string>

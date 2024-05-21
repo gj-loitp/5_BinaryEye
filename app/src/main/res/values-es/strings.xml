@@ -9,8 +9,8 @@
         <item quantity="one">%2$d carácter, %1$s</item>
         <item quantity="other">%2$d caracteres, %1$s</item>
     </plurals>
-    <string name="error_correction_level">Nivel de corrección de errores</string>
-    <string name="error_correction_level_l" formatted="false">Bajo (~7&#37; de correción)</string>
+    <string name="errorCorrectionLevel">Nivel de corrección de errores</string>
+    <string name="errorCorrectionLevell" formatted="false">Bajo (~7&#37; de correción)</string>
     <string name="error_correction_level_m" formatted="false">Medio (~15&#37; de correción)</string>
     <string name="error_correction_level_q" formatted="false">Cuartil (~25&#37; de correción)</string>
     <string name="error_correction_level_h" formatted="false">Alto (~30&#37; de correción)</string>
@@ -42,7 +42,7 @@
     <string name="format">Formato</string>
     <string name="size">Tamaño en píxeles</string>
     <string name="width_by_height">%1$d×%2$d</string>
-    <string name="input_content_here">Introduzca el contenido aquí</string>
+    <string name="inputContentHere">Introduzca el contenido aquí</string>
     <string name="unescape">Expand escape sequences</string>
     <string name="encode">CODIFICAR</string>
     <string name="error_no_content">Contenido no disponible</string>
@@ -69,7 +69,7 @@
     <string name="custom_locale">Idioma personalizado</string>
     <string name="follow_system_settings">Seguir los ajustes del sistema</string>
     <string name="show_crop_handle">Mostrar el delimitador de recorte</string>
-    <string name="show_crop_handle_summary">Restringir el escaneo a una región personalizable.</string>
+    <string name="showCropHandleSummary">Restringir el escaneo a una región personalizable.</string>
     <string name="barcode_formats">Formatos de códigos de barras</string>
     <string name="zoom_by_swiping">Deslice hacia arriba/abajo para ampliar</string>
     <string name="zoom_by_swiping_summary">Deslice su dedo hacia arriba o abajo en la pantalla para controlar el aumento de la cámara.</string>
@@ -107,7 +107,7 @@
     <string name="close_automatically">Retroceder luego de Copiar/Compartir</string>
     <string name="close_automatically_summary">Regresar automáticamente a la pantalla de escaneo luego de copiar o compartir el contenido leído.</string>
     <string name="default_search_engine">Abrir datos desconocidos en</string>
-    <string name="always_ask">Preguntar siempre</string>
+    <string name="alwaysAsk">Preguntar siempre</string>
     <string name="open_with_url">Abrir datos desconocidos con la URL</string>
     <string name="clear_network_suggestions">Borrar las sugerencias de red</string>
     <string name="clear_network_suggestions_summary">Elimina todas las sugerencias de red previamente proporcionadas por esta aplicación.</string>

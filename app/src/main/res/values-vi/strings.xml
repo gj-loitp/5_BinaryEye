@@ -8,8 +8,8 @@
     <plurals name="barcode_info">
         <item quantity="other">%2$d ký tự, %1$s</item>
     </plurals>
-    <string name="error_correction_level">Mức độ tự sửa mã</string>
-    <string name="error_correction_level_l" formatted="false">Thấp (sửa ~7&#37;)</string>
+    <string name="errorCorrectionLevel">Mức độ tự sửa mã</string>
+    <string name="errorCorrectionLevell" formatted="false">Thấp (sửa ~7&#37;)</string>
     <string name="error_correction_level_m" formatted="false">Trung bình (sửa ~15&#37;)</string>
     <string name="error_correction_level_q" formatted="false">Một phần tư (sửa ~25&#37;)</string>
     <string name="error_correction_level_h" formatted="false">Cao (sửa ~30&#37;)</string>
@@ -41,7 +41,7 @@
     <string name="format">Định dạng</string>
     <string name="size">Kích cỡ theo pixel</string>
     <string name="width_by_height">%1$d×%2$d</string>
-    <string name="input_content_here">Nhập nội dung vào đây</string>
+    <string name="inputContentHere">Nhập nội dung vào đây</string>
     <string name="unescape">Expand escape sequences</string>
     <string name="encode">MÃ HOÁ</string>
     <string name="error_no_content">Thiếu nội dung</string>
@@ -68,7 +68,7 @@
     <string name="custom_locale">Tùy chọn ngôn ngữ</string>
     <string name="follow_system_settings">Theo cài đặt của máy</string>
     <string name="show_crop_handle">Hiện giới hạn cắt hình</string>
-    <string name="show_crop_handle_summary">Giới hạn vùng quét.</string>
+    <string name="showCropHandleSummary">Giới hạn vùng quét.</string>
     <string name="barcode_formats">Các định dạng mã vạch</string>
     <string name="zoom_by_swiping">Vuốt lên/xuống để phóng to/thu nhỏ</string>
     <string name="zoom_by_swiping_summary">Vuốt lên/xuống ở màn hình camera để điều chỉnh độ phóng.</string>
@@ -106,7 +106,7 @@
     <string name="close_automatically">Quay lại sau khi Sao chép/Chia sẻ</string>
     <string name="close_automatically_summary">Tự động quay trở về màn hình quét sao khi sao chép hoặc chia sẻ nội dung đọc được.</string>
     <string name="default_search_engine">Mở dữ liệu không xác định bằng</string>
-    <string name="always_ask">Luôn hỏi</string>
+    <string name="alwaysAsk">Luôn hỏi</string>
     <string name="open_with_url">Mở dữ liệu không xác định với URL</string>
     <string name="clear_network_suggestions">Xoá gợi ý mạng</string>
     <string name="clear_network_suggestions_summary">Xoá tất cả trang mạng được gợi ý bởi ứng dụng này.</string>

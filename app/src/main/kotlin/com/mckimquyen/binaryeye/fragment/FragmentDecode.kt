@@ -247,7 +247,7 @@ class FragmentDecode : Fragment() {
 
     private fun TableLayout.fillMetaView(scan: Scan) {
         val items = linkedMapOf(
-            R.string.error_correction_level to scan.errorCorrectionLevel,
+            R.string.errorCorrectionLevel to scan.errorCorrectionLevel,
             R.string.sequence_size to scan.sequenceSize.positiveToString(),
             R.string.sequence_index to scan.sequenceIndex.positiveToString(),
             R.string.sequence_id to scan.sequenceId,

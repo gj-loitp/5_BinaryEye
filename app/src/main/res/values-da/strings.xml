@@ -9,8 +9,8 @@
         <item quantity="one">%2$d karakter, %1$s</item>
         <item quantity="other">%2$d karakterer, %1$s</item>
     </plurals>
-    <string name="error_correction_level">Fejlkorrektionsniveau</string>
-    <string name="error_correction_level_l" formatted="false">Lav (~7&#37; korrigering)</string>
+    <string name="errorCorrectionLevel">Fejlkorrektionsniveau</string>
+    <string name="errorCorrectionLevell" formatted="false">Lav (~7&#37; korrigering)</string>
     <string name="error_correction_level_m" formatted="false">Medium (~15&#37; korrigering)</string>
     <string name="error_correction_level_q" formatted="false">Kvartil (~25&#37; korrigering)</string>
     <string name="error_correction_level_h" formatted="false">Høj (~30&#37; korrigering)</string>
@@ -42,7 +42,7 @@
     <string name="format">Format</string>
     <string name="size">Størrelse i pixels</string>
     <string name="width_by_height">%1$d×%2$d</string>
-    <string name="input_content_here">Indtast indhold her</string>
+    <string name="inputContentHere">Indtast indhold her</string>
     <string name="unescape">Expand escape sequences</string>
     <string name="encode">INDKOD</string>
     <string name="error_no_content">Manglende indhold</string>
@@ -69,7 +69,7 @@
     <string name="custom_locale">Brugerdefineret sprog</string>
     <string name="follow_system_settings">Følg systemindstillingerne</string>
     <string name="show_crop_handle">Vis beskæringsbegrænser</string>
-    <string name="show_crop_handle_summary">Begræns scanning til et område, der kan tilpasses.</string>
+    <string name="showCropHandleSummary">Begræns scanning til et område, der kan tilpasses.</string>
     <string name="barcode_formats">Stregkode formater</string>
     <string name="zoom_by_swiping">Stryg op/ned for at zoome</string>
     <string name="zoom_by_swiping_summary">Stryg op eller ned på kameraskærmen for at styre kameraets zoom.</string>
@@ -107,7 +107,7 @@
     <string name="close_automatically">Gå tilbage efter Kopier/Del</string>
     <string name="close_automatically_summary">Vend automatisk tilbage til scanningsskærmen efter kopiering eller deling af det læste indhold.</string>
     <string name="default_search_engine">Åbn ukendte data i</string>
-    <string name="always_ask">Spørg altid</string>
+    <string name="alwaysAsk">Spørg altid</string>
     <string name="open_with_url">Åbn ukendte data med URL</string>
     <string name="clear_network_suggestions">Fjern netværksforslag</string>
     <string name="clear_network_suggestions_summary">Fjern netværksforslag, der tidligere blev tilføjet med denne app.</string>

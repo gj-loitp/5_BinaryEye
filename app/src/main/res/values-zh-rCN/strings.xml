@@ -8,8 +8,8 @@
     <plurals name="barcode_info">
         <item quantity="other">%2$d 字符， %1$s</item>
     </plurals>
-    <string name="error_correction_level">纠错级别</string>
-    <string name="error_correction_level_l" formatted="false">低 (~7&#37; 准确度)</string>
+    <string name="errorCorrectionLevel">纠错级别</string>
+    <string name="errorCorrectionLevell" formatted="false">低 (~7&#37; 准确度)</string>
     <string name="error_correction_level_m" formatted="false">中 (~15&#37; 准确度)</string>
     <string name="error_correction_level_q" formatted="false">较高 (~25&#37; 准确度)</string>
     <string name="error_correction_level_h" formatted="false">高 (~30&#37; 准确度)</string>
@@ -41,7 +41,7 @@
     <string name="format">编码格式</string>
     <string name="size">图片尺寸</string>
     <string name="width_by_height">%1$d×%2$d</string>
-    <string name="input_content_here">在这里输入内容</string>
+    <string name="inputContentHere">在这里输入内容</string>
     <string name="unescape">Expand escape sequences</string>
     <string name="encode">编码</string>
     <string name="error_no_content">缺少内容</string>
@@ -68,7 +68,7 @@
     <string name="custom_locale">设定语言</string>
     <string name="follow_system_settings">跟随系统设置</string>
     <string name="show_crop_handle">限制扫描范围</string>
-    <string name="show_crop_handle_summary">把扫描区域限制在选定范围内</string>
+    <string name="showCropHandleSummary">把扫描区域限制在选定范围内</string>
     <string name="barcode_formats">条码格式</string>
     <string name="zoom_by_swiping">上下滑动缩放</string>
     <string name="zoom_by_swiping_summary">通过上下滑动在扫描界面控制相机缩放</string>
@@ -106,7 +106,7 @@
     <string name="close_automatically">复制/分享后自动返回</string>
     <string name="close_automatically_summary">复制或分享读取的内容后自动返回扫描主界面。</string>
     <string name="default_search_engine">打开未知数据方式</string>
-    <string name="always_ask">总是询问</string>
+    <string name="alwaysAsk">总是询问</string>
     <string name="open_with_url">使用 URL 打开未知数据</string>
     <string name="clear_network_suggestions">清除网络建议</string>
     <string name="clear_network_suggestions_summary">清除该应用之前提供的所有网络建议。</string>

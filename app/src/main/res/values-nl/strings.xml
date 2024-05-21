@@ -9,8 +9,8 @@
         <item quantity="one">%2$d teken, %1$s</item>
         <item quantity="other">%2$d tekens, %1$s</item>
     </plurals>
-    <string name="error_correction_level">Foutcorrectie niveau</string>
-    <string name="error_correction_level_l" formatted="false">Laag (~7&#37; correction)</string>
+    <string name="errorCorrectionLevel">Foutcorrectie niveau</string>
+    <string name="errorCorrectionLevell" formatted="false">Laag (~7&#37; correction)</string>
     <string name="error_correction_level_m" formatted="false">Middelhoog (~15&#37; correction)</string>
     <string name="error_correction_level_q" formatted="false">Kwartiel (~25&#37; correction)</string>
     <string name="error_correction_level_h" formatted="false">Hoog (~30&#37; correction)</string>
@@ -42,7 +42,7 @@
     <string name="format">Format</string>
     <string name="size">Afmeting in pixels</string>
     <string name="width_by_height">%1$d×%2$d</string>
-    <string name="input_content_here">Voer hier de inhoud in</string>
+    <string name="inputContentHere">Voer hier de inhoud in</string>
     <string name="unescape">Expand escape sequences</string>
     <string name="encode">Coderen</string>
     <string name="error_no_content">Inhoud ontbreekt</string>
@@ -69,7 +69,7 @@
     <string name="custom_locale">Taal instelling</string>
     <string name="follow_system_settings">Systeeminstellingen volgen</string>
     <string name="show_crop_handle">Bijsnijd-begrenzer tonen</string>
-    <string name="show_crop_handle_summary">Scannen beperken tot een aanpasbaar gebied</string>
+    <string name="showCropHandleSummary">Scannen beperken tot een aanpasbaar gebied</string>
     <string name="barcode_formats">Barcode formats</string>
     <string name="zoom_by_swiping">Camera zoomen door omhoog/omlaag te vegen</string>
     <string name="zoom_by_swiping_summary">De zoom van de camera bedienen door in het camerascherm omhoog of omlaag te vegen.</string>
@@ -107,7 +107,7 @@
     <string name="close_automatically">Teruggaan na kopiëren/delen</string>
     <string name="close_automatically_summary">Automatisch terugkeren naar het scanscherm na het kopiëren of delen van de gelezen inhoud.</string>
     <string name="default_search_engine">Onbekende data openen in</string>
-    <string name="always_ask">Altijd vragen</string>
+    <string name="alwaysAsk">Altijd vragen</string>
     <string name="open_with_url">URL om niet bekende data te openen</string>
     <string name="clear_network_suggestions">Network suggesties wissen</string>
     <string name="clear_network_suggestions_summary">Verwijder alle netwerksuggesties die eerder door deze app werden gegeven.</string>

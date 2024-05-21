@@ -32,7 +32,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:text="@string/error_correction_level" />
+                android:text="@string/errorCorrectionLevel" />
 
             <androidx.appcompat.widget.AppCompatSpinner
                 android:id="@+id/errorCorrectionLevel"
@@ -88,7 +88,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:gravity="start|top"
-                android:hint="@string/input_content_here"
+                android:hint="@string/inputContentHere"
                 android:imeOptions="flagNoExtractUi"
                 android:importantForAutofill="no"
                 android:inputType="textMultiLine"

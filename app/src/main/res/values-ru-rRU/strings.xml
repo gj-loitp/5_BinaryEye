@@ -11,8 +11,8 @@
         <item quantity="many">%2$d символов, %1$s</item>
         <item quantity="other">%2$d символов, %1$s</item>
     </plurals>
-    <string name="error_correction_level">Уровень коррекции ошибок</string>
-    <string name="error_correction_level_l" formatted="false">Низкий (≈7&#37; исправлений)</string>
+    <string name="errorCorrectionLevel">Уровень коррекции ошибок</string>
+    <string name="errorCorrectionLevell" formatted="false">Низкий (≈7&#37; исправлений)</string>
     <string name="error_correction_level_m" formatted="false">Средний (≈15&#37; исправлений)</string>
     <string name="error_correction_level_q" formatted="false">Квартиль (≈25&#37; исправлений)</string>
     <string name="error_correction_level_h" formatted="false">Высокий (≈30&#37; исправлений)</string>
@@ -44,7 +44,7 @@
     <string name="format">Формат</string>
     <string name="size">Размер в пикселях</string>
     <string name="width_by_height">%1$d×%2$d</string>
-    <string name="input_content_here">Введите текст здесь</string>
+    <string name="inputContentHere">Введите текст здесь</string>
     <string name="unescape">Раскрывать управляющие последовательности</string>
     <string name="encode">Создать</string>
     <string name="error_no_content">Нет данных</string>
@@ -71,7 +71,7 @@
     <string name="custom_locale">Выбрать язык</string>
     <string name="follow_system_settings">Как в системе</string>
     <string name="show_crop_handle">Показывать область сканирования</string>
-    <string name="show_crop_handle_summary">Ограничить сканирование изменяемой областью.</string>
+    <string name="showCropHandleSummary">Ограничить сканирование изменяемой областью.</string>
     <string name="barcode_formats">Форматы штрих-кодов</string>
     <string name="zoom_by_swiping">Масштабировать жестом вверх/вниз</string>
     <string name="zoom_by_swiping_summary">Жест пальцем вверх или вниз для управления масштабированием камеры.</string>
@@ -109,7 +109,7 @@
     <string name="close_automatically">Возврат после копирования/обмена</string>
     <string name="close_automatically_summary">Автоматически возвращаться к экрану сканирования после копирования или передачу через функцию «Поделиться» считанного содержимого.</string>
     <string name="default_search_engine">Поиск неизвестных данных в</string>
-    <string name="always_ask">Всегда спрашивать</string>
+    <string name="alwaysAsk">Всегда спрашивать</string>
     <string name="open_with_url">Открывать неизвестные данные по URL</string>
     <string name="clear_network_suggestions">Удалить сетевые предложения</string>
     <string name="clear_network_suggestions_summary">Удалить все сетевые предложения, ранее добавленные этим приложением.</string>

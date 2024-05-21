@@ -9,8 +9,8 @@
         <item quantity="one">%2$d სიმბოლო, %1$s</item>
         <item quantity="other">%2$d სიმბოლო, %1$s</item>
     </plurals>
-    <string name="error_correction_level">შეცდომების კორექციის დონე</string>
-    <string name="error_correction_level_l" formatted="false">Low (~7&#37; correction)</string>
+    <string name="errorCorrectionLevel">შეცდომების კორექციის დონე</string>
+    <string name="errorCorrectionLevell" formatted="false">Low (~7&#37; correction)</string>
     <string name="error_correction_level_m" formatted="false">Medium (~15&#37; correction)</string>
     <string name="error_correction_level_q" formatted="false">Quartile (~25&#37; correction)</string>
     <string name="error_correction_level_h" formatted="false">High (~30&#37; correction)</string>
@@ -42,7 +42,7 @@
     <string name="format">ფორმატი</string>
     <string name="size">ზომა პიქსელებში</string>
     <string name="width_by_height">%1$d×%2$d</string>
-    <string name="input_content_here">შეიყვანეთ ტექსტი აქ</string>
+    <string name="inputContentHere">შეიყვანეთ ტექსტი აქ</string>
     <string name="unescape">Expand escape sequences</string>
     <string name="encode">შექმნა"</string>
     <string name="error_no_content">მონაცემები არაა</string>
@@ -69,7 +69,7 @@
     <string name="custom_locale">Custom language</string>
     <string name="follow_system_settings">Follow system settings</string>
     <string name="show_crop_handle">სკანირების არეალის ჩვენება</string>
-    <string name="show_crop_handle_summary">სკანირების შეზღუდვა შერჩეული არეალით.</string>
+    <string name="showCropHandleSummary">სკანირების შეზღუდვა შერჩეული არეალით.</string>
     <string name="barcode_formats">Barcode formats</string>
     <string name="zoom_by_swiping">მასშტაბირება თითის მოძრაობით მაღლა/დაბლა</string>
     <string name="zoom_by_swiping_summary">გაატარეთ თითი მაღლა ან დაბლა კამერის მასშტაბირების სამართავად.</string>
@@ -107,7 +107,7 @@
     <string name="close_automatically">Go back after Copy/Share</string>
     <string name="close_automatically_summary">Automatically return to the scan screen after copying or sharing the read contents.</string>
     <string name="default_search_engine">Open unknown data in</string>
-    <string name="always_ask">Always ask</string>
+    <string name="alwaysAsk">Always ask</string>
     <string name="open_with_url">უცნობი მონაცემების ამ ბმულის საშუალებით გახსნა</string>
     <string name="clear_network_suggestions">Remove network suggestions</string>
     <string name="clear_network_suggestions_summary">Remove network suggestions that were previously added with this app.</string>

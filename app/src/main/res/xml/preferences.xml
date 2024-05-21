@@ -5,7 +5,7 @@
         <androidx.preference.SwitchPreferenceCompat
             android:defaultValue="true"
             android:key="show_crop_handle"
-            android:summary="@string/show_crop_handle_summary"
+            android:summary="@string/showCropHandleSummary"
             android:title="@string/show_crop_handle" />
         <androidx.preference.SwitchPreferenceCompat
             android:defaultValue="true"

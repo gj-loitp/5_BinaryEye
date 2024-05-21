@@ -1,6 +1,6 @@
 <resources>
 	<string-array name="searchEnginesNames">
-		<item>@string/always_ask</item>
+		<item>@string/alwaysAsk</item>
 		<item>Google</item>
 		<item>DuckDuckGo</item>
 		<item>Qwant</item>

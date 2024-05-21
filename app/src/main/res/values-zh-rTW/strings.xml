@@ -8,8 +8,8 @@
     <plurals name="barcode_info">
         <item quantity="other">%2$d 個字元，%1$s</item>
     </plurals>
-    <string name="error_correction_level">糾錯等級</string>
-    <string name="error_correction_level_l" formatted="false">低 (~7&#37; 準確度)</string>
+    <string name="errorCorrectionLevel">糾錯等級</string>
+    <string name="errorCorrectionLevell" formatted="false">低 (~7&#37; 準確度)</string>
     <string name="error_correction_level_m" formatted="false">中 (~15&#37; 準確度)</string>
     <string name="error_correction_level_q" formatted="false">較高 (~25&#37; 準確度)</string>
     <string name="error_correction_level_h" formatted="false">高 (~30&#37; 準確度)</string>
@@ -41,7 +41,7 @@
     <string name="format">格式</string>
     <string name="size">圖片尺寸</string>
     <string name="width_by_height">%1$d×%2$d</string>
-    <string name="input_content_here">請在這裡輸入內容</string>
+    <string name="inputContentHere">請在這裡輸入內容</string>
     <string name="unescape">展開逸出序列</string>
     <string name="encode">編碼</string>
     <string name="error_no_content">缺少內容</string>
@@ -68,7 +68,7 @@
     <string name="custom_locale">設定語言</string>
     <string name="follow_system_settings">跟隨系統設定</string>
     <string name="show_crop_handle">顯示裁切範圍選擇器</string>
-    <string name="show_crop_handle_summary">將掃描區域限制在指定範圍內</string>
+    <string name="showCropHandleSummary">將掃描區域限制在指定範圍內</string>
     <string name="barcode_formats">條碼格式</string>
     <string name="zoom_by_swiping">上下滑動縮放</string>
     <string name="zoom_by_swiping_summary">透過上下滑動在掃描介面控制相機縮放</string>
@@ -106,7 +106,7 @@
     <string name="close_automatically">複製 / 分享後自動返回</string>
     <string name="close_automatically_summary">複製或分享讀取的內容後自動返回掃描畫面</string>
     <string name="default_search_engine">開啟未知資料的方式</string>
-    <string name="always_ask">總是詢問</string>
+    <string name="alwaysAsk">總是詢問</string>
     <string name="open_with_url">使用 URL 開啟未知資料</string>
     <string name="clear_network_suggestions">清除網路建議</string>
     <string name="clear_network_suggestions_summary">移除應用程式先前提供的所有網路建議</string>
