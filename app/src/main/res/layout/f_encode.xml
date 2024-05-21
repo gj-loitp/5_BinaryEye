@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.roy.binaryeye.widget.ConfinedScrollView
+    <com.mckimquyen.binaryeye.widget.ConfinedScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -102,7 +102,7 @@
                 android:layout_marginBottom="16dp"
                 android:text="@string/unescape" />
         </androidx.appcompat.widget.LinearLayoutCompat>
-    </com.roy.binaryeye.widget.ConfinedScrollView>
+    </com.mckimquyen.binaryeye.widget.ConfinedScrollView>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/insetLayout"

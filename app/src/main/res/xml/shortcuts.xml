@@ -9,8 +9,8 @@
         android:shortcutShortLabel="@string/shortcut_decode">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetClass="com.roy.binaryeye.a.CameraActivity"
-            android:targetPackage="com.roy.binaryeye" />
+            android:targetClass="com.mckimquyen.binaryeye.a.CameraActivity"
+            android:targetPackage="com.mckimquyen.binaryeye" />
     </shortcut>
     <shortcut
         android:enabled="true"
@@ -20,8 +20,8 @@
         android:shortcutShortLabel="@string/shortcut_encode">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetClass="com.roy.binaryeye.a.ActivityMain"
-            android:targetPackage="com.roy.binaryeye">
+            android:targetClass="com.mckimquyen.binaryeye.a.ActivityMain"
+            android:targetPackage="com.mckimquyen.binaryeye">
             <extra
                 android:name="encode"
                 android:value="encode" />
@@ -35,8 +35,8 @@
         android:shortcutShortLabel="@string/shortcut_preferences">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetClass="com.roy.binaryeye.a.ActivityMain"
-            android:targetPackage="com.roy.binaryeye">
+            android:targetClass="com.mckimquyen.binaryeye.a.ActivityMain"
+            android:targetPackage="com.mckimquyen.binaryeye">
             <extra
                 android:name="preferences"
                 android:value="preferences" />
