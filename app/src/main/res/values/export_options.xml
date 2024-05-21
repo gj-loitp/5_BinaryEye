@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="export_options_names">
+    <string-array name="exportOptionsNames">
         <item>@string/export_csv_comma</item>
         <item>@string/export_csv_semicolon</item>
         <item>@string/export_json</item>
         <item>@string/export_database</item>
     </string-array>
-    <string-array name="export_options_values">
+    <string-array name="exportOptionsValues">
         <item>,</item>
         <item>;</item>
         <item>json</item>

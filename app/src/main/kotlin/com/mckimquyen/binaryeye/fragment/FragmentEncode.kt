@@ -75,9 +75,9 @@ class FragmentEncode : Fragment() {
 			) {
                 val format = formats[position]
                 val arrayId = when (format) {
-                    Format.AZTEC -> R.array.aztec_error_correction_levels
-                    Format.QR_CODE -> R.array.qr_error_correction_levels
-                    Format.PDF_417 -> R.array.pdf417_error_correction_levels
+                    Format.AZTEC -> R.array.aztecErrorCorrectionLevels
+                    Format.QR_CODE -> R.array.qrErrorCorrectionLevels
+                    Format.PDF_417 -> R.array.pdf417ErrorCorrectionLevels
                     else -> 0
                 }
                 if (arrayId > 0) {

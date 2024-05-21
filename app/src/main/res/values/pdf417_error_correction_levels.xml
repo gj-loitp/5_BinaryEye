@@ -1,5 +1,5 @@
 <resources>
-	<string-array name="pdf417_error_correction_levels">
+	<string-array name="pdf417ErrorCorrectionLevels">
 		<item>0</item>
 		<item>1</item>
 		<item>2</item>

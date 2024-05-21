@@ -1,12 +1,12 @@
 <resources>
-    <string-array name="beep_tones_names">
+    <string-array name="beepTonesNames">
         <item>@string/tone_cdma_confirm</item>
         <item>@string/tone_sup_radio_ack</item>
         <item>@string/tone_prop_ack</item>
         <item>@string/tone_prop_beep</item>
         <item>@string/tone_prop_beep2</item>
     </string-array>
-    <string-array name="beep_tones_values">
+    <string-array name="beepTonesValues">
         <item>tone_cdma_confirm</item>
         <item>tone_sup_radio_ack</item>
         <item>tone_prop_ack</item>

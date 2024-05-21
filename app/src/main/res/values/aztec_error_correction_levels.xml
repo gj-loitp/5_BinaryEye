@@ -1,5 +1,5 @@
 <resources>
-    <string-array name="aztec_error_correction_levels">
+    <string-array name="aztecErrorCorrectionLevels">
         <item>0%</item>
         <item>12.5%</item>
         <item>25%</item>

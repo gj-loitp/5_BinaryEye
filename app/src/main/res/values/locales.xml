@@ -1,5 +1,5 @@
 <resources>
-	<string-array name="locale_names">
+	<string-array name="localeNames">
 		<item>@string/followSystemSettings</item>
 		<item>English</item>
 		<item>German</item>
@@ -22,7 +22,7 @@
 		<item>Japanese</item>
 		<item>Czech</item>
 	</string-array>
-	<string-array name="locale_values">
+	<string-array name="localeValues">
 		<item></item>
 		<item>en</item>
 		<item>de</item>

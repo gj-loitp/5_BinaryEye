@@ -1,5 +1,5 @@
 <resources>
-	<string-array name="qr_error_correction_levels">
+	<string-array name="qrErrorCorrectionLevels">
 		<item>@string/errorCorrectionLevell</item>
 		<item>@string/error_correction_level_m</item>
 		<item>@string/error_correction_level_q</item>

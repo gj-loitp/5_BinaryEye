@@ -25,8 +25,8 @@ class FragmentUrlDialog : PreferenceDialogFragmentCompat() {
         urlView?.text = urlPreference().getUrl()
         urlView?.hint = getString(
             when (prefs.sendScanType) {
-                "0" -> R.string.url_hint_add_content
-                else -> R.string.url_hint
+                "0" -> R.string.urlHintAddContent
+                else -> R.string.urlHint
             }
         )
     }

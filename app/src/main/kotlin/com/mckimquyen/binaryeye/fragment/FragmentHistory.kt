@@ -64,7 +64,7 @@ class FragmentHistory : Fragment() {
                 val ac = activity ?: return false
                 ac.window.statusBarColor = ContextCompat.getColor(
                     ac,
-                    R.color.accent_dark
+                    R.color.accentDark
                 )
             }
             return true
@@ -394,11 +394,11 @@ class FragmentHistory : Fragment() {
                     return@useVisibility
                 }
                 val options = ac.resources.getStringArray(
-                    R.array.export_options_values
+                    R.array.exportOptionsValues
                 )
                 val delimiter = alertDialog<String>(ac) { resume ->
                     setTitle(R.string.exportAs)
-                    setItems(R.array.export_options_names) { _, which ->
+                    setItems(R.array.exportOptionsNames) { _, which ->
                         resume(options[which])
                     }
                 } ?: return@useVisibility
@@ -430,11 +430,11 @@ class FragmentHistory : Fragment() {
     @RequiresApi(Build.VERSION_CODES.JELLY_BEAN)
     private fun Context.pickListSeparatorAndShare() {
         val separators = resources.getStringArray(
-            R.array.list_separators_values
+            R.array.listSeparatorsValues
         )
         AlertDialog.Builder(this)
             .setTitle(R.string.pickListSeparator)
-            .setItems(R.array.list_separators_names) { _, which ->
+            .setItems(R.array.listSeparatorsNames) { _, which ->
                 shareScans(separators[which])
             }
             .show()

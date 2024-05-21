@@ -23,7 +23,7 @@ class ScansAdapter(context: Context, cursor: Cursor) :
     private val contentIndex = cursor.getColumnIndex(Db.SCANS_CONTENT)
     private val formatIndex = cursor.getColumnIndex(Db.SCANS_FORMAT)
     private val selections = mutableMapOf<Long, Int>()
-    private val selectedColor = ContextCompat.getColor(context, R.color.selected_row)
+    private val selectedColor = ContextCompat.getColor(context, R.color.selectedRow)
 
     fun select(
 		view: View,

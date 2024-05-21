@@ -1,8 +1,8 @@
 <resources>
-    <string-array name="bluetooth_host_names">
+    <string-array name="bluetoothHostNames">
         <item>@string/no_bluetooth_hosts_paired</item>
     </string-array>
-    <string-array name="bluetooth_host_values">
-        <item>@string/no_bluetooth_hosts_paired_value</item>
+    <string-array name="bluetoothHostValues">
+        <item>@string/noBluetoothHostsPairedValue</item>
     </string-array>
 </resources>

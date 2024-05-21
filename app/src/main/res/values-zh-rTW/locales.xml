@@ -1,5 +1,5 @@
 <resources>
-	<string-array name="locale_names">
+	<string-array name="localeNames">
 		<item>@string/followSystemSettings</item>
 		<item>英文</item>
 		<item>德文</item>

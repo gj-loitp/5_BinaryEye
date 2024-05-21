@@ -34,8 +34,8 @@
             android:title="@string/bulk_mode" />
         <ListPreference
             android:defaultValue="500"
-            android:entries="@array/bulk_mode_delays_names"
-            android:entryValues="@array/bulk_mode_delays_values"
+            android:entries="@array/bulkModeDelaysNames"
+            android:entryValues="@array/bulkModeDelaysValues"
             android:key="bulk_mode_delay"
             android:title="@string/bulk_mode_delay" />
         <androidx.preference.SwitchPreferenceCompat
@@ -55,8 +55,8 @@
             android:title="@string/beep" />
         <ListPreference
             android:defaultValue="tone_prop_beep"
-            android:entries="@array/beep_tones_names"
-            android:entryValues="@array/beep_tones_values"
+            android:entries="@array/beepTonesNames"
+            android:entryValues="@array/beepTonesValues"
             android:key="beep_tone_name"
             android:title="@string/beep_tone" />
         <androidx.preference.SwitchPreferenceCompat
@@ -96,9 +96,9 @@
             android:summary="@string/send_scan_bluetooth_summary"
             android:title="@string/send_scan_bluetooth" />
         <ListPreference
-            android:defaultValue="@string/no_bluetooth_hosts_paired_value"
-            android:entries="@array/bluetooth_host_names"
-            android:entryValues="@array/bluetooth_host_values"
+            android:defaultValue="@string/noBluetoothHostsPairedValue"
+            android:entries="@array/bluetoothHostNames"
+            android:entryValues="@array/bluetoothHostValues"
             android:key="send_scan_bluetooth_host"
             android:title="@string/send_scan_bluetooth_host" />
     </PreferenceCategory>
