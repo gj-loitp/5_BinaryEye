@@ -12,7 +12,7 @@ buildscript {
     }
 
     dependencies {
-        classpath "com.android.tools.build:gradle:8.2.0"
+        classpath "com.android.tools.build:gradle:8.2.2"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.0"
     }
 }
@@ -21,18 +21,20 @@ allprojects {
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://jitpack.io' }
+        maven {
+            url 'https://jitpack.io'
+        }
     }
 
     gradle.projectsEvaluated {
         tasks.withType(JavaCompile).tap {
-			configureEach {
-				options.compilerArgs << "-Xlint:unchecked"
-			}
-		}
-	}
+            configureEach {
+                options.compilerArgs << "-Xlint:unchecked"
+            }
+        }
+    }
 }
 
 tasks.register('clean', Delete) {
-	delete rootProject.buildDir
+    delete rootProject.buildDir
 }
