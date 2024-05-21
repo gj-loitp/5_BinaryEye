@@ -229,13 +229,13 @@ class FragmentDecode : Fragment() {
             WifiConnector.parseMap(text)?.let { wifiData ->
                 items.putAll(
                     linkedMapOf(
-                        R.string.entry_type to getString(R.string.wifi_network),
+                        R.string.entry_type to getString(R.string.wifiNetwork),
                         R.string.wifi_ssid to wifiData["S"],
                         R.string.wifi_password to wifiData["P"],
                         R.string.wifi_type to wifiData["T"],
                         R.string.wifi_hidden to wifiData["H"],
                         R.string.wifi_eap to wifiData["E"],
-                        R.string.wifi_identity to wifiData["I"],
+                        R.string.wifiIdentity to wifiData["I"],
                         R.string.wifi_anonymous_identity to wifiData["A"],
                         R.string.wifi_phase2 to wifiData["PH2"]
                     )

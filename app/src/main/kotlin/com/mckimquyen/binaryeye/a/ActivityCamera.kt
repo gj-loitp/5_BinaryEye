@@ -87,7 +87,7 @@ class CameraActivity : AppCompatActivity() {
 			PERMISSION_CAMERA -> if (grantResults.isNotEmpty() &&
 				grantResults[0] != PackageManager.PERMISSION_GRANTED
 			) {
-				toast(R.string.camera_error)
+				toast(R.string.cameraError)
 			}
 		}
 	}
@@ -443,7 +443,7 @@ class CameraActivity : AppCompatActivity() {
 			}
 
 			override fun onCameraError() {
-				this@CameraActivity.toast(R.string.camera_error)
+				this@CameraActivity.toast(R.string.cameraError)
 			}
 
 			override fun onCameraReady(camera: Camera) {

@@ -1,6 +1,6 @@
 <resources>
 	<string-array name="locale_names">
-		<item>@string/follow_system_settings</item>
+		<item>@string/followSystemSettings</item>
 		<item>English</item>
 		<item>German</item>
 		<item>Spanish</item>

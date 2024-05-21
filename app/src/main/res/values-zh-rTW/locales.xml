@@ -1,6 +1,6 @@
 <resources>
 	<string-array name="locale_names">
-		<item>@string/follow_system_settings</item>
+		<item>@string/followSystemSettings</item>
 		<item>英文</item>
 		<item>德文</item>
 		<item>西班牙</item>

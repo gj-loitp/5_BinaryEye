@@ -15,7 +15,7 @@
         <androidx.preference.SwitchPreferenceCompat
             android:defaultValue="true"
             android:key="zoom_by_swiping"
-            android:summary="@string/zoom_by_swiping_summary"
+            android:summary="@string/zoomBySwipingSummary"
             android:title="@string/zoom_by_swiping" />
         <androidx.preference.SwitchPreferenceCompat
             android:defaultValue="false"
@@ -80,10 +80,10 @@
             android:defaultValue="true"
             android:key="send_scan_active"
             android:summary="@string/send_scan_active_summary"
-            android:title="@string/send_scan_active" />
+            android:title="@string/sendScanActive" />
         <com.mckimquyen.binaryeye.preference.UrlPreference
             android:key="send_scan_url"
-            android:title="@string/send_scan_url" />
+            android:title="@string/sendScanUrl" />
         <ListPreference
             android:defaultValue="0"
             android:entries="@array/send_type_names"

@@ -10,7 +10,7 @@ import com.mckimquyen.binaryeye.net.urlEncode
 
 object OpenOrSearchAction : IAction {
     override val iconResId: Int = R.drawable.ic_action_search
-    override val titleResId: Int = R.string.search_web
+    override val titleResId: Int = R.string.searchWeb
 
     override fun canExecuteOn(data: ByteArray): Boolean = false
 

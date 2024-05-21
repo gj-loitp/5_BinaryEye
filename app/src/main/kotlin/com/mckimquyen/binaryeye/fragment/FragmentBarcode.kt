@@ -136,7 +136,7 @@ class FragmentBarcode : Fragment() {
             }
 
             R.id.exportToFile -> {
-                context?.pickFileType(R.string.export_as) {
+                context?.pickFileType(R.string.exportAs) {
                     askForFileNameAndSave(it)
                 }
                 true

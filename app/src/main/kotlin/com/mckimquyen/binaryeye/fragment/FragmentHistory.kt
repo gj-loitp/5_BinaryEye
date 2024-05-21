@@ -347,7 +347,7 @@ class FragmentHistory : Fragment() {
         AlertDialog.Builder(this)
             .setMessage(
                 if (ids.size > 1) {
-                    R.string.really_remove_selected_scans
+                    R.string.reallyRemoveSelectedScans
                 } else {
                     R.string.really_remove_scan
                 }
@@ -371,7 +371,7 @@ class FragmentHistory : Fragment() {
                 if (filter == null) {
                     R.string.really_remove_all_scans
                 } else {
-                    R.string.really_remove_selected_scans
+                    R.string.reallyRemoveSelectedScans
                 }
             )
             .setPositiveButton(android.R.string.ok) { _, _ ->
@@ -397,7 +397,7 @@ class FragmentHistory : Fragment() {
                     R.array.export_options_values
                 )
                 val delimiter = alertDialog<String>(ac) { resume ->
-                    setTitle(R.string.export_as)
+                    setTitle(R.string.exportAs)
                     setItems(R.array.export_options_names) { _, which ->
                         resume(options[which])
                     }
