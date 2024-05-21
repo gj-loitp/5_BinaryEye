@@ -2,7 +2,7 @@
     <string name="cameraError">Kameraya erişilemiyor, lütfen yeniden deneyin</string>
     <string name="scan_code">Kod tara</string>
     <string name="compose_barcode">Barkod yarat</string>
-    <string name="decode_barcode">Barkod çöz</string>
+    <string name="decodeBarcode">Barkod çöz</string>
     <string name="content">İçerik</string>
     <string name="binary_data">(ikili veri)</string>
     <plurals name="barcode_info">
@@ -68,7 +68,7 @@
     <string name="locale_category">Dil</string>
     <string name="custom_locale">Özel yerel</string>
     <string name="followSystemSettings">Sistem ayarlarını izle</string>
-    <string name="show_crop_handle">Kırpım kısıtlayıcıyı göster</string>
+    <string name="showCropHandle">Kırpım kısıtlayıcıyı göster</string>
     <string name="showCropHandleSummary">Taramayı özelleştirilebilir bölgeyle sınırla.</string>
     <string name="barcode_formats">Barkod biçimleri</string>
     <string name="zoom_by_swiping">Aşağı/yukarı kaydırarak yakınlaştır</string>
@@ -94,7 +94,7 @@
     <string name="use_history_summary">Tanınan kodları aygıtınızda saklayın.</string>
     <string name="ignore_consecutive_duplicates">Yinelemeleri göz ardı et</string>
     <string name="ignore_consecutive_duplicates_summary">Ardışık yinelemeleri tarama geçmişine kaydetme.</string>
-    <string name="open_immediately">Hemen aç</string>
+    <string name="openImmediately">Hemen aç</string>
     <string name="open_immediately_summary">İncelemeyi atla ve içeriği hemen aç. Eğer etkinse zararlı içerik açılabilir.</string>
     <string name="copy_immediately">Panoya koy</string>
     <string name="copy_immediately_summary">Taranan içerikleri kendiliğinden panoya kopyala. Unutmayın ki, diğer uygulamalar arka planda panonuzu gözetleyebilir.</string>
@@ -122,8 +122,8 @@
     <string name="send_type_get_add_content">GET ve basitçe içeriği ekle</string>
     <string name="send_type_get_query_string">GET ile tam sorgu dizgesi</string>
     <string name="send_type_post_form">POST application/x-www-form-urlencoded</string>
-    <string name="send_type_post_json">POST application/json</string>
-    <string name="send_type_external_browser">Harici tarayıcıda aç</string>
+    <string name="sendTypePostJson">POST application/json</string>
+    <string name="sendTypeExternalBrowser">Harici tarayıcıda aç</string>
     <string name="testUrl">URL\'yi sına</string>
     <string name="send_scan_bluetooth">Forward scans with Bluetooth</string>
     <string name="send_scan_bluetooth_summary">Enable to forwards scans to a given Bluetooth host.</string>
@@ -133,7 +133,7 @@
     <string name="bluetooth_send_fail">Could not send to bluetooth device.</string>
     <string name="bluetooth_send_success">Successful bluetooth send.</string>
     <string name="really_remove_scan">Tarama gerçekten silinsin mi?</string>
-    <string name="really_remove_all_scans">Tüm taramalar gerçekten silinsin mi?</string>
+    <string name="reallyRemoveAllScans">Tüm taramalar gerçekten silinsin mi?</string>
     <string name="reallyRemoveSelectedScans">Seçili taramalar gerçekten silinsin mi?</string>
     <string name="clear_history">Geçmişi temizle</string>
     <string name="copy_scan">Taramayı kopyala</string>
@@ -142,7 +142,7 @@
     <string name="enter_name">Taramayı açıklayacak ad gir</string>
     <string name="enter_name_hint">Taramanın adı</string>
     <string name="no_barcode_found">Barkod bulunamadı</string>
-    <string name="pick_list_separator">Liste ögeleri nasıl ayrılsın?</string>
+    <string name="pickListSeparator">Liste ögeleri nasıl ayrılsın?</string>
     <string name="separator_line_break">Satır kesmesi</string>
     <string name="separator_ruler">Çizgi</string>
     <string name="save_as_file_name">Hangi adla İndirilenler\'e kaydedilsin?</string>

@@ -2,7 +2,7 @@
     <string name="cameraError">Kan ikke få adgang til kamera, prøv igen</string>
     <string name="scan_code">Scan kode</string>
     <string name="compose_barcode">Opret stregkode</string>
-    <string name="decode_barcode">Afkod stregkode</string>
+    <string name="decodeBarcode">Afkod stregkode</string>
     <string name="content">Indhold</string>
     <string name="binary_data">(binære data)</string>
     <plurals name="barcode_info">
@@ -68,7 +68,7 @@
     <string name="locale_category">Sprog</string>
     <string name="custom_locale">Brugerdefineret sprog</string>
     <string name="followSystemSettings">Følg systemindstillingerne</string>
-    <string name="show_crop_handle">Vis beskæringsbegrænser</string>
+    <string name="showCropHandle">Vis beskæringsbegrænser</string>
     <string name="showCropHandleSummary">Begræns scanning til et område, der kan tilpasses.</string>
     <string name="barcode_formats">Stregkode formater</string>
     <string name="zoom_by_swiping">Stryg op/ned for at zoome</string>
@@ -94,7 +94,7 @@
     <string name="use_history_summary">Gem genkendte koder på din enhed.</string>
     <string name="ignore_consecutive_duplicates">Ignorer dubletter</string>
     <string name="ignore_consecutive_duplicates_summary">Gem ikke fortløbende dubletter i scanningshistorikken.</string>
-    <string name="open_immediately">Åbn straks</string>
+    <string name="openImmediately">Åbn straks</string>
     <string name="open_immediately_summary">Spring inspektion over og åbn indholdet med det samme. Kan åbne skadeligt indhold, hvis det er aktiveret.</string>
     <string name="copy_immediately">Læg i udklipsholderen</string>
     <string name="copy_immediately_summary">Kopier automatisk scannet indhold til udklipsholder. Bemærk at andre apps kan holde øje med din udklipsholder i baggrunden.</string>
@@ -122,8 +122,8 @@
     <string name="send_type_get_add_content">GET og tilføj blot indhold</string>
     <string name="send_type_get_query_string">GET med komplet forespørgselsstreng</string>
     <string name="send_type_post_form">POST application/x-www-form-urlencoded</string>
-    <string name="send_type_post_json">POST application/json</string>
-    <string name="send_type_external_browser">Åbn i ekstern browser</string>
+    <string name="sendTypePostJson">POST application/json</string>
+    <string name="sendTypeExternalBrowser">Åbn i ekstern browser</string>
     <string name="testUrl">Test URL</string>
     <string name="send_scan_bluetooth">Forward scans with Bluetooth</string>
     <string name="send_scan_bluetooth_summary">Enable to forwards scans to a given Bluetooth host.</string>
@@ -133,7 +133,7 @@
     <string name="bluetooth_send_fail">Could not send to bluetooth device.</string>
     <string name="bluetooth_send_success">Successful bluetooth send.</string>
     <string name="really_remove_scan">Vil du virkelig fjerne scanningen?</string>
-    <string name="really_remove_all_scans">Vil du virkelig fjerne alle scanninger?</string>
+    <string name="reallyRemoveAllScans">Vil du virkelig fjerne alle scanninger?</string>
     <string name="reallyRemoveSelectedScans">Vil du virkelig fjerne valgte scanninger?</string>
     <string name="clear_history">Ryd historik</string>
     <string name="copy_scan">Kopier scanning</string>
@@ -142,7 +142,7 @@
     <string name="enter_name">Indtast et navn for at beskrive scanningen</string>
     <string name="enter_name_hint">Navn på scanningen</string>
     <string name="no_barcode_found">Ingen stregkode fundet</string>
-    <string name="pick_list_separator">Hvordan adskiller man listeelementer?</string>
+    <string name="pickListSeparator">Hvordan adskiller man listeelementer?</string>
     <string name="separator_line_break">Linjeskift</string>
     <string name="separator_ruler">Lineal</string>
     <string name="save_as_file_name">Vil du gemme som i downloads?</string>

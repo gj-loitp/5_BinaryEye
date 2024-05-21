@@ -2,7 +2,7 @@
     <string name="cameraError">Impossible d\'accéder à la caméra, veuillez réessayer</string>
     <string name="scan_code">Scanner le code</string>
     <string name="compose_barcode">Créer un code-barres</string>
-    <string name="decode_barcode">Décoder le code-barres</string>
+    <string name="decodeBarcode">Décoder le code-barres</string>
     <string name="content">Contenu</string>
     <string name="binary_data">(données binaires)</string>
     <plurals name="barcode_info" tools:ignore="UnusedQuantity">
@@ -69,7 +69,7 @@
     <string name="locale_category">Langue</string>
     <string name="custom_locale">Langue personnalisée</string>
     <string name="followSystemSettings">Suivre les réglages du système</string>
-    <string name="show_crop_handle">Afficher le bouton de rognage</string>
+    <string name="showCropHandle">Afficher le bouton de rognage</string>
     <string name="showCropHandleSummary">Restreint le scan à une région personnalisée.</string>
     <string name="barcode_formats">Formats de codes-barres</string>
     <string name="zoom_by_swiping">Balayage haut/bas pour zoomer</string>
@@ -95,7 +95,7 @@
     <string name="use_history_summary">Sauvegarde les codes reconnus sur votre appareil.</string>
     <string name="ignore_consecutive_duplicates">Ignorer les doublons</string>
     <string name="ignore_consecutive_duplicates_summary">Ne sauvegarde pas les doublons dans l\'historique des scans.</string>
-    <string name="open_immediately">Ouvrir immédiatement</string>
+    <string name="openImmediately">Ouvrir immédiatement</string>
     <string name="open_immediately_summary">Saute l\'inspection et ouvre le contenu immédiatement. Si activé, cela peut ouvrir un contenu nocif.</string>
     <string name="copy_immediately">Mettre dans le presse-papiers</string>
     <string name="copy_immediately_summary">Copie automatiquement les contenus scannés dans le presse-papiers. Veuillez noter que les autres applications peuvent fouiner dans votre presse-papiers en arrière-plan.</string>
@@ -123,8 +123,8 @@
     <string name="send_type_get_add_content">GET et ajouter simplement le contenu</string>
     <string name="send_type_get_query_string">GET avec chaîne de requête complète</string>
     <string name="send_type_post_form">POST application/x-www-form-urlencoded</string>
-    <string name="send_type_post_json">POST application/json</string>
-    <string name="send_type_external_browser">Ouvrir dans un navigateur externe</string>
+    <string name="sendTypePostJson">POST application/json</string>
+    <string name="sendTypeExternalBrowser">Ouvrir dans un navigateur externe</string>
     <string name="testUrl">Tester l\'URL</string>
     <string name="send_scan_bluetooth">Forward scans with Bluetooth</string>
     <string name="send_scan_bluetooth_summary">Enable to forwards scans to a given Bluetooth host.</string>
@@ -134,7 +134,7 @@
     <string name="bluetooth_send_fail">Could not send to bluetooth device.</string>
     <string name="bluetooth_send_success">Successful bluetooth send.</string>
     <string name="really_remove_scan">Supprimer le scan ?</string>
-    <string name="really_remove_all_scans">Supprimer tous les scans ?</string>
+    <string name="reallyRemoveAllScans">Supprimer tous les scans ?</string>
     <string name="reallyRemoveSelectedScans">Supprimer les scans sélectionnés ?</string>
     <string name="clear_history">Effacer l\'historique</string>
     <string name="copy_scan">Copier le scan</string>
@@ -143,7 +143,7 @@
     <string name="enter_name">Saisir un nom décrivant le scan</string>
     <string name="enter_name_hint">Nom du scan</string>
     <string name="no_barcode_found">Aucun code-barres trouvé</string>
-    <string name="pick_list_separator">Comment séparer les éléments listés ?</string>
+    <string name="pickListSeparator">Comment séparer les éléments listés ?</string>
     <string name="separator_line_break">Saut de ligne</string>
     <string name="separator_ruler">Règle</string>
     <string name="save_as_file_name">Sauvegarder dans les Téléchargements ?</string>

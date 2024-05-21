@@ -2,7 +2,7 @@
     <string name="cameraError">Impossibile accedere alla fotocamera. Riprova</string>
     <string name="scan_code">Scansiona codice</string>
     <string name="compose_barcode">Crea codice a barre</string>
-    <string name="decode_barcode">Decodifica codice a barre</string>
+    <string name="decodeBarcode">Decodifica codice a barre</string>
     <string name="content">Contenuto</string>
     <string name="binary_data">(dati binari)</string>
     <plurals name="barcode_info">
@@ -68,7 +68,7 @@
     <string name="locale_category">Lingua</string>
     <string name="custom_locale">Lingua personalizzata</string>
     <string name="followSystemSettings">Usa le impostazioni di sistema</string>
-    <string name="show_crop_handle">Visualizza riquadro limite</string>
+    <string name="showCropHandle">Visualizza riquadro limite</string>
     <string name="showCropHandleSummary">Limita la scansione ad una regione personalizzata.</string>
     <string name="barcode_formats">Formati codici a barre</string>
     <string name="zoom_by_swiping">Zoom fotocamera scorrendo su/giù</string>
@@ -94,7 +94,7 @@
     <string name="use_history_summary">Salva i codici riconosciuti nel dispositivo.</string>
     <string name="ignore_consecutive_duplicates">Ignora i duplicati</string>
     <string name="ignore_consecutive_duplicates_summary">Non salvare duplicati consecutivi nella cronologia di scansione.</string>
-    <string name="open_immediately">Apri subito</string>
+    <string name="openImmediately">Apri subito</string>
     <string name="open_immediately_summary">Salta l\'ispezione e apri i contenuti immediatamente. Se abilitato può aprire contenuti dannosi.</string>
     <string name="copy_immediately">Copia negli Appunti</string>
     <string name="copy_immediately_summary">Copia automaticamente i contenuti scansionati negli Appunti. Nota che altre app potrebbero leggere gli Appunti in secondo piano.</string>
@@ -122,8 +122,8 @@
     <string name="send_type_get_add_content">OTTIENI e aggiungi il contenuto</string>
     <string name="send_type_get_query_string">OTTIENI con stringa completa della richiesta</string>
     <string name="send_type_post_form">POST application/x-www-form-urlencoded</string>
-    <string name="send_type_post_json">POST application/json</string>
-    <string name="send_type_external_browser">Apri nel browser esterno</string>
+    <string name="sendTypePostJson">POST application/json</string>
+    <string name="sendTypeExternalBrowser">Apri nel browser esterno</string>
     <string name="testUrl">Prova URL</string>
     <string name="send_scan_bluetooth">Inoltra scansioni con Bluetooth</string>
     <string name="send_scan_bluetooth_summary">Abilita per inoltrare le scansioni ad un determinato host Bluetooth.</string>
@@ -133,7 +133,7 @@
     <string name="bluetooth_send_fail">Impossibile inviare al dispositivo Bluetooth.</string>
     <string name="bluetooth_send_success">Invio via Bluetooth riuscito.</string>
     <string name="really_remove_scan">Vuoi rimuovere la scansione?</string>
-    <string name="really_remove_all_scans">Vuoi rimuovere tutte le scansioni?</string>
+    <string name="reallyRemoveAllScans">Vuoi rimuovere tutte le scansioni?</string>
     <string name="reallyRemoveSelectedScans">Vuoi rimuovere le scansioni selezionate?</string>
     <string name="clear_history">Azzera cronologia</string>
     <string name="copy_scan">Copia scansione</string>
@@ -142,7 +142,7 @@
     <string name="enter_name">Inserisci un nome per descrivere la scansione</string>
     <string name="enter_name_hint">Nome scansione</string>
     <string name="no_barcode_found">Nessun codice a barre trovato</string>
-    <string name="pick_list_separator">Come separare elementi della lista?</string>
+    <string name="pickListSeparator">Come separare elementi della lista?</string>
     <string name="separator_line_break">Interruzione di linea</string>
     <string name="separator_ruler">Righello</string>
     <string name="save_as_file_name">Salva come file nei Download?</string>

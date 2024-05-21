@@ -2,7 +2,7 @@
     <string name="cameraError">No se puede acceder a la cámara, por favor, inténtelo de nuevo</string>
     <string name="scan_code">Escanear código de barras</string>
     <string name="compose_barcode">Componer código de barras</string>
-    <string name="decode_barcode">Decodificar código de barras</string>
+    <string name="decodeBarcode">Decodificar código de barras</string>
     <string name="content">Contenido</string>
     <string name="binary_data">(datos binarios)</string>
     <plurals name="barcode_info">
@@ -68,7 +68,7 @@
     <string name="locale_category">Idioma</string>
     <string name="custom_locale">Idioma personalizado</string>
     <string name="followSystemSettings">Seguir los ajustes del sistema</string>
-    <string name="show_crop_handle">Mostrar el delimitador de recorte</string>
+    <string name="showCropHandle">Mostrar el delimitador de recorte</string>
     <string name="showCropHandleSummary">Restringir el escaneo a una región personalizable.</string>
     <string name="barcode_formats">Formatos de códigos de barras</string>
     <string name="zoom_by_swiping">Deslice hacia arriba/abajo para ampliar</string>
@@ -94,7 +94,7 @@
     <string name="use_history_summary">Guardar códigos reconocidos en su dispositivo.</string>
     <string name="ignore_consecutive_duplicates">Ignorar duplicados</string>
     <string name="ignore_consecutive_duplicates_summary">No guarde duplicados consecutivos en el historial de escaneo.</string>
-    <string name="open_immediately">Abrir inmediatamente</string>
+    <string name="openImmediately">Abrir inmediatamente</string>
     <string name="open_immediately_summary">Omite la inspección y abre el contenido inmediatamente. Puede abrir contenido dañino si está activado.</string>
     <string name="copy_immediately">Poner en el portapapeles</string>
     <string name="copy_immediately_summary">Copiar contenido al portapapeles automáticamente. Ten en cuenta que otras aplicaciones pueden husmear en tu portapapeles en segundo plano.</string>
@@ -122,8 +122,8 @@
     <string name="send_type_get_add_content">GET y solo añadir contenido</string>
     <string name="send_type_get_query_string">GET con consulta completa</string>
     <string name="send_type_post_form">POST application/x-www-form-urlencoded</string>
-    <string name="send_type_post_json">POST application/json</string>
-    <string name="send_type_external_browser">Abrir en el navegador</string>
+    <string name="sendTypePostJson">POST application/json</string>
+    <string name="sendTypeExternalBrowser">Abrir en el navegador</string>
     <string name="testUrl">URL de prueba</string>
     <string name="send_scan_bluetooth">Forward scans with Bluetooth</string>
     <string name="send_scan_bluetooth_summary">Enable to forwards scans to a given Bluetooth host.</string>
@@ -133,7 +133,7 @@
     <string name="bluetooth_send_fail">Could not send to bluetooth device.</string>
     <string name="bluetooth_send_success">Successful bluetooth send.</string>
     <string name="really_remove_scan">¿Realmente desea borrar el escaneo seleccionado?</string>
-    <string name="really_remove_all_scans">¿Realmente desea borrar todo lo escaneado?</string>
+    <string name="reallyRemoveAllScans">¿Realmente desea borrar todo lo escaneado?</string>
     <string name="reallyRemoveSelectedScans">¿Realmente desea borrar los escaneos seleccionados?</string>
     <string name="clear_history">Borrar el historial</string>
     <string name="copy_scan">Copiar escaneo</string>
@@ -142,7 +142,7 @@
     <string name="enter_name">Introduzca un nombre para describir el escaneo</string>
     <string name="enter_name_hint">Nombre del escaneo</string>
     <string name="no_barcode_found">No se encontró ningún código de barras</string>
-    <string name="pick_list_separator">¿Cómo separar los elementos de la lista?</string>
+    <string name="pickListSeparator">¿Cómo separar los elementos de la lista?</string>
     <string name="separator_line_break">Línea separadora</string>
     <string name="separator_ruler">Regla</string>
     <string name="save_as_file_name">¿Desea guardar el archivo en Descargas?</string>

@@ -2,7 +2,7 @@
     <string name="cameraError">카메라를 접근할 수 없습니다. 다시 시도하세요</string>
     <string name="scan_code">Scan code</string>
     <string name="compose_barcode">Compose barcode</string>
-    <string name="decode_barcode">Decode barcode</string>
+    <string name="decodeBarcode">Decode barcode</string>
     <string name="content">Content</string>
     <string name="binary_data">(binary data)</string>
     <plurals name="barcode_info">
@@ -67,7 +67,7 @@
     <string name="locale_category">Language</string>
     <string name="custom_locale">Custom language</string>
     <string name="followSystemSettings">Follow system settings</string>
-    <string name="show_crop_handle">Show cropping limiter</string>
+    <string name="showCropHandle">Show cropping limiter</string>
     <string name="showCropHandleSummary">Restrict scanning to a customizable region.</string>
     <string name="barcode_formats">Barcode formats</string>
     <string name="zoom_by_swiping">Swipe up/down to zoom</string>
@@ -93,7 +93,7 @@
     <string name="use_history_summary">Save recognized codes on your device.</string>
     <string name="ignore_consecutive_duplicates">Ignore duplicates</string>
     <string name="ignore_consecutive_duplicates_summary">Do not save consecutive duplicates in the scan history.</string>
-    <string name="open_immediately">Open immediately</string>
+    <string name="openImmediately">Open immediately</string>
     <string name="open_immediately_summary">Skip inspection and open contents immediately. May open harmful content if enabled.</string>
     <string name="copy_immediately">Put into clipboard</string>
     <string name="copy_immediately_summary">Automatically copy scanned contents into clipboard. Please note that other apps may snoop on your clipboard in the background.</string>
@@ -121,8 +121,8 @@
     <string name="send_type_get_add_content">GET and simply add content</string>
     <string name="send_type_get_query_string">GET with complete query string</string>
     <string name="send_type_post_form">POST application/x-www-form-urlencoded</string>
-    <string name="send_type_post_json">POST application/json</string>
-    <string name="send_type_external_browser">Open in external browser</string>
+    <string name="sendTypePostJson">POST application/json</string>
+    <string name="sendTypeExternalBrowser">Open in external browser</string>
     <string name="testUrl">Test URL</string>
     <string name="send_scan_bluetooth">Forward scans with Bluetooth</string>
     <string name="send_scan_bluetooth_summary">Enable to forwards scans to a given Bluetooth host.</string>
@@ -132,7 +132,7 @@
     <string name="bluetooth_send_fail">Could not send to bluetooth device.</string>
     <string name="bluetooth_send_success">Successful bluetooth send.</string>
     <string name="really_remove_scan">Really remove scan?</string>
-    <string name="really_remove_all_scans">Really remove all scans?</string>
+    <string name="reallyRemoveAllScans">Really remove all scans?</string>
     <string name="reallyRemoveSelectedScans">Really remove selected scans?</string>
     <string name="clear_history">Clear history</string>
     <string name="copy_scan">Copy scan</string>
@@ -141,7 +141,7 @@
     <string name="enter_name">Enter a name to describe the scan</string>
     <string name="enter_name_hint">Name of the scan</string>
     <string name="no_barcode_found">No barcode found</string>
-    <string name="pick_list_separator">How to separate list items?</string>
+    <string name="pickListSeparator">How to separate list items?</string>
     <string name="separator_line_break">Line break</string>
     <string name="separator_ruler">Ruler</string>
     <string name="save_as_file_name">Save as in Downloads file?</string>

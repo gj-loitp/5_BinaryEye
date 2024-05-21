@@ -2,7 +2,7 @@
     <string name="cameraError">Nem lehet hozzáférni a kamerához, próbálja meg újra</string>
     <string name="scan_code">Kód beolvasása</string>
     <string name="compose_barcode">Vonalkód létrehozása</string>
-    <string name="decode_barcode">Vonalkód visszafejtése</string>
+    <string name="decodeBarcode">Vonalkód visszafejtése</string>
     <string name="content">Tartalom</string>
     <string name="binary_data">(bináris adat)</string>
     <plurals name="barcode_info">
@@ -68,7 +68,7 @@
     <string name="locale_category">Nyelv</string>
     <string name="custom_locale">Egyéni nyelv</string>
     <string name="followSystemSettings">Rendszerbeállítások követése</string>
-    <string name="show_crop_handle">Levágási korlátozó megjelenítése</string>
+    <string name="showCropHandle">Levágási korlátozó megjelenítése</string>
     <string name="showCropHandleSummary">Beolvasás korlátozása egy személyre szabható területre.</string>
     <string name="barcode_formats">Vonalkód formátumok</string>
     <string name="zoom_by_swiping">Kamera nagyítása fel/le pöccintéssel</string>
@@ -94,7 +94,7 @@
     <string name="use_history_summary">Felismert kódok mentése a saját eszközén.</string>
     <string name="ignore_consecutive_duplicates">Ne mentsen egymást követő azonos adatokat</string>
     <string name="ignore_consecutive_duplicates_summary">Ne mentse az egymást követő azonos adatokat a beolvasási előzményekbe.</string>
-    <string name="open_immediately">Vizsgálat kihagyása és a tartalom azonnali megnyitása</string>
+    <string name="openImmediately">Vizsgálat kihagyása és a tartalom azonnali megnyitása</string>
     <string name="open_immediately_summary">Vizsgálat kihagyása és a tartalom azonnali megnyitása. Ártalmas tartalmat is megnyithat, ha engedélyezve van.</string>
     <string name="copy_immediately">Tartalom automatikus másolása a vágólapra</string>
     <string name="copy_immediately_summary">Beolvasott tartalom automatikus másolása a vágólapra. Ne feledje, hogy más alkalmazások megfigyelhetik a vágólapját a háttérben.</string>
@@ -122,8 +122,8 @@
     <string name="send_type_get_add_content">GET és a tartalom egyszerű hozzáadása</string>
     <string name="send_type_get_query_string">GET a teljes lekérdezési karakterlánccal</string>
     <string name="send_type_post_form">POST application/x-www-form-urlencoded</string>
-    <string name="send_type_post_json">POST application/json</string>
-    <string name="send_type_external_browser">Megnyitás külső böngészőben</string>
+    <string name="sendTypePostJson">POST application/json</string>
+    <string name="sendTypeExternalBrowser">Megnyitás külső böngészőben</string>
     <string name="testUrl">Teszt URL</string>
     <string name="send_scan_bluetooth">Forward scans with Bluetooth</string>
     <string name="send_scan_bluetooth_summary">Enable to forwards scans to a given Bluetooth host.</string>
@@ -133,7 +133,7 @@
     <string name="bluetooth_send_fail">Could not send to bluetooth device.</string>
     <string name="bluetooth_send_success">Successful bluetooth send.</string>
     <string name="really_remove_scan">Valóban eltávolítja a beolvasást?</string>
-    <string name="really_remove_all_scans">Valóban eltávolítja az összes beolvasását?</string>
+    <string name="reallyRemoveAllScans">Valóban eltávolítja az összes beolvasását?</string>
     <string name="reallyRemoveSelectedScans">Valóban eltávolítja a kijelölt beolvasásokat?</string>
     <string name="clear_history">Előzmények törlése</string>
     <string name="copy_scan">Beolvasás másolása</string>
@@ -142,7 +142,7 @@
     <string name="enter_name">Adjon meg egy nevet a beolvasás leírásához</string>
     <string name="enter_name_hint">A beolvasás neve</string>
     <string name="no_barcode_found">Nem található vonalkód</string>
-    <string name="pick_list_separator">Hogyan kell elválasztani a listaelemeket?</string>
+    <string name="pickListSeparator">Hogyan kell elválasztani a listaelemeket?</string>
     <string name="separator_line_break">Sortörés</string>
     <string name="separator_ruler">Vonalzó</string>
     <string name="save_as_file_name">Menti fájlként?</string>

@@ -369,7 +369,7 @@ class FragmentHistory : Fragment() {
         AlertDialog.Builder(this)
             .setMessage(
                 if (filter == null) {
-                    R.string.really_remove_all_scans
+                    R.string.reallyRemoveAllScans
                 } else {
                     R.string.reallyRemoveSelectedScans
                 }
@@ -433,7 +433,7 @@ class FragmentHistory : Fragment() {
             R.array.list_separators_values
         )
         AlertDialog.Builder(this)
-            .setTitle(R.string.pick_list_separator)
+            .setTitle(R.string.pickListSeparator)
             .setItems(R.array.list_separators_names) { _, which ->
                 shareScans(separators[which])
             }

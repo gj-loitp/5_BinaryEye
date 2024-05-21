@@ -2,7 +2,7 @@
     <string name="cameraError">Geen toegang tot camera, probeer opnieuw.</string>
     <string name="scan_code">Scan een code</string>
     <string name="compose_barcode">Barcode scannen</string>
-    <string name="decode_barcode">Barcode decoderen</string>
+    <string name="decodeBarcode">Barcode decoderen</string>
     <string name="content">Inhoud</string>
     <string name="binary_data">(binaire data)</string>
     <plurals name="barcode_info">
@@ -68,7 +68,7 @@
     <string name="locale_category">Taal</string>
     <string name="custom_locale">Taal instelling</string>
     <string name="followSystemSettings">Systeeminstellingen volgen</string>
-    <string name="show_crop_handle">Bijsnijd-begrenzer tonen</string>
+    <string name="showCropHandle">Bijsnijd-begrenzer tonen</string>
     <string name="showCropHandleSummary">Scannen beperken tot een aanpasbaar gebied</string>
     <string name="barcode_formats">Barcode formats</string>
     <string name="zoom_by_swiping">Camera zoomen door omhoog/omlaag te vegen</string>
@@ -94,7 +94,7 @@
     <string name="use_history_summary">Bewaar herkende codes op je toestel.</string>
     <string name="ignore_consecutive_duplicates">Duplicaten negeren</string>
     <string name="ignore_consecutive_duplicates_summary">Bewaar geen opeenvolgende duplicaten in de scangeschiedenis.</string>
-    <string name="open_immediately">Inhoud direct tonen, zonder inspectie</string>
+    <string name="openImmediately">Inhoud direct tonen, zonder inspectie</string>
     <string name="open_immediately_summary">Sla inspectie over en open meteen de inhoud. Indien geactiveerd, kan schadelijke inhoud worden geopend.</string>
     <string name="copy_immediately">Meteen op klembord zetten</string>
     <string name="copy_immediately_summary">Kopieer de gescande inhoud automatisch naar het klembord. Let op: andere apps kunnen mogelijk meelezen op de achtergrond.</string>
@@ -122,8 +122,8 @@
     <string name="send_type_get_add_content">GET en gewoon inhoud toevoegen</string>
     <string name="send_type_get_query_string">GET met volledige query string</string>
     <string name="send_type_post_form">POST toepassing/x-www-form-urlencoded</string>
-    <string name="send_type_post_json">POST toepassing/json</string>
-    <string name="send_type_external_browser">Open in external browser</string>
+    <string name="sendTypePostJson">POST toepassing/json</string>
+    <string name="sendTypeExternalBrowser">Open in external browser</string>
     <string name="testUrl">Test URL</string>
     <string name="send_scan_bluetooth">Forward scans with Bluetooth</string>
     <string name="send_scan_bluetooth_summary">Enable to forwards scans to a given Bluetooth host.</string>
@@ -133,7 +133,7 @@
     <string name="bluetooth_send_fail">Could not send to bluetooth device.</string>
     <string name="bluetooth_send_success">Successful bluetooth send.</string>
     <string name="really_remove_scan">Scan echt verwijderen?</string>
-    <string name="really_remove_all_scans">Alle scans echt verwijderen?</string>
+    <string name="reallyRemoveAllScans">Alle scans echt verwijderen?</string>
     <string name="reallyRemoveSelectedScans">Geselecteerde scans verwijderen?</string>
     <string name="clear_history">Wis opgeslagen codes</string>
     <string name="copy_scan">Scan kopiëren</string>
@@ -142,7 +142,7 @@
     <string name="enter_name">Naam van de scan</string>
     <string name="enter_name_hint">Voer een naam in om de scan te beschrijven</string>
     <string name="no_barcode_found">Geen barcode gevonden</string>
-    <string name="pick_list_separator">Hoe lijstitems te scheiden?</string>
+    <string name="pickListSeparator">Hoe lijstitems te scheiden?</string>
     <string name="separator_line_break">Regeleinde</string>
     <string name="separator_ruler">Koppelteken</string>
     <string name="save_as_file_name">Opslaan in Downloads als?</string>

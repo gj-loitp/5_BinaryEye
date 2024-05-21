@@ -2,7 +2,7 @@
     <string name="cameraError">Невозможно получить доступ к камере, попробуйте ещё раз</string>
     <string name="scan_code">Сканировать штрих-код</string>
     <string name="compose_barcode">Создать штрих-код</string>
-    <string name="decode_barcode">Декодировать штрих-код</string>
+    <string name="decodeBarcode">Декодировать штрих-код</string>
     <string name="content">Текст</string>
     <string name="binary_data">(двоичные данные)</string>
     <plurals name="barcode_info">
@@ -70,7 +70,7 @@
     <string name="locale_category">Язык</string>
     <string name="custom_locale">Выбрать язык</string>
     <string name="followSystemSettings">Как в системе</string>
-    <string name="show_crop_handle">Показывать область сканирования</string>
+    <string name="showCropHandle">Показывать область сканирования</string>
     <string name="showCropHandleSummary">Ограничить сканирование изменяемой областью.</string>
     <string name="barcode_formats">Форматы штрих-кодов</string>
     <string name="zoom_by_swiping">Масштабировать жестом вверх/вниз</string>
@@ -96,7 +96,7 @@
     <string name="use_history_summary">Сохранять распознанные штрих-коды на устройстве.</string>
     <string name="ignore_consecutive_duplicates">Не хранить дубликаты</string>
     <string name="ignore_consecutive_duplicates_summary">Не сохранять повторяющиеся штрих-коды в истории сканирования.</string>
-    <string name="open_immediately">Сразу открывать содержимое</string>
+    <string name="openImmediately">Сразу открывать содержимое</string>
     <string name="open_immediately_summary">Пропускать проверку и сразу открыть содержимое. Может привести к открытию небезопасного содержимого.</string>
     <string name="copy_immediately">Автокопирование в буфер обмена</string>
     <string name="copy_immediately_summary">Автоматически копировать содержимое считанного штрих-кода в буфер обмена. Имейте в виду, что другие приложения могут иметь доступ к буферу обмена в фоне.</string>
@@ -124,8 +124,8 @@
     <string name="send_type_get_add_content">GET с добавлением содержимого</string>
     <string name="send_type_get_query_string">GET с полной строкой параметров запроса</string>
     <string name="send_type_post_form">POST-приложение/x-www-form-urlencoded</string>
-    <string name="send_type_post_json">POST-приложение/json</string>
-    <string name="send_type_external_browser">Открыть во внешнем браузере</string>
+    <string name="sendTypePostJson">POST-приложение/json</string>
+    <string name="sendTypeExternalBrowser">Открыть во внешнем браузере</string>
     <string name="testUrl">Проверка URL</string>
     <string name="send_scan_bluetooth">Отправлять сканирования по bluetooth</string>
     <string name="send_scan_bluetooth_summary">Пересылать сканированные данные на указанный узел bluetooth.</string>
@@ -135,7 +135,7 @@
     <string name="bluetooth_send_fail">Невозможно отправить на bluetooth-устройство.</string>
     <string name="bluetooth_send_success">Успешно отправлено по bluetooth.</string>
     <string name="really_remove_scan">Удалить сканирование?</string>
-    <string name="really_remove_all_scans">Удалить все сканирования?</string>
+    <string name="reallyRemoveAllScans">Удалить все сканирования?</string>
     <string name="reallyRemoveSelectedScans">Удалить выбранные штрих-коды?</string>
     <string name="clear_history">Очистить историю</string>
     <string name="copy_scan">Копировать</string>
@@ -144,7 +144,7 @@
     <string name="enter_name">Укажите название сканирования</string>
     <string name="enter_name_hint">Название сканирования</string>
     <string name="no_barcode_found">Штрих-код не найден</string>
-    <string name="pick_list_separator">Разделение элементов списка</string>
+    <string name="pickListSeparator">Разделение элементов списка</string>
     <string name="separator_line_break">Разрыв строки</string>
     <string name="separator_ruler">Горизонтальная линия</string>
     <string name="save_as_file_name">Сохранить файл как</string>

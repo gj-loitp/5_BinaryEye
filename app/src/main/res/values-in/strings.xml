@@ -2,7 +2,7 @@
     <string name="cameraError">Tidak bisa mengakses kamera, silakan coba lagi</string>
     <string name="scan_code">Pindai kode</string>
     <string name="compose_barcode">Buat barcode</string>
-    <string name="decode_barcode">Dekode barcode</string>
+    <string name="decodeBarcode">Dekode barcode</string>
     <string name="content">Konten</string>
     <string name="binary_data">(data biner)</string>
     <plurals name="barcode_info">
@@ -67,7 +67,7 @@
     <string name="locale_category">Bahasa</string>
     <string name="custom_locale">Bahasa lainnya</string>
     <string name="followSystemSettings">Ikuti pengaturan sistem</string>
-    <string name="show_crop_handle">Tampilkan pembatas pemotongan</string>
+    <string name="showCropHandle">Tampilkan pembatas pemotongan</string>
     <string name="showCropHandleSummary">Batasi pemindaian ke batas area tertentu.</string>
     <string name="barcode_formats">Format barcode</string>
     <string name="zoom_by_swiping">Geser ke atas/bawah untuk memperbesar</string>
@@ -93,7 +93,7 @@
     <string name="use_history_summary">Simpan kode yang berhasil dipindai pada perangkat anda.</string>
     <string name="ignore_consecutive_duplicates">Abaikan duplikat</string>
     <string name="ignore_consecutive_duplicates_summary">Jangan simpan duplikat yang berturutan di dalam riwayat pemindaian.</string>
-    <string name="open_immediately">Buka segera</string>
+    <string name="openImmediately">Buka segera</string>
     <string name="open_immediately_summary">Lewati inspeksi dan segera buka konten. Mungkin membuka konten berbahaya jika diaktifkan.</string>
     <string name="copy_immediately">Simpan ke dalam clipboard</string>
     <string name="copy_immediately_summary">Otomatis menyalin konten yang dipindai ke dalam clipboard. Harap diingat bahwa apl lain bisa melihat isi dari clipboard anda di latar belakang.</string>
@@ -121,8 +121,8 @@
     <string name="send_type_get_add_content">GET dan tambahkan konten</string>
     <string name="send_type_get_query_string">GET dengan kueri lema lengkap</string>
     <string name="send_type_post_form">POST application/x-www-form-urlencoded</string>
-    <string name="send_type_post_json">POST application/json</string>
-    <string name="send_type_external_browser">Buka di peramban eksternal</string>
+    <string name="sendTypePostJson">POST application/json</string>
+    <string name="sendTypeExternalBrowser">Buka di peramban eksternal</string>
     <string name="testUrl">URL Tes</string>
     <string name="send_scan_bluetooth">Forward scans with Bluetooth</string>
     <string name="send_scan_bluetooth_summary">Enable to forwards scans to a given Bluetooth host.</string>
@@ -132,7 +132,7 @@
     <string name="bluetooth_send_fail">Could not send to bluetooth device.</string>
     <string name="bluetooth_send_success">Successful bluetooth send.</string>
     <string name="really_remove_scan">Yakin menghapus pindaian?</string>
-    <string name="really_remove_all_scans">Yakin menghapus semua pindaian?</string>
+    <string name="reallyRemoveAllScans">Yakin menghapus semua pindaian?</string>
     <string name="reallyRemoveSelectedScans">Yakin menghapus pindaian yang dipilih?</string>
     <string name="clear_history">Hapus riwayat</string>
     <string name="copy_scan">Salin pindaian</string>
@@ -141,7 +141,7 @@
     <string name="enter_name">Masukkan keterangan pindaian</string>
     <string name="enter_name_hint">Nama pindaian</string>
     <string name="no_barcode_found">Tidak ada barcode yang ditemukan</string>
-    <string name="pick_list_separator">Pilih pemisah daftar item?</string>
+    <string name="pickListSeparator">Pilih pemisah daftar item?</string>
     <string name="separator_line_break">Baris baru</string>
     <string name="separator_ruler">Penggaris</string>
     <string name="save_as_file_name">Simpan sebagai berkas Unduhan?</string>

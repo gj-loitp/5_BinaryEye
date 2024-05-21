@@ -2,7 +2,7 @@
     <string name="cameraError">ক্যামেরা পাওয়া যাচ্ছে না, পরে চেষ্টা করো</string>
     <string name="scan_code">সংকেতের পাঠোদ্ধার</string>
     <string name="compose_barcode">বারকোড বানাও</string>
-    <string name="decode_barcode">বারকোডের পাঠোদ্ধার</string>
+    <string name="decodeBarcode">বারকোডের পাঠোদ্ধার</string>
     <string name="content">তথ্য</string>
     <string name="binary_data">(বাইনারি তথ্য)</string>
     <plurals name="barcode_info">
@@ -68,7 +68,7 @@
     <string name="locale_category">ভাষা</string>
     <string name="custom_locale">আলাদা ভাষা</string>
     <string name="followSystemSettings">ব্যবস্থার পছন্দসমূহ অনুসরণ করো</string>
-    <string name="show_crop_handle">ছাটার সীমা দেখাও</string>
+    <string name="showCropHandle">ছাটার সীমা দেখাও</string>
     <string name="showCropHandleSummary">পরিবর্তনযোগ্য জায়গায়ই শুধু খুঁজো।</string>
     <string name="barcode_formats">Barcode formats</string>
     <string name="zoom_by_swiping">ওপরে/নিচে টানো বড়ো করার জন্য</string>
@@ -94,7 +94,7 @@
     <string name="use_history_summary">সনাক্তকৃত সংকেত যন্ত্রে সংরক্ষণ করো।</string>
     <string name="ignore_consecutive_duplicates">দ্বিত্ব উপেক্ষা করো</string>
     <string name="ignore_consecutive_duplicates_summary">দুইটা ইতিহাস সংরক্ষণ করবে না।</string>
-    <string name="open_immediately">সাথে সাথে খুলো</string>
+    <string name="openImmediately">সাথে সাথে খুলো</string>
     <string name="open_immediately_summary">না দেখে সাথে সাথে খুলো। সক্রিয় থাকলে ক্ষতিকারক তথ্য খুলতে পারে।</string>
     <string name="copy_immediately">ক্লিপবোর্ডে রাখো</string>
     <string name="copy_immediately_summary">স্বয়ংক্রিয়ভাবে ক্লিপবোর্ডে অনুলিপি করো। বিশেষ দ্রষ্টব্য অন্য অ্যাপ পটভূমিতে এই তথ্য দেখে ফেলতে পারে।</string>
@@ -122,8 +122,8 @@
     <string name="send_type_get_add_content">গেট(GET) দিয়ে তথ্য যোগ করো</string>
     <string name="send_type_get_query_string">সম্পূর্ণ কুয়েরি স্ট্রিং দিয়ে গেট(GET) করো</string>
     <string name="send_type_post_form">POST application/x-www-form-urlencoded</string>
-    <string name="send_type_post_json">POST application/json</string>
-    <string name="send_type_external_browser">Open in external browser</string>
+    <string name="sendTypePostJson">POST application/json</string>
+    <string name="sendTypeExternalBrowser">Open in external browser</string>
     <string name="testUrl">পরীক্ষার জন্য ইউআরএল</string>
     <string name="send_scan_bluetooth">Forward scans with Bluetooth</string>
     <string name="send_scan_bluetooth_summary">Enable to forwards scans to a given Bluetooth host.</string>
@@ -133,7 +133,7 @@
     <string name="bluetooth_send_fail">Could not send to bluetooth device.</string>
     <string name="bluetooth_send_success">Successful bluetooth send.</string>
     <string name="really_remove_scan">আসলেই এটা মুছবে?</string>
-    <string name="really_remove_all_scans">আসলেই সব মুছবে?</string>
+    <string name="reallyRemoveAllScans">আসলেই সব মুছবে?</string>
     <string name="reallyRemoveSelectedScans">আসলেই নির্বাচিত সব মুছবে?</string>
     <string name="clear_history">ইতিহাস মুছো</string>
     <string name="copy_scan">পাঠোদ্ধার অনুলিপি করো</string>
@@ -142,7 +142,7 @@
     <string name="enter_name">পাঠোদ্ধার ব্যাখ্যা করতে একটা নাম দাও</string>
     <string name="enter_name_hint">পাঠোদ্ধারের নাম</string>
     <string name="no_barcode_found">বারকোড পাওয়া যায়নি</string>
-    <string name="pick_list_separator">তালিকার ভুক্তি কিভাবে আলাদা করবো?</string>
+    <string name="pickListSeparator">তালিকার ভুক্তি কিভাবে আলাদা করবো?</string>
     <string name="separator_line_break">বাক্য বিরতি</string>
     <string name="separator_ruler">মাপকাঠি</string>
     <string name="save_as_file_name">ডাউনলোডে নথি হিসেবে সংরক্ষণ করবে?</string>

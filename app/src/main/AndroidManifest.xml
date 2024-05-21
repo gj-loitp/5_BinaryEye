@@ -95,12 +95,12 @@
             android:exported="true"
             android:label="@string/pick_code_to_scan"
             tools:ignore="AppLinkUrlError">
-            <intent-filter android:label="@string/decode_barcode">
+            <intent-filter android:label="@string/decodeBarcode">
                 <action android:name="android.intent.action.SEND" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:mimeType="image/*" />
             </intent-filter>
-            <intent-filter android:label="@string/decode_barcode">
+            <intent-filter android:label="@string/decodeBarcode">
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:mimeType="image/*" />

@@ -2,7 +2,7 @@
     <string name="cameraError">Nepodařilo se otevřít fotoaparát, prosím zkuste to znovu</string>
     <string name="scan_code">Naskenovat kód</string>
     <string name="compose_barcode">Vytvořit čárový kód</string>
-    <string name="decode_barcode">Dekódovat čárový kód</string>
+    <string name="decodeBarcode">Dekódovat čárový kód</string>
     <string name="content">Obsah</string>
     <string name="binary_data">(binární data)</string>
     <plurals name="barcode_info">
@@ -70,7 +70,7 @@
     <string name="locale_category">Jazyk</string>
     <string name="custom_locale">Nastavit jazyk</string>
     <string name="followSystemSettings">Podle systému</string>
-    <string name="show_crop_handle">Zobrazovat hrany výřezu</string>
+    <string name="showCropHandle">Zobrazovat hrany výřezu</string>
     <string name="showCropHandleSummary">Omezí skenování na zvolenou oblast.</string>
     <string name="barcode_formats">Formáty čárových kódů</string>
     <string name="zoom_by_swiping">Potáhnutím nahoru/dolů přiblížit</string>
@@ -96,7 +96,7 @@
     <string name="use_history_summary">Rozpoznané kódy se uloží do zařízení.</string>
     <string name="ignore_consecutive_duplicates">Ignorovat duplikáty</string>
     <string name="ignore_consecutive_duplicates_summary">Další skeny stejného kódu se nebudou ukládat.</string>
-    <string name="open_immediately">Otevírat okamžitě</string>
+    <string name="openImmediately">Otevírat okamžitě</string>
     <string name="open_immediately_summary">Přeskočí kontrolu a otevře obsah okamžitě. Může otevřít škodlivý obsah.</string>
     <string name="copy_immediately">Vložit do schránky</string>
     <string name="copy_immediately_summary">Automaticky zkopírovat naskenovaný obsah do schránky. Pozor, jiné aplikace jej mohou ze schránky přečíst, i když neběží.</string>
@@ -124,8 +124,8 @@
     <string name="send_type_get_add_content">GET a simply add content</string>
     <string name="send_type_get_query_string">GET with complete query string</string>
     <string name="send_type_post_form">POST application/x-www-form-urlencoded</string>
-    <string name="send_type_post_json">POST application/json</string>
-    <string name="send_type_external_browser">Otevřít v prohlížeči</string>
+    <string name="sendTypePostJson">POST application/json</string>
+    <string name="sendTypeExternalBrowser">Otevřít v prohlížeči</string>
     <string name="testUrl">Otestovat URL</string>
     <string name="send_scan_bluetooth">Přesměrovat skeny přes Bluetooth</string>
     <string name="send_scan_bluetooth_summary">Skeny se přesměrují na daného hostitele Bluetooth.</string>
@@ -135,7 +135,7 @@
     <string name="bluetooth_send_fail">Nelze odesílat na zařízení Bluetooth.</string>
     <string name="bluetooth_send_success">Odesílání přes Bluetooth se zdařilo.</string>
     <string name="really_remove_scan">Opravdu odstranit sken?</string>
-    <string name="really_remove_all_scans">Opravdu odstranit všechny skeny?</string>
+    <string name="reallyRemoveAllScans">Opravdu odstranit všechny skeny?</string>
     <string name="reallyRemoveSelectedScans">Opravdu odstranit zvolené skeny?</string>
     <string name="clear_history">Vymazat historii</string>
     <string name="copy_scan">Zkopírovat sken</string>
@@ -144,7 +144,7 @@
     <string name="enter_name">Napište název popisující sken</string>
     <string name="enter_name_hint">Název skenu</string>
     <string name="no_barcode_found">Čárový kód nenalezen</string>
-    <string name="pick_list_separator">Jak mají být odděleny položky?</string>
+    <string name="pickListSeparator">Jak mají být odděleny položky?</string>
     <string name="separator_line_break">Nový řádek</string>
     <string name="separator_ruler">Svislice</string>
     <string name="save_as_file_name">Uložit jako do složky Stahování</string>

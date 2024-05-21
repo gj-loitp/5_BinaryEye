@@ -6,7 +6,7 @@
             android:defaultValue="true"
             android:key="show_crop_handle"
             android:summary="@string/showCropHandleSummary"
-            android:title="@string/show_crop_handle" />
+            android:title="@string/showCropHandle" />
         <androidx.preference.SwitchPreferenceCompat
             android:defaultValue="true"
             android:key="zoom_by_swiping"
@@ -81,8 +81,8 @@
             android:title="@string/sendScanUrl" />
         <ListPreference
             android:defaultValue="0"
-            android:entries="@array/send_type_names"
-            android:entryValues="@array/send_type_values"
+            android:entries="@array/sendTypeNames"
+            android:entryValues="@array/sendTypeValues"
             android:key="send_scan_type"
             android:title="@string/send_scan_type" />
         <androidx.preference.SwitchPreferenceCompat
@@ -102,7 +102,7 @@
             android:defaultValue="false"
             android:key="open_immediately"
             android:summary="@string/open_immediately_summary"
-            android:title="@string/open_immediately" />
+            android:title="@string/openImmediately" />
         <androidx.preference.SwitchPreferenceCompat
             android:defaultValue="true"
             android:key="show_meta_data"

@@ -2,7 +2,7 @@
     <string name="cameraError">Không thể mở camera, hãy thử lại</string>
     <string name="scan_code">Quét mã</string>
     <string name="compose_barcode">Tạo mã vạch</string>
-    <string name="decode_barcode">Giải mã vạch</string>
+    <string name="decodeBarcode">Giải mã vạch</string>
     <string name="content">Nội dung</string>
     <string name="binary_data">(thông tin dạng nhị phân)</string>
     <plurals name="barcode_info">
@@ -67,7 +67,7 @@
     <string name="locale_category">Ngôn ngữ</string>
     <string name="custom_locale">Tùy chọn ngôn ngữ</string>
     <string name="followSystemSettings">Theo cài đặt của máy</string>
-    <string name="show_crop_handle">Hiện giới hạn cắt hình</string>
+    <string name="showCropHandle">Hiện giới hạn cắt hình</string>
     <string name="showCropHandleSummary">Giới hạn vùng quét.</string>
     <string name="barcode_formats">Các định dạng mã vạch</string>
     <string name="zoom_by_swiping">Vuốt lên/xuống để phóng to/thu nhỏ</string>
@@ -93,7 +93,7 @@
     <string name="use_history_summary">Lưu mã đã nhận dạng được trên máy của bạn.</string>
     <string name="ignore_consecutive_duplicates">Bỏ qua trùng lặp</string>
     <string name="ignore_consecutive_duplicates_summary">Không lưu các kết quả quét trùng lặp liên tục vào lịch sử.</string>
-    <string name="open_immediately">Mở ngay</string>
+    <string name="openImmediately">Mở ngay</string>
     <string name="open_immediately_summary">Bỏ qua kiểm tra và mở ngay nội dung. Có thể mở nội dung nguy hiểm nếu kích hoạt.</string>
     <string name="copy_immediately">Sao chép kết quả</string>
     <string name="copy_immediately_summary">Tự động sao chép kết quả. Lưu ý: ứng dụng khác có thể xem nội dung bạn đã sao chép.</string>
@@ -121,8 +121,8 @@
     <string name="send_type_get_add_content">GET và chỉ thêm nội dung</string>
     <string name="send_type_get_query_string">GET với xâu truy vấn đầy đủ</string>
     <string name="send_type_post_form">POST application/x-www-form-urlencoded</string>
-    <string name="send_type_post_json">POST application/json</string>
-    <string name="send_type_external_browser">Open in external browser</string>
+    <string name="sendTypePostJson">POST application/json</string>
+    <string name="sendTypeExternalBrowser">Open in external browser</string>
     <string name="testUrl">URL thử</string>
     <string name="send_scan_bluetooth">Forward scans with Bluetooth</string>
     <string name="send_scan_bluetooth_summary">Enable to forwards scans to a given Bluetooth host.</string>
@@ -132,7 +132,7 @@
     <string name="bluetooth_send_fail">Could not send to bluetooth device.</string>
     <string name="bluetooth_send_success">Successful bluetooth send.</string>
     <string name="really_remove_scan">Thật sự xoá lần quét này?</string>
-    <string name="really_remove_all_scans">Thật sự xoá tất cả các lần quét?</string>
+    <string name="reallyRemoveAllScans">Thật sự xoá tất cả các lần quét?</string>
     <string name="reallyRemoveSelectedScans">Thật sự xoá các lần quét được chọn?</string>
     <string name="clear_history">Xoá lịch sử</string>
     <string name="copy_scan">Sao chép lần quét</string>
@@ -141,7 +141,7 @@
     <string name="enter_name">Nhập tên để miêu tả lần quét</string>
     <string name="enter_name_hint">Tên lần quét</string>
     <string name="no_barcode_found">Không tìm thấy mã vạch</string>
-    <string name="pick_list_separator">Phân chia các mục như thế nào?</string>
+    <string name="pickListSeparator">Phân chia các mục như thế nào?</string>
     <string name="separator_line_break">Ngắt dòng</string>
     <string name="separator_ruler">Đường kẻ</string>
     <string name="save_as_file_name">Lưu vào Downloads?</string>

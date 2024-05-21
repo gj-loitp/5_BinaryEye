@@ -2,7 +2,7 @@
     <string name="cameraError">無法開啟相機，請再試一次</string>
     <string name="scan_code">掃描條碼</string>
     <string name="compose_barcode">製作條碼</string>
-    <string name="decode_barcode">解析條碼</string>
+    <string name="decodeBarcode">解析條碼</string>
     <string name="content">内容</string>
     <string name="binary_data">(二進位資料)</string>
     <plurals name="barcode_info">
@@ -67,7 +67,7 @@
     <string name="locale_category">語言</string>
     <string name="custom_locale">設定語言</string>
     <string name="followSystemSettings">跟隨系統設定</string>
-    <string name="show_crop_handle">顯示裁切範圍選擇器</string>
+    <string name="showCropHandle">顯示裁切範圍選擇器</string>
     <string name="showCropHandleSummary">將掃描區域限制在指定範圍內</string>
     <string name="barcode_formats">條碼格式</string>
     <string name="zoom_by_swiping">上下滑動縮放</string>
@@ -93,7 +93,7 @@
     <string name="use_history_summary">在本機儲存掃描記錄</string>
     <string name="ignore_consecutive_duplicates">不儲存重複歷史記錄</string>
     <string name="ignore_consecutive_duplicates_summary">掃描記錄中不儲存連續的重複項目</string>
-    <string name="open_immediately">立即開啟</string>
+    <string name="openImmediately">立即開啟</string>
     <string name="open_immediately_summary">跳過檢查並立即開啟。可能會開啟有害內容</string>
     <string name="copy_immediately">自動複製掃描結果到剪貼簿</string>
     <string name="copy_immediately_summary">自動將掃描內容複製到剪貼簿。請注意，其他應用程式可能會在背景監控剪貼簿</string>
@@ -121,8 +121,8 @@
     <string name="send_type_get_add_content">GET 簡單附加資料</string>
     <string name="send_type_get_query_string">GET 完整查詢資料</string>
     <string name="send_type_post_form">POST application/x-www-form-urlencoded</string>
-    <string name="send_type_post_json">POST application/json</string>
-    <string name="send_type_external_browser">以外部瀏覽器開啟</string>
+    <string name="sendTypePostJson">POST application/json</string>
+    <string name="sendTypeExternalBrowser">以外部瀏覽器開啟</string>
     <string name="testUrl">測試 URL</string>
     <string name="send_scan_bluetooth">透過藍牙轉發掃描</string>
     <string name="send_scan_bluetooth_summary">啟用以將掃描轉發到指定藍牙裝置</string>
@@ -132,7 +132,7 @@
     <string name="bluetooth_send_fail">無法傳送到藍牙裝置</string>
     <string name="bluetooth_send_success">藍牙傳送完成</string>
     <string name="really_remove_scan">確定刪除記錄？</string>
-    <string name="really_remove_all_scans">確定要刪除所有掃描記錄？</string>
+    <string name="reallyRemoveAllScans">確定要刪除所有掃描記錄？</string>
     <string name="reallyRemoveSelectedScans">確定要刪除選擇的掃描記錄？</string>
     <string name="clear_history">清空記錄</string>
     <string name="copy_scan">複製掃描記錄</string>
@@ -141,7 +141,7 @@
     <string name="enter_name">輸入名稱</string>
     <string name="enter_name_hint">掃描描述</string>
     <string name="no_barcode_found">找不到條碼</string>
-    <string name="pick_list_separator">如何分隔清單項目？</string>
+    <string name="pickListSeparator">如何分隔清單項目？</string>
     <string name="separator_line_break">換行符號</string>
     <string name="separator_ruler">分割線</string>
     <string name="save_as_file_name">在下載資料夾儲存為檔案？</string>

@@ -2,7 +2,7 @@
     <string name="cameraError">კამერაზე წვდომის მოპოვება ვერ ხერხდება, გთხოვთ, კიდევ სცადეთ</string>
     <string name="scan_code">შტრიხ-კოდის სკანირება</string>
     <string name="compose_barcode">შტრიხ-კოდის შექმნა</string>
-    <string name="decode_barcode">შტრიხ-კოდის დეკოდირება</string>
+    <string name="decodeBarcode">შტრიხ-კოდის დეკოდირება</string>
     <string name="content">ტექსტი</string>
     <string name="binary_data">(ორობითი მონაცემები)</string>
     <plurals name="barcode_info">
@@ -68,7 +68,7 @@
     <string name="locale_category">Language</string>
     <string name="custom_locale">Custom language</string>
     <string name="followSystemSettings">Follow system settings</string>
-    <string name="show_crop_handle">სკანირების არეალის ჩვენება</string>
+    <string name="showCropHandle">სკანირების არეალის ჩვენება</string>
     <string name="showCropHandleSummary">სკანირების შეზღუდვა შერჩეული არეალით.</string>
     <string name="barcode_formats">Barcode formats</string>
     <string name="zoom_by_swiping">მასშტაბირება თითის მოძრაობით მაღლა/დაბლა</string>
@@ -94,7 +94,7 @@
     <string name="use_history_summary">ამოცნობილი შტრიხ-კოდების მოწყობილობაზე შენახვა.</string>
     <string name="ignore_consecutive_duplicates">არ შევინახოთ შემდგომი ასლები</string>
     <string name="ignore_consecutive_duplicates_summary">არ შევინახოთ შემდგომი ასლები სკანირების ისტორიაში.</string>
-    <string name="open_immediately">შემოწმების გამოტოვება და მყისიერი გახსნა</string>
+    <string name="openImmediately">შემოწმების გამოტოვება და მყისიერი გახსნა</string>
     <string name="open_immediately_summary">შემოწმების გამოტოვება და მყისიერი გახსნა. შესაძლოა გამოიწვიოს არასასარგებლო კონტენტის ჩვენება.</string>
     <string name="copy_immediately">გაცვლის ბუფერში ავტომატური კოპირება</string>
     <string name="copy_immediately_summary">სკანირებული შტრიხ-კოდის კონტენტის ავტომატური კოპირება გაცვლის ბუფერში. გთხოვთ გაითვალისწინოთ,ზოგიერთ პროგრამას შესაძლოა ჰქონდეს ფონური წვდომა გაცვლის ბუფერთან.</string>
@@ -122,8 +122,8 @@
     <string name="send_type_get_add_content">GET კონტენტის დამატებით</string>
     <string name="send_type_get_query_string">GET მოთხოვნის სრული პარამეტრებით</string>
     <string name="send_type_post_form">POST application/x-www-form-urlencoded</string>
-    <string name="send_type_post_json">POST application/json</string>
-    <string name="send_type_external_browser">Open in external browser</string>
+    <string name="sendTypePostJson">POST application/json</string>
+    <string name="sendTypeExternalBrowser">Open in external browser</string>
     <string name="testUrl">Test URL</string>
     <string name="send_scan_bluetooth">Forward scans with Bluetooth</string>
     <string name="send_scan_bluetooth_summary">Enable to forwards scans to a given Bluetooth host.</string>
@@ -133,7 +133,7 @@
     <string name="bluetooth_send_fail">Could not send to bluetooth device.</string>
     <string name="bluetooth_send_success">Successful bluetooth send.</string>
     <string name="really_remove_scan">ნამდვილად გსურთ სკანირების წაშლა?</string>
-    <string name="really_remove_all_scans">ნამდვილად გსურთ ყველაფრის წაშლა?</string>
+    <string name="reallyRemoveAllScans">ნამდვილად გსურთ ყველაფრის წაშლა?</string>
     <string name="reallyRemoveSelectedScans">ნამდვილად გსურთ შერჩეული შტრიხ-კოდების წაშლა?</string>
     <string name="clear_history">ისტორიის გასუფთავება</string>
     <string name="copy_scan">კოპირება</string>
@@ -142,7 +142,7 @@
     <string name="enter_name">მიანიჭეთ სახელი სკანირებას</string>
     <string name="enter_name_hint">სკანირების სახელი</string>
     <string name="no_barcode_found">შტრიხ-კოდი ვერ მოიძებნა</string>
-    <string name="pick_list_separator">რითი გავყოთ სიის ელემენტები?</string>
+    <string name="pickListSeparator">რითი გავყოთ სიის ელემენტები?</string>
     <string name="separator_line_break">ხაზის გამყოფი</string>
     <string name="separator_ruler">ჰორიზონტალური ხაზი</string>
     <string name="save_as_file_name">ფაილის შენახვა როგორც</string>

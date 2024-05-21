@@ -2,7 +2,7 @@
     <string name="cameraError">无法访问相机，请重试。</string>
     <string name="scan_code">扫码</string>
     <string name="compose_barcode">生成条码</string>
-    <string name="decode_barcode">解析条码</string>
+    <string name="decodeBarcode">解析条码</string>
     <string name="content">内容</string>
     <string name="binary_data">（二进制数据）</string>
     <plurals name="barcode_info">
@@ -67,7 +67,7 @@
     <string name="locale_category">语言</string>
     <string name="custom_locale">设定语言</string>
     <string name="followSystemSettings">跟随系统设置</string>
-    <string name="show_crop_handle">限制扫描范围</string>
+    <string name="showCropHandle">限制扫描范围</string>
     <string name="showCropHandleSummary">把扫描区域限制在选定范围内</string>
     <string name="barcode_formats">条码格式</string>
     <string name="zoom_by_swiping">上下滑动缩放</string>
@@ -93,7 +93,7 @@
     <string name="use_history_summary">在本地保存扫描历史</string>
     <string name="ignore_consecutive_duplicates">不保存重复历史</string>
     <string name="ignore_consecutive_duplicates_summary">在扫描历史中不保存重复项</string>
-    <string name="open_immediately">不查看内容立即打开</string>
+    <string name="openImmediately">不查看内容立即打开</string>
     <string name="open_immediately_summary">可能会打开有害内容</string>
     <string name="copy_immediately">自动复制扫描结果到剪贴板</string>
     <string name="copy_immediately_summary">注意其他 APP 可能会在后台监控剪贴板</string>
@@ -121,8 +121,8 @@
     <string name="send_type_get_add_content">GET 简单附加数据</string>
     <string name="send_type_get_query_string">GET 完整查询数据</string>
     <string name="send_type_post_form">POST application/x-www-form-urlencoded</string>
-    <string name="send_type_post_json">POST application/json</string>
-    <string name="send_type_external_browser">在外部浏览器中打开</string>
+    <string name="sendTypePostJson">POST application/json</string>
+    <string name="sendTypeExternalBrowser">在外部浏览器中打开</string>
     <string name="testUrl">测试 URL</string>
     <string name="send_scan_bluetooth">Forward scans with Bluetooth</string>
     <string name="send_scan_bluetooth_summary">Enable to forwards scans to a given Bluetooth host.</string>
@@ -132,7 +132,7 @@
     <string name="bluetooth_send_fail">Could not send to bluetooth device.</string>
     <string name="bluetooth_send_success">Successful bluetooth send.</string>
     <string name="really_remove_scan">确定删除记录？</string>
-    <string name="really_remove_all_scans">确定删除全部记录？</string>
+    <string name="reallyRemoveAllScans">确定删除全部记录？</string>
     <string name="reallyRemoveSelectedScans">确定删除所选记录？</string>
     <string name="clear_history">清空记录</string>
     <string name="copy_scan">复制扫描记录</string>
@@ -141,7 +141,7 @@
     <string name="enter_name">输入名称</string>
     <string name="enter_name_hint">扫描描述</string>
     <string name="no_barcode_found">未找到条码</string>
-    <string name="pick_list_separator">如何分隔列表项？</string>
+    <string name="pickListSeparator">如何分隔列表项？</string>
     <string name="separator_line_break">换行符</string>
     <string name="separator_ruler">分割线</string>
     <string name="save_as_file_name">保存为文件？</string>

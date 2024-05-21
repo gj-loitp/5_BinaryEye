@@ -2,7 +2,7 @@
     <string name="cameraError">نمی‌توان به دوربین دسترسی داشت، لطفاً دوباره تلاش کنید</string>
     <string name="scan_code">پویش کد</string>
     <string name="compose_barcode">ایجاد بارکد</string>
-    <string name="decode_barcode">رمزگشایی بارکد</string>
+    <string name="decodeBarcode">رمزگشایی بارکد</string>
     <string name="content">محتویات</string>
     <string name="binary_data">(دادهٔ دودویی)</string>
     <plurals name="barcode_info">
@@ -68,7 +68,7 @@
     <string name="locale_category">زبان</string>
     <string name="custom_locale">زبان سفارشی</string>
     <string name="followSystemSettings">پیروی از زبان سامانه</string>
-    <string name="show_crop_handle">نمایش محدود کننده برش</string>
+    <string name="showCropHandle">نمایش محدود کننده برش</string>
     <string name="showCropHandleSummary">پویش را به یک منطقه قابل تنظیم محدود می‌کند.</string>
     <string name="barcode_formats">قالب‌های بارکد</string>
     <string name="zoom_by_swiping">برای بزرگنمایی به بالا یا پایین بکشید</string>
@@ -94,7 +94,7 @@
     <string name="use_history_summary">کدهای شناسایی شده را در همین دستگاه ذخیره می‌کند.</string>
     <string name="ignore_consecutive_duplicates">نادیده گرفتن موارد تکراری</string>
     <string name="ignore_consecutive_duplicates_summary">موارد تکراری متوالی را در تاریخچهٔ پویش ذخیره نمی‌کند.</string>
-    <string name="open_immediately">گشودن بلافاصله</string>
+    <string name="openImmediately">گشودن بلافاصله</string>
     <string name="open_immediately_summary">بازرسی را رها کنید و محتویات را فورا باز کنید. در صورت فعال بودن ممکن است محتوای مضر را باز کند.</string>
     <string name="copy_immediately">قرار دادن در تخته‌گیره</string>
     <string name="copy_immediately_summary">به طور خودکار محتوای پویش شده را در تخته‌گیره رونوشت می‌کند. لطفاً توجه داشته باشید که برنامه‌های دیگر ممکن است در پس‌زمینه تخته‌گیرهٔ شما را شنود کنند.</string>
@@ -122,8 +122,8 @@
     <string name="send_type_get_add_content">GET و به سادگی محتوا را اضافه کنید</string>
     <string name="send_type_get_query_string">GET با رشته پرس‌وجو کامل</string>
     <string name="send_type_post_form">POST application/x-www-form-urlencoded</string>
-    <string name="send_type_post_json">POST application/json</string>
-    <string name="send_type_external_browser">گشودن در مرورگر خارجی</string>
+    <string name="sendTypePostJson">POST application/json</string>
+    <string name="sendTypeExternalBrowser">گشودن در مرورگر خارجی</string>
     <string name="testUrl">آزمودن نشانی</string>
     <string name="send_scan_bluetooth">Forward scans with Bluetooth</string>
     <string name="send_scan_bluetooth_summary">Enable to forwards scans to a given Bluetooth host.</string>
@@ -133,7 +133,7 @@
     <string name="bluetooth_send_fail">Could not send to bluetooth device.</string>
     <string name="bluetooth_send_success">Successful bluetooth send.</string>
     <string name="really_remove_scan">برای برداشتن پویش مطمئنید؟</string>
-    <string name="really_remove_all_scans">برای برداشتن همهٔ پویش‌ها مطمئنید؟</string>
+    <string name="reallyRemoveAllScans">برای برداشتن همهٔ پویش‌ها مطمئنید؟</string>
     <string name="reallyRemoveSelectedScans">برای برداشتن پویش‌های برگزیده شده مطمئنید؟</string>
     <string name="clear_history">پاک کردن تاریخچه</string>
     <string name="copy_scan">رونوشت پویش</string>
@@ -142,7 +142,7 @@
     <string name="enter_name">یک نام برای توضیح پویش وارد کنید</string>
     <string name="enter_name_hint">نام پویش</string>
     <string name="no_barcode_found">بارکدی یافت نشد</string>
-    <string name="pick_list_separator">چگونه موارد فهرست را جدا کنیم؟</string>
+    <string name="pickListSeparator">چگونه موارد فهرست را جدا کنیم؟</string>
     <string name="separator_line_break">خط بعدی</string>
     <string name="separator_ruler">خط كش</string>
     <string name="save_as_file_name">به عنوان پرونده در بارگیری‌ها ذخیره شود؟</string>

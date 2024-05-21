@@ -59,7 +59,7 @@
     <string name="wifi_config_failed">Nie można skonfigurować Wi-Fi</string>
     <string name="size">Rozmiar w pikselach</string>
     <string name="exportAs">Eksportuj jako?</string>
-    <string name="really_remove_all_scans">Czy naprawdę usunąć wszystkie skany?</string>
+    <string name="reallyRemoveAllScans">Czy naprawdę usunąć wszystkie skany?</string>
     <string name="really_remove_scan">Czy naprawdę usunąć skan?</string>
     <string name="reallyRemoveSelectedScans">Czy naprawdę usunąć wybrane skany?</string>
     <string name="binary_data">(dane binarne)</string>
@@ -113,11 +113,11 @@
     <string name="tone_prop_ack">Positive acknowledgment</string>
     <string name="tone_prop_beep">General beep</string>
     <string name="tone_prop_beep2">General double beep</string>
-    <string name="open_immediately">Pomiń kontrolę i natychmiast otwórz zawartość</string>
+    <string name="openImmediately">Pomiń kontrolę i natychmiast otwórz zawartość</string>
     <string name="open_immediately_summary">Pomiń kontrolę i natychmiast otwórz zawartość. Może otwierać szkodliwą zawartość, jeśli jest włączona.</string>
     <string name="copy_immediately">Automatycznie skopiuj zawartość do schowka</string>
     <string name="copy_immediately_summary">Automatycznie skopiuj zeskanowaną zawartość do schowka. Pamiętaj, że inne aplikacje mogą szpiegować Twój schowek w tle.</string>
-    <string name="show_crop_handle">Pokazuj ogranicznik przycinania</string>
+    <string name="showCropHandle">Pokazuj ogranicznik przycinania</string>
     <string name="showCropHandleSummary">Ogranicz skanowanie do konfigurowalnego regionu.</string>
     <string name="barcode_formats">Formaty kodów</string>
     <string name="searchWeb">Szukaj w sieci</string>
@@ -141,8 +141,8 @@
     <string name="send_type_get_add_content">GET i po prostu dodaj zawartość</string>
     <string name="send_type_get_query_string">GET z kompletnym query</string>
     <string name="send_type_post_form">POST application/x-www-form-urlencoded</string>
-    <string name="send_type_post_json">POST application/json</string>
-    <string name="send_type_external_browser">Otwórz w zewnętrznej przeglądarce</string>
+    <string name="sendTypePostJson">POST application/json</string>
+    <string name="sendTypeExternalBrowser">Otwórz w zewnętrznej przeglądarce</string>
     <string name="testUrl">Testuj URL</string>
     <string name="send_scan_bluetooth">Forward scans with Bluetooth</string>
     <string name="send_scan_bluetooth_summary">Enable to forwards scans to a given Bluetooth host.</string>
@@ -160,7 +160,7 @@
     <string name="locale_category">Język</string>
     <string name="custom_locale">Język niestandardowy</string>
     <string name="followSystemSettings">Zgodny z ustawieniami systemu</string>
-    <string name="decode_barcode">Dekoduj kod kreskowy</string>
+    <string name="decodeBarcode">Dekoduj kod kreskowy</string>
     <string name="gtin_add_on">Dodatek UPC EAN</string>
     <string name="barcode_version_number">Version</string>
     <string name="qr_version_and_modules">%1$s (%2$d modules)</string>
@@ -175,7 +175,7 @@
     <string name="width_by_height">%1$d×%2$d</string>
     <string name="inputContentHere">Wprowadź zawartość tutaj</string>
     <string name="unescape">Expand escape sequences</string>
-    <string name="pick_list_separator">Jak oddzielić elementy listy?</string>
+    <string name="pickListSeparator">Jak oddzielić elementy listy?</string>
     <string name="enter_name">Wprowadź nazwę opisującą skan</string>
     <string name="auto_rotate">Rozpoznawaj kody kreskowe 1D pionowo</string>
     <string name="auto_rotate_summary">Automatycznie obracaj ramkę aparatu, aby rozpoznać pionowe kody kreskowe 1D. W zależności od urządzenia może to mieć wpływ na wydajność.</string>
