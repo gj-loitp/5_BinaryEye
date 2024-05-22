@@ -144,7 +144,7 @@ class FragmentHistory : Fragment() {
         ac.setTitle(R.string.history)
 
         val view = inflater.inflate(
-            R.layout.f_history,
+            R.layout.roy_f_history,
             container,
             false
         )
@@ -321,7 +321,7 @@ class FragmentHistory : Fragment() {
         content: String?,
     ) {
         val view = LayoutInflater.from(this).inflate(
-            R.layout.dlg_enter_name, null
+            R.layout.roy_dlg_enter_name, null
         )
         val nameView = view.findViewById<EditText>(R.id.name)
         nameView.setText(text)

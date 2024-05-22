@@ -65,7 +65,7 @@ class ActivityPick : AppCompatActivity() {
 
     override fun onCreate(state: Bundle?) {
         super.onCreate(state)
-        setContentView(R.layout.a_pick)
+        setContentView(R.layout.roy_a_pick)
 
         // Necessary to get the right translation after setting a custom
         // locale.

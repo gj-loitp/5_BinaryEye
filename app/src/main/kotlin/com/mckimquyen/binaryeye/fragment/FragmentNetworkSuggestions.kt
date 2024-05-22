@@ -26,7 +26,7 @@ class FragmentNetworkSuggestions : Fragment() {
         ac.setTitle(R.string.network_suggestions)
 
         val view = inflater.inflate(
-			/* resource = */ R.layout.f_network_suggestions,
+			/* resource = */ R.layout.roy_f_network_suggestions,
 			/* root = */ container,
 			/* attachToRoot = */ false
         )

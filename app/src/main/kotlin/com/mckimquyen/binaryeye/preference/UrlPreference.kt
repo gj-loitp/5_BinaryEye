@@ -12,7 +12,7 @@ class UrlPreference(
     private var url: String? = null
 
     init {
-        dialogLayoutResource = R.layout.dlg_url
+        dialogLayoutResource = R.layout.roy_dlg_url
     }
 
     fun getUrl() = url

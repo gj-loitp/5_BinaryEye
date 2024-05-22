@@ -73,7 +73,7 @@ class FragmentDecode : Fragment() {
         activity?.setTitle(R.string.content)
 
         val view = inflater.inflate(
-            R.layout.f_decode,
+            R.layout.roy_f_decode,
             container,
             false
         )

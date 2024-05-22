@@ -116,7 +116,7 @@ class CameraActivity : AppCompatActivity() {
 
 	override fun onCreate(state: Bundle?) {
 		super.onCreate(state)
-		setContentView(R.layout.a_camera)
+		setContentView(R.layout.roy_a_camera)
 
 		// Necessary to get the right translation after setting a
 		// custom locale.

@@ -51,7 +51,7 @@ class FragmentEncode : Fragment() {
         ac.setTitle(R.string.compose_barcode)
 
         val view = inflater.inflate(
-			/* resource = */ R.layout.f_encode,
+			/* resource = */ R.layout.roy_f_encode,
 			/* root = */ container,
 			/* attachToRoot = */ false
         )
