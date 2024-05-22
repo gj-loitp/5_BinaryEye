@@ -1,14 +1,49 @@
-package com.mckimquyen.binaryeye.preference
+package com.mckimquyen.binaryeye.pref
 
 import android.content.Context
 import android.content.SharedPreferences
 import android.media.ToneGenerator
-import android.os.Build
 import android.preference.PreferenceManager
-import androidx.annotation.RequiresApi
 import de.markusfisch.android.zxingcpp.ZxingCpp.Format
 
-class Preferences {
+class Pref {
+    companion object {
+        private const val BARCODE_FORMATS = "formats"
+        private const val CROP_HANDLE_X = "crop_handle_x"
+        private const val CROP_HANDLE_Y = "crop_handle_y"
+        private const val CROP_HANDLE_ORIENTATION = "crop_handle_orientation"
+        private const val SHOW_CROP_HANDLE = "show_crop_handle"
+        private const val ZOOM_BY_SWIPING = "zoom_by_swiping"
+        private const val AUTO_ROTATE = "auto_rotate"
+        private const val TRY_HARDER = "try_harder"
+        private const val BULK_MODE = "bulk_mode"
+        private const val BULK_MODE_DELAY = "bulk_mode_delay"
+        private const val SHOW_TOAST_IN_BULK_MODE = "show_toast_in_bulk_mode"
+        private const val VIBRATE = "vibrate"
+        private const val BEEP = "beep"
+        private const val BEEP_TONE_NAME = "beep_tone_name"
+        private const val USE_HISTORY = "use_history"
+        private const val IGNORE_CONSECUTIVE_DUPLICATES = "ignore_consecutive_duplicates"
+        private const val OPEN_IMMEDIATELY = "open_immediately"
+        private const val COPY_IMMEDIATELY = "copy_immediately"
+        private const val SHOW_META_DATA = "show_meta_data"
+        private const val SHOW_HEX_DUMP = "show_hex_dump"
+        private const val SHOW_RECREATION = "show_recreation"
+        private const val CLOSE_AUTOMATICALLY = "close_automatically"
+        private const val DEFAULT_SEARCH_URL = "default_search_url"
+        private const val OPEN_WITH_URL = "open_with_url"
+        private const val SEND_SCAN_ACTIVE = "send_scan_active"
+        private const val SEND_SCAN_URL = "send_scan_url"
+        private const val SEND_SCAN_TYPE = "send_scan_type"
+        private const val SEND_SCAN_BLUETOOTH = "send_scan_bluetooth"
+        private const val SEND_SCAN_BLUETOOTH_HOST = "send_scan_bluetooth_host"
+        private const val CUSTOM_LOCALE = "custom_locale"
+        private const val INDEX_OF_LAST_SELECTED_FORMAT = "index_of_last_selected_format"
+        private const val INDEX_OF_LAST_SELECTED_EC_LEVEL = "index_of_last_selected_ec_level"
+        private const val FREE_ROTATION = "free_rotation"
+        private const val EXPAND_ESCAPE_SEQUENCES = "expand_escape_sequences"
+    }
+
     lateinit var preferences: SharedPreferences
 
     var barcodeFormats = setOf(
@@ -30,7 +65,6 @@ class Preferences {
         Format.UPC_A.name,
         Format.UPC_E.name,
     )
-        @RequiresApi(Build.VERSION_CODES.HONEYCOMB)
         set(value) {
             apply(BARCODE_FORMATS, value)
             field = value
@@ -95,7 +129,7 @@ class Preferences {
             apply(BEEP, value)
             field = value
         }
-    var beepToneName = "tone_prop_beep"
+    private var beepToneName = "tone_prop_beep"
         set(value) {
             apply(BEEP_TONE_NAME, value)
             field = value
@@ -209,10 +243,10 @@ class Preferences {
     }
 
     fun update() {
-		preferences.getStringSet(BARCODE_FORMATS, barcodeFormats)?.let {
-			barcodeFormats = it
-		}
-		cropHandleX = preferences.getInt(CROP_HANDLE_X, cropHandleX)
+        preferences.getStringSet(BARCODE_FORMATS, barcodeFormats)?.let {
+            barcodeFormats = it
+        }
+        cropHandleX = preferences.getInt(CROP_HANDLE_X, cropHandleX)
         cropHandleY = preferences.getInt(CROP_HANDLE_Y, cropHandleY)
         cropHandleOrientation = preferences.getInt(
             CROP_HANDLE_ORIENTATION,
@@ -336,42 +370,5 @@ class Preferences {
 
     private fun apply(label: String, value: Set<String>) {
         preferences.edit().putStringSet(label, value).apply()
-    }
-
-    companion object {
-        private const val BARCODE_FORMATS = "formats"
-        private const val CROP_HANDLE_X = "crop_handle_x"
-        private const val CROP_HANDLE_Y = "crop_handle_y"
-        private const val CROP_HANDLE_ORIENTATION = "crop_handle_orientation"
-        private const val SHOW_CROP_HANDLE = "show_crop_handle"
-        private const val ZOOM_BY_SWIPING = "zoom_by_swiping"
-        private const val AUTO_ROTATE = "auto_rotate"
-        private const val TRY_HARDER = "try_harder"
-        private const val BULK_MODE = "bulk_mode"
-        private const val BULK_MODE_DELAY = "bulk_mode_delay"
-        private const val SHOW_TOAST_IN_BULK_MODE = "show_toast_in_bulk_mode"
-        private const val VIBRATE = "vibrate"
-        private const val BEEP = "beep"
-        private const val BEEP_TONE_NAME = "beep_tone_name"
-        private const val USE_HISTORY = "use_history"
-        private const val IGNORE_CONSECUTIVE_DUPLICATES = "ignore_consecutive_duplicates"
-        private const val OPEN_IMMEDIATELY = "open_immediately"
-        private const val COPY_IMMEDIATELY = "copy_immediately"
-        private const val SHOW_META_DATA = "show_meta_data"
-        private const val SHOW_HEX_DUMP = "show_hex_dump"
-        private const val SHOW_RECREATION = "show_recreation"
-        private const val CLOSE_AUTOMATICALLY = "close_automatically"
-        private const val DEFAULT_SEARCH_URL = "default_search_url"
-        private const val OPEN_WITH_URL = "open_with_url"
-        private const val SEND_SCAN_ACTIVE = "send_scan_active"
-        private const val SEND_SCAN_URL = "send_scan_url"
-        private const val SEND_SCAN_TYPE = "send_scan_type"
-        private const val SEND_SCAN_BLUETOOTH = "send_scan_bluetooth"
-        private const val SEND_SCAN_BLUETOOTH_HOST = "send_scan_bluetooth_host"
-        private const val CUSTOM_LOCALE = "custom_locale"
-        private const val INDEX_OF_LAST_SELECTED_FORMAT = "index_of_last_selected_format"
-        private const val INDEX_OF_LAST_SELECTED_EC_LEVEL = "index_of_last_selected_ec_level"
-        private const val FREE_ROTATION = "free_rotation"
-        private const val EXPAND_ESCAPE_SEQUENCES = "expand_escape_sequences"
     }
 }

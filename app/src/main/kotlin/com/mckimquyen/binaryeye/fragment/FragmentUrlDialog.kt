@@ -8,7 +8,7 @@ import com.mckimquyen.binaryeye.R
 import com.mckimquyen.binaryeye.prefs
 import com.mckimquyen.binaryeye.db.Scan
 import com.mckimquyen.binaryeye.net.sendAsync
-import com.mckimquyen.binaryeye.preference.UrlPreference
+import com.mckimquyen.binaryeye.pref.UrlPref
 
 class FragmentUrlDialog : PreferenceDialogFragmentCompat() {
     private var urlView: TextView? = null
@@ -39,7 +39,7 @@ class FragmentUrlDialog : PreferenceDialogFragmentCompat() {
 
     private fun getUrl() = completeUrl(urlView?.text.toString())
 
-    private fun urlPreference() = preference as UrlPreference
+    private fun urlPreference() = preference as UrlPref
 
     private fun testUrl(textView: TextView?) {
         val url = getUrl()

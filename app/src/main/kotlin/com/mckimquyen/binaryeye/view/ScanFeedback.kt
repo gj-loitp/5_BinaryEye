@@ -5,9 +5,9 @@ import android.media.AudioManager
 import com.mckimquyen.binaryeye.prefs
 import com.mckimquyen.binaryeye.media.beepConfirm
 import com.mckimquyen.binaryeye.media.beepError
-import com.mckimquyen.binaryeye.os.error
-import com.mckimquyen.binaryeye.os.getVibrator
-import com.mckimquyen.binaryeye.os.vibrate
+import com.mckimquyen.binaryeye.view.os.error
+import com.mckimquyen.binaryeye.view.os.getVibrator
+import com.mckimquyen.binaryeye.view.os.vibrate
 
 fun Context.scanFeedback() {
     if (prefs.vibrate) {

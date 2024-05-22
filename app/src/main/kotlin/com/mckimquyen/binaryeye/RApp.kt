@@ -2,7 +2,7 @@ package com.mckimquyen.binaryeye
 
 import android.app.Application
 import com.mckimquyen.binaryeye.db.Db
-import com.mckimquyen.binaryeye.preference.Preferences
+import com.mckimquyen.binaryeye.pref.Pref
 
 //TODO ad applovin
 //TODO firebase
@@ -20,7 +20,7 @@ import com.mckimquyen.binaryeye.preference.Preferences
 //done mckimquyen
 
 val db = Db()
-val prefs = Preferences()
+val prefs = Pref()
 
 class BinaryEyeApp : Application() {
     override fun onCreate() {

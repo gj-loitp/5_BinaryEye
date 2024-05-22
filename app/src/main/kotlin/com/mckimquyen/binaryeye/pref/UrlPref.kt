@@ -1,13 +1,13 @@
-package com.mckimquyen.binaryeye.preference
+package com.mckimquyen.binaryeye.pref
 
 import android.content.Context
 import androidx.preference.DialogPreference
 import android.util.AttributeSet
 import com.mckimquyen.binaryeye.R
 
-class UrlPreference(
+class UrlPref(
     context: Context?,
-    attrs: AttributeSet?
+    attrs: AttributeSet?,
 ) : DialogPreference(context, attrs) {
     private var url: String? = null
 
@@ -25,7 +25,7 @@ class UrlPreference(
     @Deprecated("Deprecated in Java")
     override fun onSetInitialValue(
         restorePersistedValue: Boolean,
-        defaultValue: Any?
+        defaultValue: Any?,
     ) {
         setUrl(
             if (restorePersistedValue) {

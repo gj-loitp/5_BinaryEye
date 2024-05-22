@@ -76,7 +76,7 @@
             android:key="send_scan_active"
             android:summary="@string/send_scan_active_summary"
             android:title="@string/sendScanActive" />
-        <com.mckimquyen.binaryeye.preference.UrlPreference
+        <com.mckimquyen.binaryeye.pref.UrlPref
             android:key="send_scan_url"
             android:title="@string/sendScanUrl" />
         <ListPreference
@@ -129,7 +129,7 @@
             android:entryValues="@array/searchEnginesValues"
             android:key="default_search_url"
             android:title="@string/default_search_engine" />
-        <com.mckimquyen.binaryeye.preference.UrlPreference
+        <com.mckimquyen.binaryeye.pref.UrlPref
             android:key="open_with_url"
             android:title="@string/open_with_url" />
         <Preference

@@ -22,7 +22,7 @@ import com.mckimquyen.binaryeye.app.hasBluetoothPermission
 import com.mckimquyen.binaryeye.prefs
 import com.mckimquyen.binaryeye.bluetooth.setBluetoothHosts
 import com.mckimquyen.binaryeye.media.beepConfirm
-import com.mckimquyen.binaryeye.preference.UrlPreference
+import com.mckimquyen.binaryeye.pref.UrlPref
 import com.mckimquyen.binaryeye.view.setPaddingFromWindowInsets
 import com.mckimquyen.binaryeye.view.systemBarRecyclerViewScrollListener
 import com.mckimquyen.binaryeye.view.widget.toast
@@ -139,7 +139,7 @@ class FragmentPreferences : PreferenceFragmentCompat() {
     }
 
     override fun onDisplayPreferenceDialog(preference: Preference) {
-        if (preference is UrlPreference) {
+        if (preference is UrlPref) {
             val fm = fragmentManager
             FragmentUrlDialog.newInstance(preference.key).apply {
                 setTargetFragment(this@FragmentPreferences, 0)
@@ -165,7 +165,7 @@ class FragmentPreferences : PreferenceFragmentCompat() {
 
     private fun setSummary(preference: Preference) {
         when (preference) {
-            is UrlPreference -> {
+            is UrlPref -> {
                 preference.setSummary(preference.getUrl())
             }
 

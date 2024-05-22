@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.os
+package com.mckimquyen.binaryeye.view.os
 
 import android.content.Context
 import android.os.Build
@@ -54,7 +54,9 @@ fun Vibrator.error() {
     } else {
         vibrate(
             VibrationEffect.createWaveform(
-                errorPatternTimings, errorPatternAmplitudes, -1
+                /* timings = */ errorPatternTimings,
+                /* amplitudes = */ errorPatternAmplitudes,
+                /* repeat = */ -1
             )
         )
     }
