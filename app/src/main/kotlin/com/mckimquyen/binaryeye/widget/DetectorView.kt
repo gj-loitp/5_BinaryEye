@@ -38,7 +38,7 @@ class DetectorView : View {
     }
     private val dotRadius: Float
     private val handleBitmap = resources.getBitmapFromDrawable(
-        R.drawable.button_crop
+        R.drawable.ic_button_crop
     )
     private val handleXRadius = handleBitmap.width / 2
     private val handleYRadius = handleBitmap.height / 2

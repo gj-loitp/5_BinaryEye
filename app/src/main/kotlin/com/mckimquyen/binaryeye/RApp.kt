@@ -6,18 +6,18 @@ import com.mckimquyen.binaryeye.preference.Preferences
 
 //TODO ad applovin
 //TODO firebase
+//TODO ic_launcher
+//TODO ad id
+//TODO leak canary
+//TODO proguard
+//TODO keystore
+//TODO app version
+//TODO rate app
+//TODO more app
+//TODO share app
+//TODO policy
 
-//done
-//ic_launcher
-//ad id
-//leak canary
-//proguard
-//keystore
-//app version
-//rate app
-//more app
-//share app
-//policy
+//done mckimquyen
 
 val db = Db()
 val prefs = Preferences()

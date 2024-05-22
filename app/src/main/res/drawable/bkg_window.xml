@@ -3,6 +3,6 @@
     <item>
         <bitmap
             android:gravity="top|right"
-            android:src="@drawable/wallpaper" />
+            android:src="@drawable/bkg_wallpaper" />
     </item>
 </layer-list>
