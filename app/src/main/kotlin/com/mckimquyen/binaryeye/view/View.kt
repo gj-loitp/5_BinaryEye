@@ -8,7 +8,7 @@ import kotlinx.coroutines.withContext
 suspend inline fun View.useVisibility(
     whileExecuting: Int = View.VISIBLE,
     otherwise: Int = View.GONE,
-    crossinline block: suspend () -> Unit
+    crossinline block: suspend () -> Unit,
 ) {
     if (visibility == whileExecuting) {
         return
@@ -27,9 +27,9 @@ suspend inline fun View.useVisibility(
 
 fun View.setPadding(rect: Rect) {
     this.setPadding(
-		/* left = */ rect.left,
-		/* top = */ rect.top,
-		/* right = */ rect.right,
-		/* bottom = */ rect.bottom
+        /* left = */ rect.left,
+        /* top = */ rect.top,
+        /* right = */ rect.right,
+        /* bottom = */ rect.bottom
     )
 }

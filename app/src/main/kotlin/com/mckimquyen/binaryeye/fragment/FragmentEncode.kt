@@ -11,10 +11,10 @@ import com.mckimquyen.binaryeye.R
 import com.mckimquyen.binaryeye.adapter.prettifyFormatName
 import com.mckimquyen.binaryeye.app.addFragment
 import com.mckimquyen.binaryeye.prefs
-import com.mckimquyen.binaryeye.text.unescape
+import com.mckimquyen.binaryeye.view.text.unescape
 import com.mckimquyen.binaryeye.view.hideSoftKeyboard
 import com.mckimquyen.binaryeye.view.setPaddingFromWindowInsets
-import com.mckimquyen.binaryeye.widget.toast
+import com.mckimquyen.binaryeye.view.widget.toast
 import de.markusfisch.android.zxingcpp.ZxingCpp.Format
 
 class FragmentEncode : Fragment() {

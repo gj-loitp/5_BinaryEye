@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.widget
+package com.mckimquyen.binaryeye.view.widget
 
 import android.content.Context
 import android.graphics.Canvas
@@ -10,7 +10,11 @@ import de.markusfisch.android.scalingimageview.widget.ScalingImageView
 open class ConfinedScalingImageView : ScalingImageView {
     val insets = Rect()
 
-    constructor(context: Context, attrs: AttributeSet, defStyle: Int) : super(
+    constructor(
+        context: Context,
+        attrs: AttributeSet,
+        defStyle: Int,
+    ) : super(
         context,
         attrs,
         defStyle
@@ -20,7 +24,10 @@ open class ConfinedScalingImageView : ScalingImageView {
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        colorSystemAndToolBars(context = context, scrolled = !bounds.contains(mappedRect))
+        colorSystemAndToolBars(
+            context = context,
+            scrolled = !bounds.contains(mappedRect)
+        )
     }
 
     override fun layoutImage(
@@ -28,14 +35,14 @@ open class ConfinedScalingImageView : ScalingImageView {
         left: Int,
         top: Int,
         right: Int,
-        bottom: Int
+        bottom: Int,
     ) {
         if (changed) {
             setBounds(
-				/* left = */ (left + insets.left).toFloat(),
-				/* top = */ (top + insets.top).toFloat(),
-				/* right = */ (right - insets.right).toFloat(),
-				/* bottom = */ (bottom - insets.bottom).toFloat()
+                /* left = */ (left + insets.left).toFloat(),
+                /* top = */ (top + insets.top).toFloat(),
+                /* right = */ (right - insets.right).toFloat(),
+                /* bottom = */ (bottom - insets.bottom).toFloat()
             )
         }
         centerRemap()

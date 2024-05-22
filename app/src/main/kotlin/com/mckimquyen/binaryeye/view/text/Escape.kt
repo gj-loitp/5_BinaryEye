@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.text
+package com.mckimquyen.binaryeye.view.text
 
 // This code is based on Google's own implementation:
 // http://www.java2s.com/example/android-utility-method/string-escape/javascriptunescape-string-s-dc359.html

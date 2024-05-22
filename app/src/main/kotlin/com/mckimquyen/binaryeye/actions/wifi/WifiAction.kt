@@ -3,7 +3,7 @@ package com.mckimquyen.binaryeye.actions.wifi
 import android.content.Context
 import com.mckimquyen.binaryeye.R
 import com.mckimquyen.binaryeye.actions.IAction
-import com.mckimquyen.binaryeye.widget.toast
+import com.mckimquyen.binaryeye.view.widget.toast
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

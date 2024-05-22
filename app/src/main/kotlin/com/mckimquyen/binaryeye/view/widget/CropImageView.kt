@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.widget
+package com.mckimquyen.binaryeye.view.widget
 
 import android.content.Context
 import android.graphics.Canvas
@@ -26,7 +26,7 @@ class CropImageView(context: Context, attr: AttributeSet) :
         val mr = mappedRect ?: return
         if (mr != lastMappedRect) {
             removeCallbacks(onScanRunnable)
-            postDelayed(onScanRunnable, 300)
+            postDelayed(/* action = */ onScanRunnable, /* delayMillis = */ 300)
             lastMappedRect.set(mr)
         }
     }

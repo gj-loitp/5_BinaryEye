@@ -4,7 +4,7 @@ import android.content.Context
 import android.content.Intent
 import com.mckimquyen.binaryeye.content.execShareIntent
 import com.mckimquyen.binaryeye.content.openUrl
-import com.mckimquyen.binaryeye.widget.toast
+import com.mckimquyen.binaryeye.view.widget.toast
 
 interface IAction {
     val iconResId: Int

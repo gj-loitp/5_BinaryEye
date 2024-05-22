@@ -46,8 +46,8 @@ import com.mckimquyen.binaryeye.view.errorFeedback
 import com.mckimquyen.binaryeye.view.initSystemBars
 import com.mckimquyen.binaryeye.view.scanFeedback
 import com.mckimquyen.binaryeye.view.setPaddingFromWindowInsets
-import com.mckimquyen.binaryeye.widget.DetectorView
-import com.mckimquyen.binaryeye.widget.toast
+import com.mckimquyen.binaryeye.view.widget.DetectorView
+import com.mckimquyen.binaryeye.view.widget.toast
 import de.markusfisch.android.cameraview.widget.CameraView
 import de.markusfisch.android.zxingcpp.ZxingCpp
 import de.markusfisch.android.zxingcpp.ZxingCpp.Binarizer

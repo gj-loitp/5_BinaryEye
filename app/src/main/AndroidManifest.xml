@@ -111,7 +111,7 @@
             android:exported="true" />
 
         <service
-            android:name=".service.ScanTileService"
+            android:name=".sv.ScanTileService"
             android:exported="true"
             android:icon="@drawable/ic_action_scan"
             android:label="@string/scan_code"

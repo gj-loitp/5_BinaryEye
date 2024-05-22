@@ -38,10 +38,10 @@ fun View.doOnApplyWindowInsets(f: (View, Rect) -> Unit) {
 }
 
 private fun insetsWithToolbar(insets: WindowInsetsCompat? = null) = Rect(
-	/* left = */ insets?.systemWindowInsetLeft ?: 0,
-	/* top = */ (insets?.systemWindowInsetTop ?: 0) + toolbarHeight,
-	/* right = */ insets?.systemWindowInsetRight ?: 0,
-	/* bottom = */ insets?.systemWindowInsetBottom ?: 0
+    /* left = */ insets?.systemWindowInsetLeft ?: 0,
+    /* top = */ (insets?.systemWindowInsetTop ?: 0) + toolbarHeight,
+    /* right = */ insets?.systemWindowInsetRight ?: 0,
+    /* bottom = */ insets?.systemWindowInsetBottom ?: 0
 )
 
 @RequiresApi(Build.VERSION_CODES.KITKAT)

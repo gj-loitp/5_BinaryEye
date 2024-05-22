@@ -25,7 +25,7 @@ import com.mckimquyen.binaryeye.media.beepConfirm
 import com.mckimquyen.binaryeye.preference.UrlPreference
 import com.mckimquyen.binaryeye.view.setPaddingFromWindowInsets
 import com.mckimquyen.binaryeye.view.systemBarRecyclerViewScrollListener
-import com.mckimquyen.binaryeye.widget.toast
+import com.mckimquyen.binaryeye.view.widget.toast
 
 class FragmentPreferences : PreferenceFragmentCompat() {
     private val changeListener = object : OnSharedPreferenceChangeListener {

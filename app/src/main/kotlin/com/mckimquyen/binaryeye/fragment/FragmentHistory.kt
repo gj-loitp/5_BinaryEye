@@ -39,7 +39,7 @@ import com.mckimquyen.binaryeye.view.setPaddingFromWindowInsets
 import com.mckimquyen.binaryeye.view.systemBarListViewScrollListener
 import com.mckimquyen.binaryeye.view.unlockStatusBarColor
 import com.mckimquyen.binaryeye.view.useVisibility
-import com.mckimquyen.binaryeye.widget.toast
+import com.mckimquyen.binaryeye.view.widget.toast
 import kotlinx.coroutines.*
 
 class FragmentHistory : Fragment() {

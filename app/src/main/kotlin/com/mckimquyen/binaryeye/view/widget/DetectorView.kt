@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.widget
+package com.mckimquyen.binaryeye.view.widget
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -72,11 +72,13 @@ class DetectorView : View {
         isSaveEnabled = true
     }
 
-    constructor(context: Context, attrs: AttributeSet) :
-            super(context, attrs)
+    constructor(context: Context, attrs: AttributeSet) : super(context, attrs)
 
-    constructor(context: Context, attrs: AttributeSet, defStyleAttr: Int) :
-            super(context, attrs, defStyleAttr)
+    constructor(
+        context: Context,
+        attrs: AttributeSet,
+        defStyleAttr: Int,
+    ) : super(context, attrs, defStyleAttr)
 
     fun saveCropHandlePos() {
         val pos = getCropHandlePos()
@@ -93,13 +95,17 @@ class DetectorView : View {
 
     fun restoreCropHandlePos() {
         setCropHandlePos(
-            prefs.cropHandleX,
-            prefs.cropHandleY,
-            prefs.cropHandleOrientation
+            x = prefs.cropHandleX,
+            y = prefs.cropHandleY,
+            orientation = prefs.cropHandleOrientation
         )
     }
 
-    private fun setCropHandlePos(x: Int, y: Int, orientation: Int) {
+    private fun setCropHandlePos(
+        x: Int,
+        y: Int,
+        orientation: Int,
+    ) {
         // Always set handlePos even if it's invalid because
         // handlePos.x may be -2 which is a signal to set the
         // default ROI.
@@ -115,7 +121,7 @@ class DetectorView : View {
         coordinatesLast = numberOfCoordinates
         invalidate()
         removeCallbacks(invalidateRunnable)
-        postDelayed(invalidateRunnable, 500)
+        postDelayed(/* action = */ invalidateRunnable, /* delayMillis = */ 500)
     }
 
     override fun onSaveInstanceState(): Parcelable? {
@@ -236,10 +242,21 @@ class DetectorView : View {
     private fun reset() {
         handlePos.set(handleHome)
         handleActive = false
-        roi.set(0, 0, 0, 0)
+        roi.set(
+            /* left = */ 0,
+            /* top = */ 0,
+            /* right = */ 0,
+            /* bottom = */ 0
+        )
     }
 
-    override fun onLayout(changed: Boolean, left: Int, top: Int, right: Int, bottom: Int) {
+    override fun onLayout(
+        changed: Boolean,
+        left: Int,
+        top: Int,
+        right: Int,
+        bottom: Int,
+    ) {
         super.onLayout(changed, left, top, right, bottom)
         val width = right - left
         val height = bottom - top
@@ -295,12 +312,12 @@ class DetectorView : View {
             save()
             clipOutPathCompat(
                 calculateRoundedRectPath(
-                    roi.left.toFloat(),
-                    roi.top.toFloat(),
-                    roi.right.toFloat(),
-                    roi.bottom.toFloat(),
-                    radius,
-                    radius
+                    left = roi.left.toFloat(),
+                    top = roi.top.toFloat(),
+                    right = roi.right.toFloat(),
+                    bottom = roi.bottom.toFloat(),
+                    rx = radius,
+                    ry = radius
                 )
             )
             drawColor(shadeColor)
@@ -312,10 +329,10 @@ class DetectorView : View {
 
     private fun Canvas.drawHandle() {
         drawBitmap(
-            handleBitmap,
-            (handlePos.x - handleXRadius).toFloat(),
-            (handlePos.y - handleYRadius).toFloat(),
-            null
+            /* bitmap = */ handleBitmap,
+            /* left = */ (handlePos.x - handleXRadius).toFloat(),
+            /* top = */ (handlePos.y - handleYRadius).toFloat(),
+            /* paint = */ null
         )
     }
 
@@ -325,14 +342,14 @@ class DetectorView : View {
         val dy = abs(handlePos.y - center.y)
         minDist = min(dx, dy)
         shadeColor = (min(
-            1f,
-            minDist.toFloat() / distToFull.toFloat()
+            a = 1f,
+            b = minDist.toFloat() / distToFull.toFloat()
         ) * 128f).toInt() shl 24
         roi.set(
-            center.x - dx,
-            center.y - dy,
-            center.x + dx,
-            center.y + dy
+            /* left = */ center.x - dx,
+            /* top = */ center.y - dy,
+            /* right = */ center.x + dx,
+            /* bottom = */ center.y + dy
         )
     }
 
@@ -367,13 +384,13 @@ class DetectorView : View {
             out.writeInt(savedOrientation)
         }
 
-        companion object {
-            @JvmField
-            val CREATOR = object : Parcelable.Creator<SavedState> {
-                override fun createFromParcel(source: Parcel) = SavedState(source)
-                override fun newArray(size: Int): Array<SavedState?> = arrayOfNulls(size)
-            }
-        }
+//        companion object {
+//            @JvmField
+//            val CREATOR = object : Parcelable.Creator<SavedState> {
+//                override fun createFromParcel(source: Parcel) = SavedState(source)
+//                override fun newArray(size: Int): Array<SavedState?> = arrayOfNulls(size)
+//            }
+//        }
     }
 }
 
@@ -403,7 +420,7 @@ private fun calculateRoundedRectPath(
     right: Float,
     bottom: Float,
     rx: Float,
-    ry: Float
+    ry: Float,
 ): Path {
     val width = right - left
     val height = bottom - top

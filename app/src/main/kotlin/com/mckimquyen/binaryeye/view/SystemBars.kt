@@ -18,7 +18,7 @@ val systemBarListViewScrollListener = object : AbsListView.OnScrollListener {
         view: AbsListView,
         firstVisibleItem: Int,
         visibleItemCount: Int,
-        totalItemCount: Int
+        totalItemCount: Int,
     ) {
         // Give Android some time to settle down before running this,
         // not putting it on the queue makes it only work sometimes.
@@ -44,7 +44,11 @@ val systemBarRecyclerViewScrollListener = object : RecyclerView.OnScrollListener
         val scrolled = layoutManager.findFirstCompletelyVisibleItemPosition() != 0
         val scrollable = scrolled || layoutManager.findLastVisibleItemPosition() <
                 (recyclerView.adapter?.itemCount ?: (0 - 1))
-        colorSystemAndToolBars(recyclerView.context, scrolled, scrollable)
+        colorSystemAndToolBars(
+            context = recyclerView.context,
+            scrolled = scrolled,
+            scrollable = scrollable
+        )
     }
 
     override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
@@ -90,12 +94,12 @@ private val actionBarBackground = ColorDrawable()
 fun colorSystemAndToolBars(
     context: Context,
     scrolled: Boolean = false,
-    scrollable: Boolean = false
+    scrollable: Boolean = false,
 ) {
     if (translucentPrimaryColor == 0) {
         translucentPrimaryColor = ContextCompat.getColor(
-			/* context = */ context,
-			/* id = */ R.color.primary_translucent
+            /* context = */ context,
+            /* id = */ R.color.primary_translucent
         )
     }
     val topColor = if (scrolled) translucentPrimaryColor else 0
@@ -124,12 +128,12 @@ fun colorSystemAndToolBars(
 }
 
 private fun getAppCompatActivity(context: Context): AppCompatActivity? {
-    var ctx = context
-    while (ctx is ContextWrapper) {
-        if (ctx is AppCompatActivity) {
-            return ctx
+    var c = context
+    while (c is ContextWrapper) {
+        if (c is AppCompatActivity) {
+            return c
         }
-        ctx = ctx.baseContext ?: break
+        c = c.baseContext ?: break
     }
     return null
 }

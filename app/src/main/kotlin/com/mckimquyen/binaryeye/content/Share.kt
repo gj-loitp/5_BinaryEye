@@ -8,7 +8,7 @@ import android.os.Build
 import androidx.core.content.FileProvider
 import com.mckimquyen.binaryeye.BuildConfig
 import com.mckimquyen.binaryeye.R
-import com.mckimquyen.binaryeye.widget.toast
+import com.mckimquyen.binaryeye.view.widget.toast
 import java.io.File
 
 fun Context.execShareIntent(intent: Intent): Boolean = if (

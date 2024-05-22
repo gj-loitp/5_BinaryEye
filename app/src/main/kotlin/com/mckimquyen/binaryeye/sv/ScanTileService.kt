@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.service
+package com.mckimquyen.binaryeye.sv
 
 import android.content.Intent
 import android.os.Build

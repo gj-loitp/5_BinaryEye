@@ -27,9 +27,9 @@ import com.mckimquyen.binaryeye.view.initSystemBars
 import com.mckimquyen.binaryeye.view.recordToolbarHeight
 import com.mckimquyen.binaryeye.view.scanFeedback
 import com.mckimquyen.binaryeye.view.setPaddingFromWindowInsets
-import com.mckimquyen.binaryeye.widget.CropImageView
-import com.mckimquyen.binaryeye.widget.DetectorView
-import com.mckimquyen.binaryeye.widget.toast
+import com.mckimquyen.binaryeye.view.widget.CropImageView
+import com.mckimquyen.binaryeye.view.widget.DetectorView
+import com.mckimquyen.binaryeye.view.widget.toast
 import de.markusfisch.android.zxingcpp.ZxingCpp
 import de.markusfisch.android.zxingcpp.ZxingCpp.Binarizer
 import de.markusfisch.android.zxingcpp.ZxingCpp.DecodeHints

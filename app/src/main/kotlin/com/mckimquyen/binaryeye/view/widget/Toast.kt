@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.widget
+package com.mckimquyen.binaryeye.view.widget
 
 import android.content.Context
 import android.widget.Toast

@@ -13,7 +13,7 @@ import android.widget.ListView
 import com.mckimquyen.binaryeye.R
 import com.mckimquyen.binaryeye.view.setPaddingFromWindowInsets
 import com.mckimquyen.binaryeye.view.systemBarListViewScrollListener
-import com.mckimquyen.binaryeye.widget.toast
+import com.mckimquyen.binaryeye.view.widget.toast
 
 class FragmentNetworkSuggestions : Fragment() {
     @RequiresApi(Build.VERSION_CODES.R)

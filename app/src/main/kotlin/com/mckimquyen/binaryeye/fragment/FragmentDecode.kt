@@ -31,7 +31,7 @@ import com.mckimquyen.binaryeye.io.askForFileName
 import com.mckimquyen.binaryeye.io.toSaveResult
 import com.mckimquyen.binaryeye.io.writeExternalFile
 import com.mckimquyen.binaryeye.view.setPaddingFromWindowInsets
-import com.mckimquyen.binaryeye.widget.toast
+import com.mckimquyen.binaryeye.view.widget.toast
 import kotlinx.coroutines.*
 import kotlin.math.roundToInt
 

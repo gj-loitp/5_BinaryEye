@@ -21,8 +21,8 @@ import com.mckimquyen.binaryeye.io.toSaveResult
 import com.mckimquyen.binaryeye.io.writeExternalFile
 import com.mckimquyen.binaryeye.view.doOnApplyWindowInsets
 import com.mckimquyen.binaryeye.view.setPaddingFromWindowInsets
-import com.mckimquyen.binaryeye.widget.ConfinedScalingImageView
-import com.mckimquyen.binaryeye.widget.toast
+import com.mckimquyen.binaryeye.view.widget.ConfinedScalingImageView
+import com.mckimquyen.binaryeye.view.widget.toast
 import de.markusfisch.android.zxingcpp.ZxingCpp
 import de.markusfisch.android.zxingcpp.ZxingCpp.Format
 import kotlinx.coroutines.*

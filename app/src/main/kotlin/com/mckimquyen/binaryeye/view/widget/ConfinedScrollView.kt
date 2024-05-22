@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.widget
+package com.mckimquyen.binaryeye.view.widget
 
 import android.content.Context
 import android.util.AttributeSet
@@ -8,18 +8,20 @@ import com.mckimquyen.binaryeye.view.colorSystemAndToolBars
 class ConfinedScrollView : ScrollView {
     private var scrollable = false
 
-    constructor(context: Context, attrs: AttributeSet, defStyle: Int) :
-            super(context, attrs, defStyle)
+    constructor(
+        context: Context,
+        attrs: AttributeSet,
+        defStyle: Int,
+    ) : super(context, attrs, defStyle)
 
-    constructor(context: Context, attrs: AttributeSet) :
-            this(context, attrs, 0)
+    constructor(context: Context, attrs: AttributeSet) : this(context, attrs, 0)
 
     override fun onLayout(
         changed: Boolean,
         left: Int,
         top: Int,
         right: Int,
-        bottom: Int
+        bottom: Int,
     ) {
         super.onLayout(changed, left, top, right, bottom)
         if (changed) {
@@ -42,9 +44,13 @@ class ConfinedScrollView : ScrollView {
         x: Int,
         y: Int,
         oldx: Int,
-        oldy: Int
+        oldy: Int,
     ) {
         super.onScrollChanged(x, y, oldx, oldy)
-        colorSystemAndToolBars(context, y > 0, scrollable)
+        colorSystemAndToolBars(
+            context = context,
+            scrolled = y > 0,
+            scrollable = scrollable
+        )
     }
 }
