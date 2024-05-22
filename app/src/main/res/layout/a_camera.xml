@@ -15,7 +15,7 @@
         android:layout_height="match_parent"
         android:fitsSystemWindows="true">
 
-        <include layout="@layout/v_toolbar" />
+        <include layout="@layout/roy_v_toolbar" />
 
         <SeekBar
             android:id="@+id/zoom"

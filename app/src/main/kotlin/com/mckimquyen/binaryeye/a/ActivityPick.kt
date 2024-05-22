@@ -197,7 +197,7 @@ class ActivityPick : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.a_pick, menu)
+        menuInflater.inflate(R.menu.menu_a_pick, menu)
         freeRotationItem = menu.findItem(R.id.toggleFree).apply {
             updateFreeRotationIcon()
         }

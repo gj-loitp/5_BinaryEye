@@ -8,7 +8,7 @@
             android:icon="@drawable/ic_action_search"
             android:title="@string/search_scan"
             material:actionViewClass="androidx.appcompat.widget.SearchView"
-            material:showAsAction="collapseActionView|always" />
+            material:showAsAction="always" />
         <item
             android:id="@+id/exportHistory"
             android:icon="@drawable/ic_action_export"

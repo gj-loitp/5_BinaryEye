@@ -56,7 +56,7 @@ class FragmentHistory : Fragment() {
             menu: Menu,
         ): Boolean {
             mode.menuInflater.inflate(
-                R.menu.f_history_edit,
+                R.menu.menu_f_history_edit,
                 menu
             )
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -199,7 +199,7 @@ class FragmentHistory : Fragment() {
         menu: Menu,
         inflater: MenuInflater,
     ) {
-        inflater.inflate(R.menu.f_history, menu)
+        inflater.inflate(R.menu.menu_f_history, menu)
         initSearchView(menu.findItem(R.id.search))
         menu.setGroupVisible(R.id.scansAvailable, scansAdapter?.count != 0)
         clearListMenuItem = menu.findItem(R.id.clear)

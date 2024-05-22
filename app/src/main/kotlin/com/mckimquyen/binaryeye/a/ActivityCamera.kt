@@ -241,7 +241,7 @@ class CameraActivity : AppCompatActivity() {
 	}
 
 	override fun onCreateOptionsMenu(menu: Menu): Boolean {
-		menuInflater.inflate(R.menu.a_camera, menu)
+		menuInflater.inflate(R.menu.menu_a_camera, menu)
 		menu.findItem(R.id.bulkMode).isChecked = bulkMode
 		return true
 	}

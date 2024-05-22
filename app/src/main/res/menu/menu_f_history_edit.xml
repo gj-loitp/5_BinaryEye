@@ -4,7 +4,7 @@
         android:id="@+id/copyScan"
         android:icon="@drawable/ic_action_copy"
         android:title="@string/copy_scan"
-        material:showAsAction="ifRoom" />
+        material:showAsAction="always" />
     <item
         android:id="@+id/editScan"
         android:icon="@drawable/ic_action_edit"

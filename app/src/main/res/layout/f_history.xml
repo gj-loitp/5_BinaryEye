@@ -33,5 +33,5 @@
             android:visibility="gone" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-    <include layout="@layout/v_progress_view" />
+    <include layout="@layout/roy_v_progress_view" />
 </FrameLayout>
