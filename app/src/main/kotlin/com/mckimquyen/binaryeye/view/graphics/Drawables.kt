@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.graphics
+package com.mckimquyen.binaryeye.view.graphics
 
 import android.content.res.Resources
 import android.graphics.Bitmap
@@ -8,11 +8,11 @@ import android.graphics.drawable.Drawable
 import android.os.Build
 
 fun Resources.getBitmapFromDrawable(
-    resId: Int
+    resId: Int,
 ): Bitmap = getBitmapFromDrawable(getDrawableCompat(resId))
 
 fun Resources.getDrawableCompat(
-    resId: Int
+    resId: Int,
 ): Drawable = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
     getDrawable(resId, null)
 } else {

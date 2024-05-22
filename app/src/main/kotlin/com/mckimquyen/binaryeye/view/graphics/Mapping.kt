@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.graphics
+package com.mckimquyen.binaryeye.view.graphics
 
 import android.graphics.Matrix
 import android.graphics.Rect
@@ -9,33 +9,46 @@ import kotlin.math.roundToInt
 data class FrameMetrics(
     var width: Int = 0,
     var height: Int = 0,
-    var orientation: Int = 0
+    var orientation: Int = 0,
 )
 
 fun Rect.setFrameRoi(
     frameMetrics: FrameMetrics,
     viewRect: Rect,
-    viewRoi: Rect
+    viewRoi: Rect,
 ) {
     Matrix().apply {
         // Map ROI from view coordinates to frame coordinates.
-        setTranslate(-viewRect.left.toFloat(), -viewRect.top.toFloat())
-        postScale(1f / viewRect.width(), 1f / viewRect.height())
-        postRotate(-frameMetrics.orientation.toFloat(), .5f, .5f)
-        postScale(frameMetrics.width.toFloat(), frameMetrics.height.toFloat())
+        setTranslate(
+            /* dx = */ -viewRect.left.toFloat(),
+            /* dy = */ -viewRect.top.toFloat()
+        )
+        postScale(
+            /* sx = */ 1f / viewRect.width(),
+            /* sy = */ 1f / viewRect.height()
+        )
+        postRotate(
+            /* degrees = */ -frameMetrics.orientation.toFloat(),
+            /* px = */ .5f,
+            /* py = */ .5f
+        )
+        postScale(
+            /* sx = */ frameMetrics.width.toFloat(),
+            /* sy = */ frameMetrics.height.toFloat()
+        )
         val frameRoiF = RectF()
         val viewRoiF = RectF(
-			/* left = */ viewRoi.left.toFloat(),
-			/* top = */ viewRoi.top.toFloat(),
-			/* right = */ viewRoi.right.toFloat(),
-			/* bottom = */ viewRoi.bottom.toFloat()
+            /* left = */ viewRoi.left.toFloat(),
+            /* top = */ viewRoi.top.toFloat(),
+            /* right = */ viewRoi.right.toFloat(),
+            /* bottom = */ viewRoi.bottom.toFloat()
         )
         mapRect(frameRoiF, viewRoiF)
         set(
-			/* left = */ frameRoiF.left.roundToInt(),
-			/* top = */ frameRoiF.top.roundToInt(),
-			/* right = */ frameRoiF.right.roundToInt(),
-			/* bottom = */ frameRoiF.bottom.roundToInt()
+            /* left = */ frameRoiF.left.roundToInt(),
+            /* top = */ frameRoiF.top.roundToInt(),
+            /* right = */ frameRoiF.right.roundToInt(),
+            /* bottom = */ frameRoiF.bottom.roundToInt()
         )
     }
 }
@@ -43,7 +56,7 @@ fun Rect.setFrameRoi(
 fun Matrix.setFrameToView(
     frameMetrics: FrameMetrics,
     viewRect: Rect,
-    viewRoi: Rect? = null
+    viewRoi: Rect? = null,
 ) {
     // Configure this matrix to map points in frame coordinates to
     // view coordinates.
@@ -61,8 +74,8 @@ fun Matrix.setFrameToView(
         }
     }
     setScale(
-		/* sx = */ viewRect.width().toFloat() / uprightWidth,
-		/* sy = */ viewRect.height().toFloat() / uprightHeight
+        /* sx = */ viewRect.width().toFloat() / uprightWidth,
+        /* sy = */ viewRect.height().toFloat() / uprightHeight
     )
     viewRoi?.let {
         postTranslate(/* dx = */ viewRoi.left.toFloat(), /* dy = */ viewRoi.top.toFloat())
@@ -71,7 +84,7 @@ fun Matrix.setFrameToView(
 
 fun Matrix.mapPosition(
     position: Position,
-    coords: FloatArray
+    coords: FloatArray,
 ): Int {
     var i = 0
     setOf(

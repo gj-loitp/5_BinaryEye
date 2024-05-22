@@ -12,8 +12,8 @@ import android.view.MotionEvent
 import android.view.View
 import com.mckimquyen.binaryeye.R
 import com.mckimquyen.binaryeye.prefs
-import com.mckimquyen.binaryeye.graphics.getBitmapFromDrawable
-import com.mckimquyen.binaryeye.graphics.getDashedBorderPaint
+import com.mckimquyen.binaryeye.view.graphics.getBitmapFromDrawable
+import com.mckimquyen.binaryeye.view.graphics.getDashedBorderPaint
 import kotlin.math.abs
 import kotlin.math.max
 import kotlin.math.min

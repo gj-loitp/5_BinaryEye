@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.graphics
+package com.mckimquyen.binaryeye.view.graphics
 
 import android.content.Context
 import android.graphics.DashPathEffect

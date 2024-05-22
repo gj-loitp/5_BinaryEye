@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.media
+package com.mckimquyen.binaryeye.view.media
 
 import android.media.AudioManager
 import android.media.ToneGenerator

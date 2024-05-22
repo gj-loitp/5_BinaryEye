@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.graphics
+package com.mckimquyen.binaryeye.view.graphics
 
 import android.graphics.Bitmap
 import android.graphics.Canvas
@@ -58,5 +58,5 @@ private fun Bitmap.analyzeTransparency(): Result {
 
 private data class Result(
     val hasTransparentPixels: Boolean,
-    val backgroundColor: Int
+    val backgroundColor: Int,
 )

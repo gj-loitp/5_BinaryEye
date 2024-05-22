@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.io
+package com.mckimquyen.binaryeye.view.io
 
 import android.app.Activity
 import android.content.ContentValues
@@ -15,7 +15,10 @@ import java.io.FileOutputStream
 import java.io.IOException
 import java.io.OutputStream
 
-fun addSuffixIfNotGiven(name: String, suffix: String): String {
+fun addSuffixIfNotGiven(
+    name: String,
+    suffix: String,
+): String {
     val trimmed = name.trim()
     return if (suffix.isNotEmpty() && !trimmed.endsWith(suffix)) {
         "$trimmed$suffix"
@@ -49,9 +52,12 @@ fun Boolean.toSaveResult() = if (this) {
 fun Context.writeExternalFile(
     fileName: String,
     mimeType: String,
-    write: (outputStream: OutputStream) -> Unit
+    write: (outputStream: OutputStream) -> Unit,
 ): Boolean = try {
-    openExternalOutputStream(fileName, mimeType).use { write(it) }
+    openExternalOutputStream(
+        fileName = fileName,
+        mimeType = mimeType
+    ).use { write(it) }
     true
 } catch (e: IOException) {
     false
@@ -59,7 +65,7 @@ fun Context.writeExternalFile(
 
 private fun Context.openExternalOutputStream(
     fileName: String,
-    mimeType: String
+    mimeType: String,
 ): OutputStream = if (Build.VERSION.SDK_INT < Build.VERSION_CODES.Q) {
     val file = File(
         Environment.getExternalStoragePublicDirectory(

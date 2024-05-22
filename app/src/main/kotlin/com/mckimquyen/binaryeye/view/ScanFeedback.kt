@@ -3,8 +3,8 @@ package com.mckimquyen.binaryeye.view
 import android.content.Context
 import android.media.AudioManager
 import com.mckimquyen.binaryeye.prefs
-import com.mckimquyen.binaryeye.media.beepConfirm
-import com.mckimquyen.binaryeye.media.beepError
+import com.mckimquyen.binaryeye.view.media.beepConfirm
+import com.mckimquyen.binaryeye.view.media.beepError
 import com.mckimquyen.binaryeye.view.os.error
 import com.mckimquyen.binaryeye.view.os.getVibrator
 import com.mckimquyen.binaryeye.view.os.vibrate

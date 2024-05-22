@@ -2,7 +2,7 @@ package com.mckimquyen.binaryeye.db
 
 import android.app.Activity
 import android.os.Environment
-import com.mckimquyen.binaryeye.io.writeExternalFile
+import com.mckimquyen.binaryeye.view.io.writeExternalFile
 import java.io.File
 import java.io.FileInputStream
 

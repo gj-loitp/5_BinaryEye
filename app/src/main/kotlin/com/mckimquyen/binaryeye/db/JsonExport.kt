@@ -2,7 +2,7 @@ package com.mckimquyen.binaryeye.db
 
 import android.content.Context
 import android.database.Cursor
-import com.mckimquyen.binaryeye.io.writeExternalFile
+import com.mckimquyen.binaryeye.view.io.writeExternalFile
 import org.json.JSONArray
 import org.json.JSONException
 import org.json.JSONObject

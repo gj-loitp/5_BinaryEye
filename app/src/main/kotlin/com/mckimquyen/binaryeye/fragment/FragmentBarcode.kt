@@ -14,11 +14,11 @@ import com.mckimquyen.binaryeye.app.hasWritePermission
 import com.mckimquyen.binaryeye.content.copyToClipboard
 import com.mckimquyen.binaryeye.content.shareFile
 import com.mckimquyen.binaryeye.content.shareText
-import com.mckimquyen.binaryeye.graphics.COLOR_BLACK
-import com.mckimquyen.binaryeye.graphics.COLOR_WHITE
-import com.mckimquyen.binaryeye.io.addSuffixIfNotGiven
-import com.mckimquyen.binaryeye.io.toSaveResult
-import com.mckimquyen.binaryeye.io.writeExternalFile
+import com.mckimquyen.binaryeye.view.graphics.COLOR_BLACK
+import com.mckimquyen.binaryeye.view.graphics.COLOR_WHITE
+import com.mckimquyen.binaryeye.view.io.addSuffixIfNotGiven
+import com.mckimquyen.binaryeye.view.io.toSaveResult
+import com.mckimquyen.binaryeye.view.io.writeExternalFile
 import com.mckimquyen.binaryeye.view.doOnApplyWindowInsets
 import com.mckimquyen.binaryeye.view.setPaddingFromWindowInsets
 import com.mckimquyen.binaryeye.view.widget.ConfinedScalingImageView

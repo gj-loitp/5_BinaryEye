@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.graphics
+package com.mckimquyen.binaryeye.view.graphics
 
 import android.content.ContentResolver
 import android.graphics.Bitmap
@@ -17,13 +17,17 @@ fun ContentResolver.loadImageUri(uri: Uri): Bitmap? = try {
         options.inJustDecodeBounds = true
         BitmapFactory.decodeStream(it, null, options)
         options.inSampleSize = calculateInSampleSize(
-			width = options.outWidth,
-			height = options.outHeight
+            width = options.outWidth,
+            height = options.outHeight
         )
         options.inJustDecodeBounds = false
     }
     openInputStream(uri)?.use {
-        BitmapFactory.decodeStream(it, null, options)
+        BitmapFactory.decodeStream(
+            /* is = */ it,
+            /* outPadding = */ null,
+            /* opts = */ options
+        )
     }
 } catch (e: IOException) {
     null
@@ -33,7 +37,7 @@ private fun calculateInSampleSize(
     width: Int,
     height: Int,
     reqWidth: Int = 1024,
-    reqHeight: Int = 1024
+    reqHeight: Int = 1024,
 ): Int {
     var inSampleSize = 1
     if (height > reqHeight || width > reqWidth) {
@@ -53,7 +57,7 @@ fun Bitmap.crop(
     rect: RectF,
     rotation: Float,
     pivotX: Float,
-    pivotY: Float
+    pivotY: Float,
 ) = try {
     val erected = erect(rotation, pivotX, pivotY)
     val w = erected.width
@@ -61,11 +65,11 @@ fun Bitmap.crop(
     val x = max(0, (rect.left * w).roundToInt())
     val y = max(0, (rect.top * h).roundToInt())
     Bitmap.createBitmap(
-		/* source = */ erected,
-		/* x = */ x,
-		/* y = */ y,
-		/* width = */ min(w - x, (rect.right * w).roundToInt() - x),
-		/* height = */ min(h - y, (rect.bottom * h).roundToInt() - y)
+        /* source = */ erected,
+        /* x = */ x,
+        /* y = */ y,
+        /* width = */ min(w - x, (rect.right * w).roundToInt() - x),
+        /* height = */ min(h - y, (rect.bottom * h).roundToInt() - y)
     )
 } catch (e: OutOfMemoryError) {
     null
@@ -76,20 +80,20 @@ fun Bitmap.crop(
 private fun Bitmap.erect(
     rotation: Float,
     pivotX: Float,
-    pivotY: Float
+    pivotY: Float,
 ): Bitmap = if (
     rotation % 360f != 0f
 ) {
     Bitmap.createBitmap(
-		/* source = */ this,
-		/* x = */ 0,
-		/* y = */ 0,
-		/* width = */ width,
-		/* height = */ height,
-		/* m = */ Matrix().apply {
+        /* source = */ this,
+        /* x = */ 0,
+        /* y = */ 0,
+        /* width = */ width,
+        /* height = */ height,
+        /* m = */ Matrix().apply {
             setRotate(rotation, pivotX, pivotY)
         },
-		/* filter = */ true
+        /* filter = */ true
     )
 } else {
     this

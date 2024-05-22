@@ -21,7 +21,7 @@ import com.mckimquyen.binaryeye.app.addFragment
 import com.mckimquyen.binaryeye.app.hasBluetoothPermission
 import com.mckimquyen.binaryeye.prefs
 import com.mckimquyen.binaryeye.bluetooth.setBluetoothHosts
-import com.mckimquyen.binaryeye.media.beepConfirm
+import com.mckimquyen.binaryeye.view.media.beepConfirm
 import com.mckimquyen.binaryeye.pref.UrlPref
 import com.mckimquyen.binaryeye.view.setPaddingFromWindowInsets
 import com.mckimquyen.binaryeye.view.systemBarRecyclerViewScrollListener

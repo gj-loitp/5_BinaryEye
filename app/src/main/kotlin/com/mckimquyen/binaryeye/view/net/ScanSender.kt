@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.net
+package com.mckimquyen.binaryeye.view.net
 
 import com.mckimquyen.binaryeye.db.Scan
 import kotlinx.coroutines.CoroutineScope
@@ -17,12 +17,15 @@ import java.net.URL
 fun Scan.sendAsync(
     url: String,
     type: String,
-    callback: (Int?, String?) -> Unit
+    callback: (Int?, String?) -> Unit,
 ) {
     CoroutineScope(Dispatchers.IO).launch(Dispatchers.IO) {
         val response = send(url, type)
         withContext(Dispatchers.Main) {
-            callback(response.code, response.body)
+            callback(
+                response.code,
+                response.body
+            )
         }
     }
 }
@@ -87,7 +90,7 @@ private fun Map<String, String?>.filterNullValues() =
 
 private fun request(
     url: String,
-    writer: ((HttpURLConnection) -> Any)? = null
+    writer: ((HttpURLConnection) -> Any)? = null,
 ): Response {
     var con: HttpURLConnection? = null
     return try {
@@ -125,6 +128,6 @@ private fun InputStream.readHead(): String {
 }
 
 private data class Response(
-	val code: Int?,
-	val body: String?
+    val code: Int?,
+    val body: String?,
 )

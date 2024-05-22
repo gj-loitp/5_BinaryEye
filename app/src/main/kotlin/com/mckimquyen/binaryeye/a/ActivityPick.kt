@@ -17,11 +17,11 @@ import android.view.View
 import com.mckimquyen.binaryeye.R
 import com.mckimquyen.binaryeye.app.applyLocale
 import com.mckimquyen.binaryeye.prefs
-import com.mckimquyen.binaryeye.graphics.crop
-import com.mckimquyen.binaryeye.graphics.fixTransparency
-import com.mckimquyen.binaryeye.graphics.loadImageUri
-import com.mckimquyen.binaryeye.graphics.mapPosition
-import com.mckimquyen.binaryeye.media.releaseToneGenerators
+import com.mckimquyen.binaryeye.view.graphics.crop
+import com.mckimquyen.binaryeye.view.graphics.fixTransparency
+import com.mckimquyen.binaryeye.view.graphics.loadImageUri
+import com.mckimquyen.binaryeye.view.graphics.mapPosition
+import com.mckimquyen.binaryeye.view.media.releaseToneGenerators
 import com.mckimquyen.binaryeye.view.colorSystemAndToolBars
 import com.mckimquyen.binaryeye.view.initSystemBars
 import com.mckimquyen.binaryeye.view.recordToolbarHeight
