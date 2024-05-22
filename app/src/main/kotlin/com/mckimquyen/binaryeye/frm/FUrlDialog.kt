@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.fragment
+package com.mckimquyen.binaryeye.frm
 
 import android.os.Bundle
 import androidx.preference.PreferenceDialogFragmentCompat
@@ -10,7 +10,7 @@ import com.mckimquyen.binaryeye.db.Scan
 import com.mckimquyen.binaryeye.view.net.sendAsync
 import com.mckimquyen.binaryeye.pref.UrlPref
 
-class FragmentUrlDialog : PreferenceDialogFragmentCompat() {
+class FUrlDialog : PreferenceDialogFragmentCompat() {
     private var urlView: TextView? = null
     private var testButton: TextView? = null
 
@@ -49,9 +49,9 @@ class FragmentUrlDialog : PreferenceDialogFragmentCompat() {
         textView ?: return
         textView.text = "…"
         Scan(
-			content = "test",
-			raw = null,
-			format = "none"
+            content = "test",
+            raw = null,
+            format = "none"
         ).sendAsync(url, prefs.sendScanType) { code, body ->
             textView.text = when {
                 code != null -> "$code"
@@ -62,10 +62,10 @@ class FragmentUrlDialog : PreferenceDialogFragmentCompat() {
     }
 
     companion object {
-        fun newInstance(key: String): FragmentUrlDialog {
+        fun newInstance(key: String): FUrlDialog {
             val args = Bundle()
             args.putString(ARG_KEY, key)
-            val fragment = FragmentUrlDialog()
+            val fragment = FUrlDialog()
             fragment.arguments = args
             return fragment
         }

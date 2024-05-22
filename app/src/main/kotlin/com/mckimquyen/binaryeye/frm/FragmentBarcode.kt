@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.fragment
+package com.mckimquyen.binaryeye.frm
 
 import android.annotation.SuppressLint
 import android.app.AlertDialog

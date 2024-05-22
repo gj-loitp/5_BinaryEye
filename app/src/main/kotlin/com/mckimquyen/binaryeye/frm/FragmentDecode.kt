@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.fragment
+package com.mckimquyen.binaryeye.frm
 
 import android.os.Build
 import android.os.Bundle

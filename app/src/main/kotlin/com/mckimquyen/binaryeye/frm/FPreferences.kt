@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.fragment
+package com.mckimquyen.binaryeye.frm
 
 import android.app.Activity
 import android.app.AlertDialog
@@ -27,7 +27,7 @@ import com.mckimquyen.binaryeye.view.setPaddingFromWindowInsets
 import com.mckimquyen.binaryeye.view.systemBarRecyclerViewScrollListener
 import com.mckimquyen.binaryeye.view.widget.toast
 
-class FragmentPreferences : PreferenceFragmentCompat() {
+class FPreferences : PreferenceFragmentCompat() {
     private val changeListener = object : OnSharedPreferenceChangeListener {
         override fun onSharedPreferenceChanged(
             sharedPreferences: SharedPreferences,
@@ -78,7 +78,7 @@ class FragmentPreferences : PreferenceFragmentCompat() {
                 // From R+ we can query past network suggestions and
                 // make them editable.
                 setOnPreferenceClickListener {
-                    fragmentManager?.addFragment(FragmentNetworkSuggestions())
+                    fragmentManager?.addFragment(FNetworkSuggestions())
                     true
                 }
             } else if (Build.VERSION.SDK_INT == Build.VERSION_CODES.Q) {
@@ -141,8 +141,8 @@ class FragmentPreferences : PreferenceFragmentCompat() {
     override fun onDisplayPreferenceDialog(preference: Preference) {
         if (preference is UrlPref) {
             val fm = fragmentManager
-            FragmentUrlDialog.newInstance(preference.key).apply {
-                setTargetFragment(this@FragmentPreferences, 0)
+            FUrlDialog.newInstance(preference.key).apply {
+                setTargetFragment(this@FPreferences, 0)
                 fm?.let { show(it, null) }
             }
         } else if (preference.key == "send_scan_bluetooth_host") {

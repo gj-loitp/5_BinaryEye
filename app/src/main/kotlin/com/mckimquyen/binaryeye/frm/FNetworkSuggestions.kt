@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.fragment
+package com.mckimquyen.binaryeye.frm
 
 import android.content.Context
 import android.net.wifi.WifiManager
@@ -15,20 +15,20 @@ import com.mckimquyen.binaryeye.view.setPaddingFromWindowInsets
 import com.mckimquyen.binaryeye.view.systemBarListViewScrollListener
 import com.mckimquyen.binaryeye.view.widget.toast
 
-class FragmentNetworkSuggestions : Fragment() {
+class FNetworkSuggestions : Fragment() {
     @RequiresApi(Build.VERSION_CODES.R)
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
-        state: Bundle?
+        state: Bundle?,
     ): View? {
         val ac = activity ?: return null
         ac.setTitle(R.string.network_suggestions)
 
         val view = inflater.inflate(
-			/* resource = */ R.layout.roy_f_network_suggestions,
-			/* root = */ container,
-			/* attachToRoot = */ false
+            /* resource = */ R.layout.roy_f_network_suggestions,
+            /* root = */ container,
+            /* attachToRoot = */ false
         )
 
         val wm = ac.applicationContext.getSystemService(
@@ -39,8 +39,8 @@ class FragmentNetworkSuggestions : Fragment() {
             android.R.layout.simple_list_item_checked,
             wm.networkSuggestions.map {
                 Suggestion(
-					label = it.ssid ?: it.toString(),
-					suggestion = it
+                    label = it.ssid ?: it.toString(),
+                    suggestion = it
                 )
             }
         )
@@ -61,9 +61,7 @@ class FragmentNetworkSuggestions : Fragment() {
                 if (checked.valueAt(i)) {
                     val pos = checked.keyAt(i)
                     listView.setItemChecked(pos, false)
-                    val suggestion = listView.getItemAtPosition(
-                        pos
-                    ) as Suggestion
+                    val suggestion = listView.getItemAtPosition(pos) as Suggestion
                     removeList.add(suggestion.suggestion)
                     removeFromAdapter.add(suggestion)
                 }
@@ -86,7 +84,7 @@ class FragmentNetworkSuggestions : Fragment() {
 
 private data class Suggestion(
     val label: String,
-    val suggestion: WifiNetworkSuggestion
+    val suggestion: WifiNetworkSuggestion,
 ) {
     override fun toString() = label
 }

@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.fragment
+package com.mckimquyen.binaryeye.frm
 
 import android.annotation.SuppressLint
 import android.app.AlertDialog
@@ -149,9 +149,7 @@ class FragmentHistory : Fragment() {
             false
         )
 
-        useHistorySwitch = view.findViewById(
-            R.id.useHistory
-        ) as SwitchCompat
+        useHistorySwitch = view.findViewById(R.id.useHistory)
         initHistorySwitch(useHistorySwitch)
 
         listView = view.findViewById(R.id.scans)

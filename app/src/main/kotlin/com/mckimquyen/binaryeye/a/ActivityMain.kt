@@ -14,10 +14,10 @@ import com.mckimquyen.binaryeye.app.applyLocale
 import com.mckimquyen.binaryeye.app.permissionGrantedCallback
 import com.mckimquyen.binaryeye.app.setFragment
 import com.mckimquyen.binaryeye.db.Scan
-import com.mckimquyen.binaryeye.fragment.FragmentDecode
-import com.mckimquyen.binaryeye.fragment.FragmentEncode
-import com.mckimquyen.binaryeye.fragment.FragmentHistory
-import com.mckimquyen.binaryeye.fragment.FragmentPreferences
+import com.mckimquyen.binaryeye.frm.FragmentDecode
+import com.mckimquyen.binaryeye.frm.FragmentEncode
+import com.mckimquyen.binaryeye.frm.FragmentHistory
+import com.mckimquyen.binaryeye.frm.FPreferences
 import com.mckimquyen.binaryeye.prefs
 import com.mckimquyen.binaryeye.view.colorSystemAndToolBars
 import com.mckimquyen.binaryeye.view.initSystemBars
@@ -78,9 +78,9 @@ class ActivityMain : AppCompatActivity() {
         const val DECODED = "decoded"
 
         private fun getFragmentForIntent(intent: Intent?): Fragment {
-            intent ?: return FragmentPreferences()
+            intent ?: return FPreferences()
             return when {
-                intent.hasExtra(PREFERENCES) -> FragmentPreferences()
+                intent.hasExtra(PREFERENCES) -> FPreferences()
                 intent.hasExtra(HISTORY) -> FragmentHistory()
                 intent.hasExtra(ENCODE) -> FragmentEncode.newInstance(
                     intent.getStringExtra(ENCODE)
@@ -90,7 +90,7 @@ class ActivityMain : AppCompatActivity() {
                     intent.getParcelableExtra(DECODED)!!
                 )
 
-                else -> FragmentPreferences()
+                else -> FPreferences()
             }
         }
 
