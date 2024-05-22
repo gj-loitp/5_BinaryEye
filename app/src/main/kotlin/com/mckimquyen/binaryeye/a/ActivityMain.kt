@@ -14,9 +14,9 @@ import com.mckimquyen.binaryeye.app.applyLocale
 import com.mckimquyen.binaryeye.app.permissionGrantedCallback
 import com.mckimquyen.binaryeye.app.setFragment
 import com.mckimquyen.binaryeye.db.Scan
-import com.mckimquyen.binaryeye.frm.FragmentDecode
-import com.mckimquyen.binaryeye.frm.FragmentEncode
-import com.mckimquyen.binaryeye.frm.FragmentHistory
+import com.mckimquyen.binaryeye.frm.FDecode
+import com.mckimquyen.binaryeye.frm.FEncode
+import com.mckimquyen.binaryeye.frm.FHistory
 import com.mckimquyen.binaryeye.frm.FPreferences
 import com.mckimquyen.binaryeye.prefs
 import com.mckimquyen.binaryeye.view.colorSystemAndToolBars
@@ -81,12 +81,12 @@ class ActivityMain : AppCompatActivity() {
             intent ?: return FPreferences()
             return when {
                 intent.hasExtra(PREFERENCES) -> FPreferences()
-                intent.hasExtra(HISTORY) -> FragmentHistory()
-                intent.hasExtra(ENCODE) -> FragmentEncode.newInstance(
+                intent.hasExtra(HISTORY) -> FHistory()
+                intent.hasExtra(ENCODE) -> FEncode.newInstance(
                     intent.getStringExtra(ENCODE)
                 )
 
-                intent.hasExtra(DECODED) -> FragmentDecode.newInstance(
+                intent.hasExtra(DECODED) -> FDecode.newInstance(
                     intent.getParcelableExtra(DECODED)!!
                 )
 

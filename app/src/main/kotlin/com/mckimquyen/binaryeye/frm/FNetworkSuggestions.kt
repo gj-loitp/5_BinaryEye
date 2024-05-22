@@ -49,7 +49,7 @@ class FNetworkSuggestions : Fragment() {
         listView.emptyView = view.findViewById(R.id.noSuggestions)
         listView.adapter = suggestionArrayAdapter
         listView.setOnScrollListener(systemBarListViewScrollListener)
-        (view.findViewById(R.id.insetLayout) as View).setPaddingFromWindowInsets()
+        (view.findViewById<View>(R.id.insetLayout)).setPaddingFromWindowInsets()
         listView.setPaddingFromWindowInsets()
 
         view.findViewById<View>(R.id.remove).setOnClickListener {

@@ -17,7 +17,7 @@ import com.mckimquyen.binaryeye.view.setPaddingFromWindowInsets
 import com.mckimquyen.binaryeye.view.widget.toast
 import de.markusfisch.android.zxingcpp.ZxingCpp.Format
 
-class FragmentEncode : Fragment() {
+class FEncode : Fragment() {
     private lateinit var formatView: Spinner
     private lateinit var ecLabel: TextView
     private lateinit var ecSpinner: Spinner
@@ -43,24 +43,24 @@ class FragmentEncode : Fragment() {
     )
 
     override fun onCreateView(
-		inflater: LayoutInflater,
-		container: ViewGroup?,
-		state: Bundle?,
-	): View? {
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        state: Bundle?,
+    ): View? {
         val ac = activity ?: return null
         ac.setTitle(R.string.compose_barcode)
 
         val view = inflater.inflate(
-			/* resource = */ R.layout.roy_f_encode,
-			/* root = */ container,
-			/* attachToRoot = */ false
+            /* resource = */ R.layout.roy_f_encode,
+            /* root = */ container,
+            /* attachToRoot = */ false
         )
 
         formatView = view.findViewById(R.id.format)
         val formatAdapter = ArrayAdapter(
-			/* context = */ ac,
-			/* resource = */ android.R.layout.simple_spinner_item,
-			/* objects = */ formats.map { prettifyFormatName(it.name) }
+            /* context = */ ac,
+            /* resource = */ android.R.layout.simple_spinner_item,
+            /* objects = */ formats.map { prettifyFormatName(it.name) }
         )
         formatAdapter.setDropDownViewResource(
             android.R.layout.simple_spinner_dropdown_item
@@ -68,11 +68,11 @@ class FragmentEncode : Fragment() {
         formatView.adapter = formatAdapter
         formatView.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
-				parentView: AdapterView<*>?,
-				selectedItemView: View?,
-				position: Int,
-				id: Long,
-			) {
+                parentView: AdapterView<*>?,
+                selectedItemView: View?,
+                position: Int,
+                id: Long,
+            ) {
                 val format = formats[position]
                 val arrayId = when (format) {
                     Format.AZTEC -> R.array.aztecErrorCorrectionLevels
@@ -104,11 +104,11 @@ class FragmentEncode : Fragment() {
         ecSpinner = view.findViewById(R.id.errorCorrectionLevel)
         ecSpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
-				parentView: AdapterView<*>?,
-				selectedItemView: View?,
-				position: Int,
-				id: Long,
-			) {
+                parentView: AdapterView<*>?,
+                selectedItemView: View?,
+                position: Int,
+                id: Long,
+            ) {
                 val format = formats[formatView.selectedItemPosition]
                 prefs.indexOfLastSelectedEcLevel = format.packEcLevel(
                     prefs.indexOfLastSelectedEcLevel,
@@ -150,8 +150,8 @@ class FragmentEncode : Fragment() {
             it.context.encode()
         }
 
-        (view.findViewById(R.id.insetLayout) as View).setPaddingFromWindowInsets()
-        (view.findViewById(R.id.scrollView) as View).setPaddingFromWindowInsets()
+        (view.findViewById<View>(R.id.insetLayout)).setPaddingFromWindowInsets()
+        (view.findViewById<View>(R.id.scrollView)).setPaddingFromWindowInsets()
 
         return view
     }
@@ -179,14 +179,14 @@ class FragmentEncode : Fragment() {
         hideSoftKeyboard(contentView)
         val format = formats[formatView.selectedItemPosition]
         fragmentManager?.addFragment(
-            FragmentBarcode.newInstance(
-				content = content,
-				format = format,
-				size = getSize(sizeBarView.progress),
-				ecLevel = format.getErrorCorrectionLevel(ecSpinner.selectedItemPosition),
-				colors = if (format.canBeInverted()) {
-					colorsSpinner.selectedItemPosition
-				} else 0
+            FBarcode.newInstance(
+                content = content,
+                format = format,
+                size = getSize(sizeBarView.progress),
+                ecLevel = format.getErrorCorrectionLevel(ecSpinner.selectedItemPosition),
+                colors = if (format.canBeInverted()) {
+                    colorsSpinner.selectedItemPosition
+                } else 0
             )
         )
     }
@@ -196,10 +196,10 @@ class FragmentEncode : Fragment() {
         sizeBarView.setOnSeekBarChangeListener(
             object : SeekBar.OnSeekBarChangeListener {
                 override fun onProgressChanged(
-					seekBar: SeekBar,
-					progressValue: Int,
-					fromUser: Boolean,
-				) {
+                    seekBar: SeekBar,
+                    progressValue: Int,
+                    fromUser: Boolean,
+                ) {
                     updateSize(progressValue)
                 }
 
@@ -219,13 +219,17 @@ class FragmentEncode : Fragment() {
         private const val FORMAT = "format"
 
         fun newInstance(
-			content: String? = null,
-			format: String? = null,
-		): Fragment {
+            content: String? = null,
+            format: String? = null,
+        ): Fragment {
             val args = Bundle()
-            content?.let { args.putString(CONTENT, content) }
-            format?.let { args.putString(FORMAT, it) }
-            val fragment = FragmentEncode()
+            content?.let {
+                args.putString(CONTENT, content)
+            }
+            format?.let {
+                args.putString(FORMAT, it)
+            }
+            val fragment = FEncode()
             fragment.arguments = args
             return fragment
         }
@@ -255,10 +259,10 @@ private fun Format.ecLevelShift() = when (this) {
 }
 
 private fun Format.canBeInverted() = when (this) {
-	Format.AZTEC,
-	Format.DATA_MATRIX,
-	Format.QR_CODE,
-	-> true
+    Format.AZTEC,
+    Format.DATA_MATRIX,
+    Format.QR_CODE,
+    -> true
 
     else -> false
 }

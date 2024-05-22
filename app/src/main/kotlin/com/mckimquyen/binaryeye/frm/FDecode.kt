@@ -35,7 +35,7 @@ import com.mckimquyen.binaryeye.view.widget.toast
 import kotlinx.coroutines.*
 import kotlin.math.roundToInt
 
-class FragmentDecode : Fragment() {
+class FDecode : Fragment() {
     private lateinit var contentView: EditText
     private lateinit var formatView: TextView
     private lateinit var dataView: TableLayout
@@ -73,9 +73,9 @@ class FragmentDecode : Fragment() {
         activity?.setTitle(R.string.content)
 
         val view = inflater.inflate(
-            R.layout.roy_f_decode,
-            container,
-            false
+            /* resource = */ R.layout.roy_f_decode,
+            /* root = */ container,
+            /* attachToRoot = */ false
         )
 
         closeAutomatically = prefs.closeAutomatically &&
@@ -118,8 +118,8 @@ class FragmentDecode : Fragment() {
 
         updateViewsAndFab(originalContent, originalBytes)
 
-        (view.findViewById(R.id.insetLayout) as View).setPaddingFromWindowInsets()
-        (view.findViewById(R.id.scrollView) as View).setPaddingFromWindowInsets()
+        (view.findViewById<View>(R.id.insetLayout)).setPaddingFromWindowInsets()
+        (view.findViewById<View>(R.id.scrollView)).setPaddingFromWindowInsets()
 
         return view
     }
@@ -210,11 +210,11 @@ class FragmentDecode : Fragment() {
             v.setImageBitmap(r.encode(text))
             v.setOnClickListener {
                 fragmentManager?.addFragment(
-                    FragmentBarcode.newInstance(
-                        text,
-                        r.format,
-                        r.size,
-                        r.ecLevel
+                    FBarcode.newInstance(
+                        content = text,
+                        format = r.format,
+                        size = r.size,
+                        ecLevel = r.ecLevel
                     )
                 )
             }
@@ -289,7 +289,12 @@ class FragmentDecode : Fragment() {
                     val keyView = TextView(ctx)
                     keyView.setText(item.key)
                     val valueView = TextView(ctx)
-                    valueView.setPadding(spaceBetween, 0, 0, 0)
+                    valueView.setPadding(
+                        /* left = */ spaceBetween,
+                        /* top = */ 0,
+                        /* right = */ 0,
+                        /* bottom = */ 0
+                    )
                     valueView.text = text
                     tr.addView(keyView)
                     tr.addView(valueView)
@@ -338,7 +343,7 @@ class FragmentDecode : Fragment() {
 
             R.id.create -> {
                 fragmentManager?.addFragment(
-                    FragmentEncode.newInstance(content, format)
+                    FEncode.newInstance(content, format)
                 )
                 true
             }
@@ -372,7 +377,10 @@ class FragmentDecode : Fragment() {
         }
     }
 
-    private fun copyToClipboard(text: String, isSensitive: Boolean = false) {
+    private fun copyToClipboard(
+        text: String,
+        isSensitive: Boolean = false,
+    ) {
         activity?.apply {
             this.copyToClipboard(text, isSensitive)
             toast(R.string.copied_to_clipboard)
@@ -440,7 +448,7 @@ class FragmentDecode : Fragment() {
         fun newInstance(scan: Scan): Fragment {
             val args = Bundle()
             args.putParcelable(SCAN, scan)
-            val fragment = FragmentDecode()
+            val fragment = FDecode()
             fragment.arguments = args
             return fragment
         }

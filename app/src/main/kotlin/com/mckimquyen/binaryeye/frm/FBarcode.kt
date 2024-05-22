@@ -33,7 +33,7 @@ import java.io.OutputStream
 import java.util.*
 import kotlin.math.min
 
-class FragmentBarcode : Fragment() {
+class FBarcode : Fragment() {
     private enum class FileType {
         PNG, SVG, TXT
     }
@@ -98,7 +98,7 @@ class FragmentBarcode : Fragment() {
             }
         }
 
-        (view.findViewById(R.id.insetLayout) as View).setPaddingFromWindowInsets()
+        (view.findViewById<View>(R.id.insetLayout)).setPaddingFromWindowInsets()
         imageView.doOnApplyWindowInsets { v, insets ->
             (v as ConfinedScalingImageView).insets.set(insets)
         }
@@ -113,7 +113,7 @@ class FragmentBarcode : Fragment() {
             getString(FORMAT) ?: throw IllegalArgumentException(
                 "format cannot be null"
             )
-        ), getInt(SIZE), getInt(EC_LEVEL), Colors.values()[getInt(COLORS)]
+        ), getInt(SIZE), getInt(EC_LEVEL), Colors.entries[getInt(COLORS)]
     )
 
     override fun onDestroyView() {
@@ -150,7 +150,7 @@ class FragmentBarcode : Fragment() {
         title: Int,
         action: (FileType) -> Unit,
     ) {
-        val fileTypes = FileType.values()
+        val fileTypes = FileType.entries.toTypedArray()
         AlertDialog.Builder(this).setTitle(title)
             .setItems(fileTypes.map { it.name }.toTypedArray()) { _, which ->
                 action(fileTypes[which])
@@ -267,7 +267,7 @@ class FragmentBarcode : Fragment() {
             args.putInt(SIZE, size)
             args.putInt(EC_LEVEL, ecLevel)
             args.putInt(COLORS, colors)
-            val fragment = FragmentBarcode()
+            val fragment = FBarcode()
             fragment.arguments = args
             return fragment
         }
@@ -284,12 +284,12 @@ private data class Barcode(
     private var _bitmap: Bitmap? = null
     fun bitmap(): Bitmap {
         val b = _bitmap ?: ZxingCpp.encodeAsBitmap(
-            content,
-            format,
-            size,
-            size,
-            -1,
-            ecLevel,
+            text = content,
+            format = format,
+            width = size,
+            height = size,
+            margin = -1,
+            ecLevel = ecLevel,
             setColor = colors.foregroundColor(),
             unsetColor = colors.backgroundColor()
         )
@@ -309,7 +309,11 @@ private data class Barcode(
     private var _text: String? = null
     fun text(): String {
         val t = _text ?: ZxingCpp.encodeAsText(
-            content, format, -1, ecLevel, inverted = colors == Colors.BLACK_ON_WHITE
+            text = content,
+            format = format,
+            margin = -1,
+            ecLevel = ecLevel,
+            inverted = colors == Colors.BLACK_ON_WHITE
         )
         _text = t
         return t

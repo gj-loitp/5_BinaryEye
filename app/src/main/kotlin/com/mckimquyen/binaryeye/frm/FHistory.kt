@@ -8,7 +8,6 @@ import android.database.Cursor
 import android.os.Build
 import android.os.Bundle
 import android.os.Parcelable
-import androidx.annotation.RequiresApi
 import androidx.core.app.ActivityCompat
 import androidx.fragment.app.Fragment
 import androidx.core.content.ContextCompat
@@ -42,7 +41,7 @@ import com.mckimquyen.binaryeye.view.useVisibility
 import com.mckimquyen.binaryeye.view.widget.toast
 import kotlinx.coroutines.*
 
-class FragmentHistory : Fragment() {
+class FHistory : Fragment() {
     private lateinit var useHistorySwitch: SwitchCompat
     private lateinit var listView: ListView
     private lateinit var fab: View
@@ -174,7 +173,7 @@ class FragmentHistory : Fragment() {
 
         progressView = view.findViewById(R.id.progressView)
 
-        (view.findViewById(R.id.insetLayout) as View).setPaddingFromWindowInsets()
+        (view.findViewById<View>(R.id.insetLayout)).setPaddingFromWindowInsets()
         listView.setPaddingFromWindowInsets()
 
         update()
@@ -305,7 +304,7 @@ class FragmentHistory : Fragment() {
     private fun showScan(id: Long) = db.getScan(id)?.also { scan ->
         closeActionMode()
         try {
-            fragmentManager?.addFragment(FragmentDecode.newInstance(scan))
+            fragmentManager?.addFragment(FDecode.newInstance(scan))
         } catch (e: IllegalArgumentException) {
             e.printStackTrace()
         }
@@ -425,7 +424,6 @@ class FragmentHistory : Fragment() {
         }
     }
 
-    @RequiresApi(Build.VERSION_CODES.JELLY_BEAN)
     private fun Context.pickListSeparatorAndShare() {
         val separators = resources.getStringArray(
             R.array.listSeparatorsValues
@@ -438,7 +436,6 @@ class FragmentHistory : Fragment() {
             .show()
     }
 
-    @RequiresApi(Build.VERSION_CODES.JELLY_BEAN)
     private fun shareScans(format: String) = scope.launch {
         progressView.useVisibility {
             var text: String? = null
