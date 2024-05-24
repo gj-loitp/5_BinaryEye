@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.a
+package com.mckimquyen.binaryeye.view.act
 
 import android.content.Context
 import android.content.Intent
@@ -63,8 +63,8 @@ class ActivityPick : AppCompatActivity() {
         super.attachBaseContext(base)
     }
 
-    override fun onCreate(state: Bundle?) {
-        super.onCreate(state)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         setContentView(R.layout.roy_a_pick)
 
         // Necessary to get the right translation after setting a custom
@@ -87,7 +87,7 @@ class ActivityPick : AppCompatActivity() {
             return
         }
 
-        cropImageView = findViewById<CropImageView>(R.id.image)
+        cropImageView = findViewById(R.id.image)
         cropImageView.restrictTranslation = false
         cropImageView.freeRotation = prefs.freeRotation
         cropImageView.setImageBitmap(bitmap)
@@ -95,7 +95,7 @@ class ActivityPick : AppCompatActivity() {
             scanWithinBounds(bitmap)
         }
 
-        detectorView = findViewById<DetectorView>(R.id.detectorView)
+        detectorView = findViewById(R.id.detectorView)
         detectorView.onRoiChanged = {
             scanWithinBounds(bitmap)
         }
@@ -142,12 +142,12 @@ class ActivityPick : AppCompatActivity() {
         )
         matrix.apply {
             setScale(
-                croppedInView.width().toFloat() / cropped.width,
-                croppedInView.height().toFloat() / cropped.height
+                /* sx = */ croppedInView.width().toFloat() / cropped.width,
+                /* sy = */ croppedInView.height().toFloat() / cropped.height
             )
             postTranslate(
-                croppedInView.left.toFloat(),
-                croppedInView.top.toFloat()
+                /* dx = */ croppedInView.left.toFloat(),
+                /* dy = */ croppedInView.top.toFloat()
             )
         }
         scope.launch {
@@ -172,21 +172,21 @@ class ActivityPick : AppCompatActivity() {
     // By default, ZXing uses LOCAL_AVERAGE, but this does not work
     // well with inverted barcodes on low-contrast backgrounds.
     private fun Bitmap.decode() = ZxingCpp.readBitmap(
-		bitmap = this,
-		left = 0, top = 0,
-		width = width, height = height,
-		rotation = 0,
-		decodeHints = decodeHints.apply {
-			binarizer = Binarizer.LOCAL_AVERAGE
-		}
+        bitmap = this,
+        left = 0, top = 0,
+        width = width, height = height,
+        rotation = 0,
+        decodeHints = decodeHints.apply {
+            binarizer = Binarizer.LOCAL_AVERAGE
+        }
     ) ?: ZxingCpp.readBitmap(
-		bitmap = this,
-		left = 0, top = 0,
-		width = width, height = height,
-		rotation = 0,
-		decodeHints = decodeHints.apply {
-			binarizer = Binarizer.GLOBAL_HISTOGRAM
-		}
+        bitmap = this,
+        left = 0, top = 0,
+        width = width, height = height,
+        rotation = 0,
+        decodeHints = decodeHints.apply {
+            binarizer = Binarizer.GLOBAL_HISTOGRAM
+        }
     )
 
     override fun onDestroy() {
@@ -233,7 +233,7 @@ class ActivityPick : AppCompatActivity() {
     }
 
     private fun rotateClockwise() {
-        cropImageView.imageRotation = cropImageView.imageRotation + 90 % 360
+        cropImageView.imageRotation += 90 % 360
     }
 
     private fun loadSentImage(intent: Intent): Bitmap? {
@@ -260,15 +260,15 @@ class ActivityPick : AppCompatActivity() {
 }
 
 private fun getNormalizedRoi(
-	imageRect: RectF,
-	roi: Rect,
+    imageRect: RectF,
+    roi: Rect,
 ): RectF {
     val w = imageRect.width()
     val h = imageRect.height()
     return RectF(
-        (roi.left - imageRect.left) / w,
-        (roi.top - imageRect.top) / h,
-        (roi.right - imageRect.left) / w,
-        (roi.bottom - imageRect.top) / h
+        /* left = */ (roi.left - imageRect.left) / w,
+        /* top = */ (roi.top - imageRect.top) / h,
+        /* right = */ (roi.right - imageRect.left) / w,
+        /* bottom = */ (roi.bottom - imageRect.top) / h
     )
 }

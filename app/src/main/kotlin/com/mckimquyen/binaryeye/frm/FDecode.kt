@@ -15,7 +15,7 @@ import com.mckimquyen.binaryeye.view.actions.ActionRegistry
 import com.mckimquyen.binaryeye.view.actions.IAction
 import com.mckimquyen.binaryeye.view.actions.wifi.WifiAction
 import com.mckimquyen.binaryeye.view.actions.wifi.WifiConnector
-import com.mckimquyen.binaryeye.a.ActivityMain
+import com.mckimquyen.binaryeye.view.act.ActivityMain
 import com.mckimquyen.binaryeye.adapter.prettifyFormatName
 import com.mckimquyen.binaryeye.ext.app.addFragment
 import com.mckimquyen.binaryeye.ext.app.hasLocationPermission

@@ -16,7 +16,7 @@ import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.PreferenceGroup
 import com.mckimquyen.binaryeye.R
-import com.mckimquyen.binaryeye.a.ActivitySplash
+import com.mckimquyen.binaryeye.view.act.ActivitySplash
 import com.mckimquyen.binaryeye.ext.app.addFragment
 import com.mckimquyen.binaryeye.ext.app.hasBluetoothPermission
 import com.mckimquyen.binaryeye.prefs

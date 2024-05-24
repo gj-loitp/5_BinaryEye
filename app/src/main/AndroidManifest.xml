@@ -55,7 +55,7 @@
         android:usesCleartextTraffic="true"
         tools:ignore="RtlEnabled,UnusedAttribute">
         <activity
-            android:name=".a.ActivitySplash"
+            android:name=".view.act.ActivitySplash"
             android:exported="true"
             android:theme="@style/SplashTheme">
             <intent-filter>
@@ -67,7 +67,7 @@
                 android:resource="@xml/shortcuts" />
         </activity>
         <activity
-            android:name=".a.CameraActivity"
+            android:name=".view.act.CameraActivity"
             android:exported="true"
             android:label="@string/scan_code">
             <intent-filter android:label="@string/compose_barcode">
@@ -91,7 +91,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".a.ActivityPick"
+            android:name=".view.act.ActivityPick"
             android:exported="true"
             android:label="@string/pick_code_to_scan"
             tools:ignore="AppLinkUrlError">
@@ -107,7 +107,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".a.ActivityMain"
+            android:name=".view.act.ActivityMain"
             android:exported="true" />
 
         <service

@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Build
 import android.service.quicksettings.TileService
 import androidx.annotation.RequiresApi
-import com.mckimquyen.binaryeye.a.CameraActivity
+import com.mckimquyen.binaryeye.view.act.CameraActivity
 
 @RequiresApi(Build.VERSION_CODES.N)
 class ScanTileService : TileService() {

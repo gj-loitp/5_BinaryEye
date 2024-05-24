@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.a
+package com.mckimquyen.binaryeye.view.act
 
 import android.content.Context
 import android.content.Intent
@@ -29,6 +29,7 @@ class ActivityMain : AppCompatActivity() {
         permissions: Array<String>,
         grantResults: IntArray,
     ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         when (requestCode) {
             PERMISSION_LOCATION, PERMISSION_WRITE -> if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 permissionGrantedCallback?.invoke()
@@ -39,7 +40,7 @@ class ActivityMain : AppCompatActivity() {
 
     override fun onSupportNavigateUp(): Boolean {
         val fm = supportFragmentManager
-        if (fm != null && fm.backStackEntryCount > 0) {
+        if (fm.backStackEntryCount > 0) {
             fm.popBackStack()
         } else {
             finish()
@@ -114,11 +115,8 @@ class ActivityMain : AppCompatActivity() {
             val intent = Intent(context, ActivityMain::class.java)
             intent.putExtra(ENCODE, text)
             if (isExternal) {
-                val flagActivityClearTask =
-                    Intent.FLAG_ACTIVITY_CLEAR_TASK
-                intent.addFlags(
-                    Intent.FLAG_ACTIVITY_NO_HISTORY or flagActivityClearTask or Intent.FLAG_ACTIVITY_NEW_TASK
-                )
+                val flagActivityClearTask = Intent.FLAG_ACTIVITY_CLEAR_TASK
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY or flagActivityClearTask or Intent.FLAG_ACTIVITY_NEW_TASK)
             }
             return intent
         }
