@@ -8,11 +8,11 @@ import androidx.fragment.app.Fragment
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.mckimquyen.binaryeye.R
-import com.mckimquyen.binaryeye.app.PERMISSION_LOCATION
-import com.mckimquyen.binaryeye.app.PERMISSION_WRITE
-import com.mckimquyen.binaryeye.app.applyLocale
-import com.mckimquyen.binaryeye.app.permissionGrantedCallback
-import com.mckimquyen.binaryeye.app.setFragment
+import com.mckimquyen.binaryeye.ext.app.PERMISSION_LOCATION
+import com.mckimquyen.binaryeye.ext.app.PERMISSION_WRITE
+import com.mckimquyen.binaryeye.ext.app.applyLocale
+import com.mckimquyen.binaryeye.ext.app.permissionGrantedCallback
+import com.mckimquyen.binaryeye.ext.app.setFragment
 import com.mckimquyen.binaryeye.database.Scan
 import com.mckimquyen.binaryeye.frm.FDecode
 import com.mckimquyen.binaryeye.frm.FEncode

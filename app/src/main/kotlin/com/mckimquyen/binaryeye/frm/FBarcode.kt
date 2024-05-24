@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 import android.view.*
 import android.widget.EditText
 import com.mckimquyen.binaryeye.R
-import com.mckimquyen.binaryeye.app.hasWritePermission
+import com.mckimquyen.binaryeye.ext.app.hasWritePermission
 import com.mckimquyen.binaryeye.view.content.copyToClipboard
 import com.mckimquyen.binaryeye.view.content.shareFile
 import com.mckimquyen.binaryeye.view.content.shareText

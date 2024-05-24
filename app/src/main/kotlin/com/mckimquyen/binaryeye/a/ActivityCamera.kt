@@ -20,11 +20,11 @@ import android.widget.SeekBar
 import com.mckimquyen.binaryeye.BuildConfig
 import com.mckimquyen.binaryeye.R
 import com.mckimquyen.binaryeye.adapter.prettifyFormatName
-import com.mckimquyen.binaryeye.app.PERMISSION_CAMERA
-import com.mckimquyen.binaryeye.app.applyLocale
-import com.mckimquyen.binaryeye.app.hasBluetoothPermission
-import com.mckimquyen.binaryeye.app.hasCameraPermission
-import com.mckimquyen.binaryeye.bluetooth.sendBluetoothAsync
+import com.mckimquyen.binaryeye.ext.app.PERMISSION_CAMERA
+import com.mckimquyen.binaryeye.ext.app.applyLocale
+import com.mckimquyen.binaryeye.ext.app.hasBluetoothPermission
+import com.mckimquyen.binaryeye.ext.app.hasCameraPermission
+import com.mckimquyen.binaryeye.view.bluetooth.sendBluetoothAsync
 import com.mckimquyen.binaryeye.view.content.copyToClipboard
 import com.mckimquyen.binaryeye.view.content.execShareIntent
 import com.mckimquyen.binaryeye.view.content.openUrl

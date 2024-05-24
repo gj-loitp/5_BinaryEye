@@ -9,7 +9,7 @@ import android.provider.MediaStore
 import androidx.annotation.MainThread
 import android.widget.EditText
 import com.mckimquyen.binaryeye.R
-import com.mckimquyen.binaryeye.app.alertDialog
+import com.mckimquyen.binaryeye.ext.app.alertDialog
 import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException

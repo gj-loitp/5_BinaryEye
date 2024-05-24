@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.*
 import com.mckimquyen.binaryeye.R
 import com.mckimquyen.binaryeye.adapter.prettifyFormatName
-import com.mckimquyen.binaryeye.app.addFragment
+import com.mckimquyen.binaryeye.ext.app.addFragment
 import com.mckimquyen.binaryeye.prefs
 import com.mckimquyen.binaryeye.view.text.unescape
 import com.mckimquyen.binaryeye.view.hideSoftKeyboard

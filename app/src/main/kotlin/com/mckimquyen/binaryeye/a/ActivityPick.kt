@@ -15,7 +15,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import com.mckimquyen.binaryeye.R
-import com.mckimquyen.binaryeye.app.applyLocale
+import com.mckimquyen.binaryeye.ext.app.applyLocale
 import com.mckimquyen.binaryeye.prefs
 import com.mckimquyen.binaryeye.view.graphics.crop
 import com.mckimquyen.binaryeye.view.graphics.fixTransparency

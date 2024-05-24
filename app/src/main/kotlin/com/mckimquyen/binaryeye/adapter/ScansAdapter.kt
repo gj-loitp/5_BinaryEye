@@ -26,10 +26,10 @@ class ScansAdapter(context: Context, cursor: Cursor) :
     private val selectedColor = ContextCompat.getColor(context, R.color.selectedRow)
 
     fun select(
-		view: View,
-		id: Long,
-		position: Int,
-	) {
+        view: View,
+        id: Long,
+        position: Int,
+    ) {
         view.select(
             if (selections[id] == null) {
                 selections[id] = position
@@ -109,7 +109,7 @@ class ScansAdapter(context: Context, cursor: Cursor) :
                 else -> content
             }
             contentView.setCompoundDrawablesWithIntrinsicBounds(
-				/* left = */ icon, /* top = */ 0, /* right = */ 0, /* bottom = */ 0
+                /* left = */ icon, /* top = */ 0, /* right = */ 0, /* bottom = */ 0
             )
             formatView.text = prettifyFormatName(cursor.getString(formatIndex))
         }
@@ -147,8 +147,8 @@ private fun formatDateTime(rfc: String): String {
     try {
         SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.US).parse(rfc)?.let {
             return DateFormat.getDateTimeInstance(
-				/* dateStyle = */ DateFormat.LONG,
-				/* timeStyle = */ DateFormat.SHORT
+                /* dateStyle = */ DateFormat.LONG,
+                /* timeStyle = */ DateFormat.SHORT
             ).format(it)
         }
     } catch (e: ParseException) {

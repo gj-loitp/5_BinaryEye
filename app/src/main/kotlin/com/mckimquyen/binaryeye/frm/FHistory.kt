@@ -20,9 +20,9 @@ import android.widget.EditText
 import android.widget.ListView
 import com.mckimquyen.binaryeye.R
 import com.mckimquyen.binaryeye.adapter.ScansAdapter
-import com.mckimquyen.binaryeye.app.addFragment
-import com.mckimquyen.binaryeye.app.alertDialog
-import com.mckimquyen.binaryeye.app.hasWritePermission
+import com.mckimquyen.binaryeye.ext.app.addFragment
+import com.mckimquyen.binaryeye.ext.app.alertDialog
+import com.mckimquyen.binaryeye.ext.app.hasWritePermission
 import com.mckimquyen.binaryeye.prefs
 import com.mckimquyen.binaryeye.view.content.copyToClipboard
 import com.mckimquyen.binaryeye.view.content.shareText
