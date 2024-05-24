@@ -1,7 +1,6 @@
-package com.mckimquyen.binaryeye.db
+package com.mckimquyen.binaryeye.database
 
 import android.graphics.Bitmap
-import android.os.Build
 import android.os.Parcel
 import android.os.Parcelable
 import android.text.format.DateFormat
@@ -11,20 +10,20 @@ import de.markusfisch.android.zxingcpp.ZxingCpp.Format
 import de.markusfisch.android.zxingcpp.ZxingCpp.Result
 
 data class Scan(
-	val content: String,
-	val raw: ByteArray?,
-	val format: String,
-	val errorCorrectionLevel: String? = null,
-	val version: String? = null,
-	val sequenceSize: Int = -1,
-	val sequenceIndex: Int = -1,
-	val sequenceId: String = "",
-	val country: String? = null,
-	val addOn: String? = null,
-	val price: String? = null,
-	val issueNumber: String? = null,
-	val dateTime: String = getDateTime(),
-	var id: Long = 0L,
+    val content: String,
+    val raw: ByteArray?,
+    val format: String,
+    val errorCorrectionLevel: String? = null,
+    val version: String? = null,
+    val sequenceSize: Int = -1,
+    val sequenceIndex: Int = -1,
+    val sequenceId: String = "",
+    val country: String? = null,
+    val addOn: String? = null,
+    val price: String? = null,
+    val issueNumber: String? = null,
+    val dateTime: String = getDateTime(),
+    var id: Long = 0L,
 ) : Parcelable {
     // Needs to be overwritten manually, as ByteArray is an array and
     // this isn't handled well by Kotlin.
@@ -113,26 +112,26 @@ data class Scan(
 
     override fun describeContents() = 0
 
-    companion object {
-        @JvmField
-        val CREATOR = object : Parcelable.Creator<Scan> {
-            override fun createFromParcel(parcel: Parcel) = Scan(parcel)
-            override fun newArray(size: Int) = arrayOfNulls<Scan>(size)
-        }
-    }
+//    companion object {
+//        @JvmField
+//        val CREATOR = object : Parcelable.Creator<Scan> {
+//            override fun createFromParcel(parcel: Parcel) = Scan(parcel)
+//            override fun newArray(size: Int) = arrayOfNulls<Scan>(size)
+//        }
+//    }
 }
 
 fun Result.toScan(): Scan {
     val content: String
     val raw: ByteArray?
     when (contentType) {
-		ContentType.GS1,
-		ContentType.ISO15434,
-		ContentType.TEXT,
-		-> {
-			content = text
-			raw = null
-		}
+        ContentType.GS1,
+        ContentType.ISO15434,
+        ContentType.TEXT,
+        -> {
+            content = text
+            raw = null
+        }
 
         else -> {
             content = ""
@@ -156,10 +155,10 @@ fun Result.toScan(): Scan {
 }
 
 data class Recreation(
-	val format: Format,
-	val ecLevel: Int,
-	val size: Int,
-	val margin: Int,
+    val format: Format,
+    val ecLevel: Int,
+    val size: Int,
+    val margin: Int,
 ) {
     fun encode(content: String): Bitmap? = try {
         ZxingCpp.encodeAsBitmap(
@@ -171,8 +170,8 @@ data class Recreation(
 }
 
 fun Scan.toRecreation(
-	size: Int = 128,
-	margin: Int = -1,
+    size: Int = 128,
+    margin: Int = -1,
 ) = if (content.isEmpty()) {
     null
 } else {
@@ -191,15 +190,9 @@ fun Scan.toRecreation(
 }
 
 private fun getDateTime(
-	time: Long = System.currentTimeMillis(),
+    time: Long = System.currentTimeMillis(),
 ) = DateFormat.format(
-    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN_MR2) {
-        // Up to API level 17, 'k' was interpreted as 'H', which wasn't
-        // implemented until API level 18.
-        "yyyy-MM-dd kk:mm:ss"
-    } else {
-        "yyyy-MM-dd HH:mm:ss"
-    },
+    "yyyy-MM-dd HH:mm:ss",
     time
 ).toString()
 

@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.db
+package com.mckimquyen.binaryeye.database
 
 import android.content.ContentValues
 import android.content.Context
@@ -230,15 +230,15 @@ class Db {
         const val SCANS_RAW = "raw"
         const val SCANS_FORMAT = "format"
         const val SCANS_ERROR_CORRECTION_LEVEL = "error_correction_level"
-        const val SCANS_VERSION_NUMBER = "version_number"
+        private const val SCANS_VERSION_NUMBER = "version_number"
         const val SCANS_VERSION = "version"
-        const val SCANS_ISSUE_NUMBER = "issue_number"
-        const val SCANS_ORIENTATION = "orientation"
-        const val SCANS_OTHER_META_DATA = "other_meta_data"
-        const val SCANS_PDF417_EXTRA_METADATA = "pdf417_extra_metadata"
-        const val SCANS_POSSIBLE_COUNTRY = "possible_country"
-        const val SCANS_SUGGESTED_PRICE = "suggested_price"
-        const val SCANS_UPC_EAN_EXTENSION = "upc_ean_extension"
+        private const val SCANS_ISSUE_NUMBER = "issue_number"
+        private const val SCANS_ORIENTATION = "orientation"
+        private const val SCANS_OTHER_META_DATA = "other_meta_data"
+        private const val SCANS_PDF417_EXTRA_METADATA = "pdf417_extra_metadata"
+        private const val SCANS_POSSIBLE_COUNTRY = "possible_country"
+        private const val SCANS_SUGGESTED_PRICE = "suggested_price"
+        private const val SCANS_UPC_EAN_EXTENSION = "upc_ean_extension"
         const val SCANS_SEQUENCE_SIZE = "sequence_size"
         const val SCANS_SEQUENCE_INDEX = "sequence_index"
         const val SCANS_SEQUENCE_ID = "sequence_id"

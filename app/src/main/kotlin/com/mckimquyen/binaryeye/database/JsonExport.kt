@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.db
+package com.mckimquyen.binaryeye.database
 
 import android.content.Context
 import android.database.Cursor
@@ -8,8 +8,8 @@ import org.json.JSONException
 import org.json.JSONObject
 
 fun Context.exportJson(
-	name: String,
-	cursor: Cursor,
+    name: String,
+    cursor: Cursor,
 ) = writeExternalFile(name, "application/json") { outputStream ->
     cursor.exportJson()?.let {
         outputStream.write(it.toByteArray())
@@ -46,7 +46,7 @@ fun Cursor.exportJson(): String? {
         if (getString(contentIndex)?.isEmpty() == true) {
             deviation = Pair(
                 contentIndex,
-                getBlob(rawIndex).toHexString()
+                getBlob(/* columnIndex = */ rawIndex).toHexString()
             )
         }
         root.put(toJsonObject(indices, deviation))
@@ -55,8 +55,8 @@ fun Cursor.exportJson(): String? {
 }
 
 private fun Cursor.toJsonObject(
-	indices: List<Pair<Int, String>>,
-	deviation: Pair<Int, String>?,
+    indices: List<Pair<Int, String>>,
+    deviation: Pair<Int, String>?,
 ): JSONObject {
     val obj = JSONObject()
     return try {

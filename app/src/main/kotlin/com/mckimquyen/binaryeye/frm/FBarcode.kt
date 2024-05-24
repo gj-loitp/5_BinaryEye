@@ -11,9 +11,9 @@ import android.view.*
 import android.widget.EditText
 import com.mckimquyen.binaryeye.R
 import com.mckimquyen.binaryeye.app.hasWritePermission
-import com.mckimquyen.binaryeye.content.copyToClipboard
-import com.mckimquyen.binaryeye.content.shareFile
-import com.mckimquyen.binaryeye.content.shareText
+import com.mckimquyen.binaryeye.view.content.copyToClipboard
+import com.mckimquyen.binaryeye.view.content.shareFile
+import com.mckimquyen.binaryeye.view.content.shareText
 import com.mckimquyen.binaryeye.view.graphics.COLOR_BLACK
 import com.mckimquyen.binaryeye.view.graphics.COLOR_WHITE
 import com.mckimquyen.binaryeye.view.io.addSuffixIfNotGiven

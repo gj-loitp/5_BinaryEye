@@ -5,7 +5,7 @@ import com.mckimquyen.binaryeye.R
 import com.mckimquyen.binaryeye.actions.IAction
 import com.mckimquyen.binaryeye.app.alertDialog
 import com.mckimquyen.binaryeye.prefs
-import com.mckimquyen.binaryeye.content.openUrl
+import com.mckimquyen.binaryeye.view.content.openUrl
 import com.mckimquyen.binaryeye.view.net.urlEncode
 
 object OpenOrSearchAction : IAction {

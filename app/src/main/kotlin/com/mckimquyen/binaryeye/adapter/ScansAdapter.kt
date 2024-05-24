@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.CursorAdapter
 import android.widget.TextView
 import com.mckimquyen.binaryeye.R
-import com.mckimquyen.binaryeye.db.Db
+import com.mckimquyen.binaryeye.database.Db
 import java.text.DateFormat
 import java.text.ParseException
 import java.text.SimpleDateFormat

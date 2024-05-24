@@ -63,7 +63,7 @@ fun Activity.createAdBanner(
     logTag: String?,
     bkgColor: Int = Color.RED,
     viewGroup: ViewGroup?,
-    isAdaptiveBanner: Boolean
+    isAdaptiveBanner: Boolean,
 ): MaxAdView {
     val log = "$logTag - createAdBanner"
     val enableAdBanner = this.getString(R.string.EnableAdBanner) == "true"

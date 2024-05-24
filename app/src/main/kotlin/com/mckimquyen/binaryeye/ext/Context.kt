@@ -17,7 +17,6 @@ fun Context.isDefaultLauncher(): Boolean {
             PackageManager.ResolveInfoFlags.of(PackageManager.MATCH_DEFAULT_ONLY.toLong())
         )
     } else {
-        @Suppress("DEPRECATION")
         packageManager.resolveActivity(intent, PackageManager.MATCH_DEFAULT_ONLY)
     }
 
@@ -30,7 +29,7 @@ fun Context.isDefaultLauncher(): Boolean {
 
 //mo app setting default cua device
 fun Context.launchSystemSetting(
-    packageName: String
+    packageName: String,
 ) {
     val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
     intent.data = Uri.parse("package:$packageName")
@@ -56,7 +55,7 @@ fun Context.openBrowserPolicy(
 }
 
 fun Context?.openUrlInBrowser(
-    url: String?
+    url: String?,
 ) {
     if (this == null || url.isNullOrEmpty()) {
         return

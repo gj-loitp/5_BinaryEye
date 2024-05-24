@@ -6,7 +6,7 @@ import android.view.View
 import android.widget.TextView
 import com.mckimquyen.binaryeye.R
 import com.mckimquyen.binaryeye.prefs
-import com.mckimquyen.binaryeye.db.Scan
+import com.mckimquyen.binaryeye.database.Scan
 import com.mckimquyen.binaryeye.view.net.sendAsync
 import com.mckimquyen.binaryeye.pref.UrlPref
 

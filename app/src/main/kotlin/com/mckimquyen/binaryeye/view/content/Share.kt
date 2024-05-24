@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.content
+package com.mckimquyen.binaryeye.view.content
 
 import android.content.ActivityNotFoundException
 import android.content.Context
@@ -36,8 +36,8 @@ fun Context.startIntent(intent: Intent): Boolean = try {
 }
 
 fun Context.openUrl(
-	url: String,
-	silent: Boolean = false,
+    url: String,
+    silent: Boolean = false,
 ): Boolean {
     val intent = Intent(Intent.ACTION_VIEW, url.parseAndNormalizeUri())
     return if (silent) {
@@ -47,17 +47,11 @@ fun Context.openUrl(
     }
 }
 
-fun String.parseAndNormalizeUri(): Uri = Uri.parse(this).let {
-    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-        it.normalizeScheme()
-    } else {
-        it
-    }
-}
+fun String.parseAndNormalizeUri(): Uri = Uri.parse(this).normalizeScheme()
 
 fun Context.shareText(
-	text: String,
-	mimeType: String = "text/plain",
+    text: String,
+    mimeType: String = "text/plain",
 ) {
     execShareIntent(Intent(Intent.ACTION_SEND).apply {
         putExtra(Intent.EXTRA_TEXT, text)
@@ -66,8 +60,8 @@ fun Context.shareText(
 }
 
 fun Context.shareFile(
-	file: File,
-	mimeType: String,
+    file: File,
+    mimeType: String,
 ) {
     getUriForFile(file)?.let {
         shareUri(it, mimeType)
@@ -87,8 +81,8 @@ private fun Context.getUriForFile(file: File): Uri? = if (
 }
 
 private fun Context.shareUri(
-	uri: Uri,
-	mimeType: String,
+    uri: Uri,
+    mimeType: String,
 ) {
     execShareIntent(Intent(Intent.ACTION_SEND).apply {
         putExtra(Intent.EXTRA_STREAM, uri)

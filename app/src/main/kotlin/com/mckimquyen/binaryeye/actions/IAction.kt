@@ -2,8 +2,8 @@ package com.mckimquyen.binaryeye.actions
 
 import android.content.Context
 import android.content.Intent
-import com.mckimquyen.binaryeye.content.execShareIntent
-import com.mckimquyen.binaryeye.content.openUrl
+import com.mckimquyen.binaryeye.view.content.execShareIntent
+import com.mckimquyen.binaryeye.view.content.openUrl
 import com.mckimquyen.binaryeye.view.widget.toast
 
 interface IAction {

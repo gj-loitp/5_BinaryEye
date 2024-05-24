@@ -4,7 +4,7 @@ import android.bluetooth.BluetoothAdapter
 import android.bluetooth.BluetoothDevice
 import android.bluetooth.BluetoothSocket
 import androidx.preference.ListPreference
-import com.mckimquyen.binaryeye.db.Scan
+import com.mckimquyen.binaryeye.database.Scan
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -14,8 +14,8 @@ import java.io.OutputStreamWriter
 import java.util.*
 
 fun Scan.sendBluetoothAsync(
-	host: String,
-	callback: (Boolean, Boolean) -> Unit,
+    host: String,
+    callback: (Boolean, Boolean) -> Unit,
 ) {
     CoroutineScope(Dispatchers.IO).launch(Dispatchers.IO) {
         val connected = if (isConnected) {

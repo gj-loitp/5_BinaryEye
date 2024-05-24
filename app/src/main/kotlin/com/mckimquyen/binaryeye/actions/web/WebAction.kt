@@ -3,7 +3,7 @@ package com.mckimquyen.binaryeye.actions.web
 import android.content.Context
 import com.mckimquyen.binaryeye.R
 import com.mckimquyen.binaryeye.actions.IAction
-import com.mckimquyen.binaryeye.content.openUrl
+import com.mckimquyen.binaryeye.view.content.openUrl
 
 object WebAction : IAction {
     private val colloquialRegex =

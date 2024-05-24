@@ -1,7 +1,7 @@
 package com.mckimquyen.binaryeye
 
 import android.app.Application
-import com.mckimquyen.binaryeye.db.Db
+import com.mckimquyen.binaryeye.database.Db
 import com.mckimquyen.binaryeye.pref.Pref
 
 //TODO ad applovin

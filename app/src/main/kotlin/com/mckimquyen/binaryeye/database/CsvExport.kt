@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.db
+package com.mckimquyen.binaryeye.database
 
 import android.content.Context
 import android.database.Cursor
@@ -50,7 +50,7 @@ private fun exportCsv(
     val rawIndex = cursor.getColumnIndex(Db.SCANS_RAW)
     outputStream.write(
         columns.joinToString(
-            delimiter,
+            separator = delimiter,
             postfix = "\n"
         ).toByteArray()
     )
@@ -58,12 +58,16 @@ private fun exportCsv(
         var deviation: Pair<Int, String>? = null
         if (cursor.getString(contentIndex)?.isEmpty() == true) {
             deviation = Pair(
-                contentIndex,
-                cursor.getBlob(rawIndex).toHexString()
+                first = contentIndex,
+                second = cursor.getBlob(rawIndex).toHexString()
             )
         }
         outputStream.write(
-            cursor.toCsvRecord(indices, delimiter, deviation)
+            cursor.toCsvRecord(
+                indices = indices,
+                delimiter = delimiter,
+                deviation = deviation
+            )
         )
     } while (cursor.moveToNext())
 }

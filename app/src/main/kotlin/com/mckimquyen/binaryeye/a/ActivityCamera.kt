@@ -25,11 +25,11 @@ import com.mckimquyen.binaryeye.app.applyLocale
 import com.mckimquyen.binaryeye.app.hasBluetoothPermission
 import com.mckimquyen.binaryeye.app.hasCameraPermission
 import com.mckimquyen.binaryeye.bluetooth.sendBluetoothAsync
-import com.mckimquyen.binaryeye.content.copyToClipboard
-import com.mckimquyen.binaryeye.content.execShareIntent
-import com.mckimquyen.binaryeye.content.openUrl
+import com.mckimquyen.binaryeye.view.content.copyToClipboard
+import com.mckimquyen.binaryeye.view.content.execShareIntent
+import com.mckimquyen.binaryeye.view.content.openUrl
 import com.mckimquyen.binaryeye.db
-import com.mckimquyen.binaryeye.db.toScan
+import com.mckimquyen.binaryeye.database.toScan
 import com.mckimquyen.binaryeye.ext.moreApp
 import com.mckimquyen.binaryeye.ext.openBrowserPolicy
 import com.mckimquyen.binaryeye.ext.rateApp

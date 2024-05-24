@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.db
+package com.mckimquyen.binaryeye.database
 
 import android.app.Activity
 import android.os.Environment

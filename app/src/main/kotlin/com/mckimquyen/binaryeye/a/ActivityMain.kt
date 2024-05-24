@@ -13,7 +13,7 @@ import com.mckimquyen.binaryeye.app.PERMISSION_WRITE
 import com.mckimquyen.binaryeye.app.applyLocale
 import com.mckimquyen.binaryeye.app.permissionGrantedCallback
 import com.mckimquyen.binaryeye.app.setFragment
-import com.mckimquyen.binaryeye.db.Scan
+import com.mckimquyen.binaryeye.database.Scan
 import com.mckimquyen.binaryeye.frm.FDecode
 import com.mckimquyen.binaryeye.frm.FEncode
 import com.mckimquyen.binaryeye.frm.FHistory

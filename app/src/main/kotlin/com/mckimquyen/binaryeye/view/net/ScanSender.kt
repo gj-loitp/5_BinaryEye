@@ -1,6 +1,6 @@
 package com.mckimquyen.binaryeye.view.net
 
-import com.mckimquyen.binaryeye.db.Scan
+import com.mckimquyen.binaryeye.database.Scan
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

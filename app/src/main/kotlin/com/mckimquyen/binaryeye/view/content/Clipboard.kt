@@ -1,4 +1,4 @@
-package com.mckimquyen.binaryeye.content
+package com.mckimquyen.binaryeye.view.content
 
 import android.content.ClipData
 import android.content.ClipDescription
