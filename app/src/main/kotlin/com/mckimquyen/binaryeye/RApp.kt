@@ -7,7 +7,6 @@ import com.mckimquyen.binaryeye.pref.Pref
 //TODO ad applovin
 //TODO firebase
 
-//TODO ic_launcher
 //TODO keystore
 //TODO app version
 //TODO rate app
@@ -20,6 +19,7 @@ import com.mckimquyen.binaryeye.pref.Pref
 //leak canary
 //proguard
 //ui switch
+//ic_launcher
 
 val db = Db()
 val prefs = Pref()
