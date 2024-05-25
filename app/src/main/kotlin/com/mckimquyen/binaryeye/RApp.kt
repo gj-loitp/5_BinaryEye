@@ -7,8 +7,6 @@ import com.mckimquyen.binaryeye.pref.Pref
 //TODO ad applovin
 //TODO firebase
 
-//TODO keystore
-
 //done mckimquyen
 //ad id
 //leak canary
@@ -21,6 +19,7 @@ import com.mckimquyen.binaryeye.pref.Pref
 //share app
 //policy
 //double tap to exit
+//keystore
 
 val db = Db()
 val prefs = Pref()
