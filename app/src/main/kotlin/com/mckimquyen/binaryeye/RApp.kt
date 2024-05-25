@@ -8,8 +8,6 @@ import com.mckimquyen.binaryeye.pref.Pref
 //TODO firebase
 
 //TODO keystore
-//TODO policy
-//TODO double tap to exit
 
 //done mckimquyen
 //ad id
@@ -21,6 +19,8 @@ import com.mckimquyen.binaryeye.pref.Pref
 //rate app
 //more app
 //share app
+//policy
+//double tap to exit
 
 val db = Db()
 val prefs = Pref()

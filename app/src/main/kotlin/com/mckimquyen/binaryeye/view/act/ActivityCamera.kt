@@ -10,6 +10,8 @@ import android.graphics.Rect
 import android.hardware.Camera
 import android.net.Uri
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
@@ -17,6 +19,7 @@ import android.view.MenuItem
 import android.view.MotionEvent
 import android.view.View
 import android.widget.SeekBar
+import android.widget.Toast
 import com.mckimquyen.binaryeye.BuildConfig
 import com.mckimquyen.binaryeye.R
 import com.mckimquyen.binaryeye.adapter.prettifyFormatName
@@ -210,6 +213,23 @@ class CameraActivity : AppCompatActivity() {
     override fun onPause() {
         super.onPause()
         closeCamera()
+    }
+
+    private var doubleBackToExitPressedOnce = false
+
+    @Deprecated("Deprecated in Java")
+    override fun onBackPressed() {
+        if (doubleBackToExitPressedOnce) {
+            super.onBackPressed()
+            return
+        }
+
+        this.doubleBackToExitPressedOnce = true
+        Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show()
+
+        Handler(Looper.getMainLooper()).postDelayed({
+            doubleBackToExitPressedOnce = false
+        }, 2000)
     }
 
     private fun closeCamera() {
