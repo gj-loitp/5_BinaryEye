@@ -6,10 +6,8 @@ import com.mckimquyen.binaryeye.pref.Pref
 
 //TODO ad applovin
 //TODO firebase
+
 //TODO ic_launcher
-//TODO ad id
-//TODO leak canary
-//TODO proguard
 //TODO keystore
 //TODO app version
 //TODO rate app
@@ -18,11 +16,14 @@ import com.mckimquyen.binaryeye.pref.Pref
 //TODO policy
 
 //done mckimquyen
+//ad id
+//leak canary
+//proguard
 
 val db = Db()
 val prefs = Pref()
 
-class BinaryEyeApp : Application() {
+class RApp : Application() {
     override fun onCreate() {
         super.onCreate()
         db.open(this)

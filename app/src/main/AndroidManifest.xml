@@ -42,7 +42,7 @@
         </intent>
     </queries>
     <application
-        android:name=".BinaryEyeApp"
+        android:name=".RApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
