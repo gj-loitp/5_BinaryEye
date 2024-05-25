@@ -11,4 +11,5 @@
     <color name="separator">#333</color>
     <color name="crop_bound">#fff</color>
     <color name="dot">#90A4AE</color>
+    <color name="white">#ffffff</color>
 </resources>

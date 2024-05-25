@@ -1,4 +1,5 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -24,7 +25,10 @@
             android:layout_alignParentTop="true"
             android:padding="16dp"
             android:text="@string/use_history"
+            android:thumb="@drawable/sw_thumb_selector"
             android:visibility="gone"
+            app:track="@drawable/sw_track_selector"
+            app:trackTintMode="multiply"
             tools:visibility="visible" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton

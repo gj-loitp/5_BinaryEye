@@ -19,6 +19,7 @@ import com.mckimquyen.binaryeye.pref.Pref
 //ad id
 //leak canary
 //proguard
+//ui switch
 
 val db = Db()
 val prefs = Pref()
