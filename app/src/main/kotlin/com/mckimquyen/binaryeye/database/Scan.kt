@@ -112,13 +112,14 @@ data class Scan(
 
     override fun describeContents() = 0
 
-//    companion object {
-//        @JvmField
-//        val CREATOR = object : Parcelable.Creator<Scan> {
-//            override fun createFromParcel(parcel: Parcel) = Scan(parcel)
-//            override fun newArray(size: Int) = arrayOfNulls<Scan>(size)
-//        }
-//    }
+    //do not delete
+    companion object {
+        @JvmField
+        val CREATOR = object : Parcelable.Creator<Scan> {
+            override fun createFromParcel(parcel: Parcel) = Scan(parcel)
+            override fun newArray(size: Int) = arrayOfNulls<Scan>(size)
+        }
+    }
 }
 
 fun Result.toScan(): Scan {
