@@ -11,7 +11,8 @@
             android:defaultValue="true"
             android:key="show_crop_handle"
             android:summary="@string/showCropHandleSummary"
-            android:title="@string/showCropHandle" />
+            android:title="@string/showCropHandle"
+            android:widgetLayout="@layout/switch_preference_compat" />
         <androidx.preference.SwitchPreferenceCompat
             android:defaultValue="true"
             android:key="zoom_by_swiping"
