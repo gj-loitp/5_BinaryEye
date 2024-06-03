@@ -40,4 +40,9 @@
         <item name="android:layout_gravity">bottom|end</item>
         <item name="elevation">4dp</item>
     </style>
+
+    <style name="CustomSwitch" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:thumb">@drawable/sw_thumb_selector</item>
+        <item name="android:track">@drawable/sw_track_selector</item>
+    </style>
 </resources>
