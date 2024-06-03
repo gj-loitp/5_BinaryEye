@@ -17,22 +17,26 @@
             android:defaultValue="true"
             android:key="zoom_by_swiping"
             android:summary="@string/zoomBySwipingSummary"
-            android:title="@string/zoom_by_swiping" />
+            android:title="@string/zoom_by_swiping"
+            android:widgetLayout="@layout/switch_preference_compat" />
         <androidx.preference.SwitchPreferenceCompat
             android:defaultValue="false"
             android:key="auto_rotate"
             android:summary="@string/auto_rotate_summary"
-            android:title="@string/auto_rotate" />
+            android:title="@string/auto_rotate"
+            android:widgetLayout="@layout/switch_preference_compat" />
         <androidx.preference.SwitchPreferenceCompat
             android:defaultValue="false"
             android:key="try_harder"
             android:summary="@string/try_harder_summary"
-            android:title="@string/try_harder" />
+            android:title="@string/try_harder"
+            android:widgetLayout="@layout/switch_preference_compat" />
         <androidx.preference.SwitchPreferenceCompat
             android:defaultValue="false"
             android:key="bulk_mode"
             android:summary="@string/bulk_mode_summary"
-            android:title="@string/bulk_mode" />
+            android:title="@string/bulk_mode"
+            android:widgetLayout="@layout/switch_preference_compat" />
         <ListPreference
             android:defaultValue="500"
             android:entries="@array/bulkModeDelaysNames"
@@ -43,17 +47,20 @@
             android:defaultValue="true"
             android:key="show_toast_in_bulk_mode"
             android:summary="@string/show_toast_in_bulk_mode_summary"
-            android:title="@string/show_toast_in_bulk_mode" />
+            android:title="@string/show_toast_in_bulk_mode"
+            android:widgetLayout="@layout/switch_preference_compat" />
         <androidx.preference.SwitchPreferenceCompat
             android:defaultValue="true"
             android:key="vibrate"
             android:summary="@string/vibrate_summary"
-            android:title="@string/vibrate" />
+            android:title="@string/vibrate"
+            android:widgetLayout="@layout/switch_preference_compat" />
         <androidx.preference.SwitchPreferenceCompat
             android:defaultValue="false"
             android:key="beep"
             android:summary="@string/beep_summary"
-            android:title="@string/beep" />
+            android:title="@string/beep"
+            android:widgetLayout="@layout/switch_preference_compat" />
         <ListPreference
             android:defaultValue="tone_prop_beep"
             android:entries="@array/beepTonesNames"
@@ -64,24 +71,28 @@
             android:defaultValue="true"
             android:key="use_history"
             android:summary="@string/use_history_summary"
-            android:title="@string/use_history" />
+            android:title="@string/use_history"
+            android:widgetLayout="@layout/switch_preference_compat" />
         <androidx.preference.SwitchPreferenceCompat
             android:defaultValue="true"
             android:key="ignore_consecutive_duplicates"
             android:summary="@string/ignore_consecutive_duplicates_summary"
-            android:title="@string/ignore_consecutive_duplicates" />
+            android:title="@string/ignore_consecutive_duplicates"
+            android:widgetLayout="@layout/switch_preference_compat" />
         <androidx.preference.SwitchPreferenceCompat
             android:defaultValue="false"
             android:key="copy_immediately"
             android:summary="@string/copy_immediately_summary"
-            android:title="@string/copy_immediately" />
+            android:title="@string/copy_immediately"
+            android:widgetLayout="@layout/switch_preference_compat" />
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/send_category">
         <androidx.preference.SwitchPreferenceCompat
             android:defaultValue="true"
             android:key="send_scan_active"
             android:summary="@string/send_scan_active_summary"
-            android:title="@string/sendScanActive" />
+            android:title="@string/sendScanActive"
+            android:widgetLayout="@layout/switch_preference_compat" />
         <com.mckimquyen.binaryeye.pref.UrlPref
             android:key="send_scan_url"
             android:title="@string/sendScanUrl" />
@@ -95,7 +106,8 @@
             android:defaultValue="false"
             android:key="send_scan_bluetooth"
             android:summary="@string/send_scan_bluetooth_summary"
-            android:title="@string/send_scan_bluetooth" />
+            android:title="@string/send_scan_bluetooth"
+            android:widgetLayout="@layout/switch_preference_compat" />
         <ListPreference
             android:defaultValue="@string/noBluetoothHostsPairedValue"
             android:entries="@array/bluetoothHostNames"
@@ -108,27 +120,32 @@
             android:defaultValue="false"
             android:key="open_immediately"
             android:summary="@string/open_immediately_summary"
-            android:title="@string/openImmediately" />
+            android:title="@string/openImmediately"
+            android:widgetLayout="@layout/switch_preference_compat" />
         <androidx.preference.SwitchPreferenceCompat
             android:defaultValue="true"
             android:key="show_meta_data"
             android:summary="@string/show_meta_data_summary"
-            android:title="@string/show_meta_data" />
+            android:title="@string/show_meta_data"
+            android:widgetLayout="@layout/switch_preference_compat" />
         <androidx.preference.SwitchPreferenceCompat
             android:defaultValue="true"
             android:key="show_hex_dump"
             android:summary="@string/show_hex_dump_summary"
-            android:title="@string/show_hex_dump" />
+            android:title="@string/show_hex_dump"
+            android:widgetLayout="@layout/switch_preference_compat" />
         <androidx.preference.SwitchPreferenceCompat
             android:defaultValue="true"
             android:key="show_recreation"
             android:summary="@string/show_recreation_summary"
-            android:title="@string/show_recreation" />
+            android:title="@string/show_recreation"
+            android:widgetLayout="@layout/switch_preference_compat" />
         <androidx.preference.SwitchPreferenceCompat
             android:defaultValue="true"
             android:key="close_automatically"
             android:summary="@string/close_automatically_summary"
-            android:title="@string/close_automatically" />
+            android:title="@string/close_automatically"
+            android:widgetLayout="@layout/switch_preference_compat" />
         <ListPreference
             android:defaultValue=""
             android:entries="@array/searchEnginesNames"
