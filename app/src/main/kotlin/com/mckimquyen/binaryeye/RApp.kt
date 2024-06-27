@@ -20,6 +20,7 @@ import com.mckimquyen.binaryeye.pref.Pref
 //policy
 //double tap to exit
 //keystore
+//20 tester
 
 val db = Db()
 val prefs = Pref()

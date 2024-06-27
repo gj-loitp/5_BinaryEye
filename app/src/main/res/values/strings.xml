@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string name="cameraError">Can\'t access camera, please try again</string>
     <string name="scan_code">Scan code</string>
     <string name="compose_barcode">Compose barcode</string>
@@ -196,4 +196,5 @@
     <string name="more_app">More app</string>
     <string name="share_app">Share app</string>
     <string name="term_policy"><![CDATA[Term & policy]]></string>
+    <string name="join_beta_tester">Join beta tester</string>
 </resources>

@@ -35,6 +35,7 @@ import com.mckimquyen.binaryeye.db
 import com.mckimquyen.binaryeye.database.toScan
 import com.mckimquyen.binaryeye.ext.moreApp
 import com.mckimquyen.binaryeye.ext.openBrowserPolicy
+import com.mckimquyen.binaryeye.ext.openUrlInBrowser
 import com.mckimquyen.binaryeye.ext.rateApp
 import com.mckimquyen.binaryeye.ext.shareApp
 import com.mckimquyen.binaryeye.view.graphics.FrameMetrics
@@ -338,6 +339,11 @@ class CameraActivity : AppCompatActivity() {
 
             R.id.menuPolicy -> {
                 openBrowserPolicy()
+                true
+            }
+
+            R.id.menuBetaTester -> {
+                openUrlInBrowser("https://github.com/gj-loitp/20-TESTER-FOR-CLOSED-TESTING")
                 true
             }
 

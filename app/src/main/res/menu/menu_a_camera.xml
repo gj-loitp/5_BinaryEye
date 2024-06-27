@@ -63,4 +63,9 @@
         android:icon="@drawable/ic_action_info"
         android:title="@string/info"
         material:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menuBetaTester"
+        android:icon="@drawable/baseline_self_improvement_24"
+        android:title="@string/join_beta_tester"
+        material:showAsAction="ifRoom" />
 </menu>
