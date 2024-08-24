@@ -377,7 +377,9 @@ class CameraActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.create -> {
-                createBarcode()
+                showAd {
+                    createBarcode()
+                }
                 true
             }
 
@@ -419,7 +421,9 @@ class CameraActivity : AppCompatActivity() {
             }
 
             R.id.preferences -> {
-                startActivity(ActivityMain.getPreferencesIntent(this))
+                showAd {
+                    startActivity(ActivityMain.getPreferencesIntent(this))
+                }
                 true
             }
 
@@ -449,7 +453,8 @@ class CameraActivity : AppCompatActivity() {
             }
 
             R.id.menuBetaTester -> {
-                openUrlInBrowser("https://github.com/gj-loitp/20-TESTER-FOR-CLOSED-TESTING")
+//                openUrlInBrowser("https://github.com/gj-loitp/20-TESTER-FOR-CLOSED-TESTING")
+                rateApp("com.mckimquyen.bemytester")
                 true
             }
 
