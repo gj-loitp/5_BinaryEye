@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.mckimquyen.binaryeye",
+  "variantName": "productionRelease",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 20240824,
+      "versionName": "2024.08.24",
+      "outputFile": "com.mckimquyen.binaryeyerelease_2024.08.24_20240824.apk"
+    }
+  ],
+  "elementType": "File"
+}
