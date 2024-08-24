@@ -8,8 +8,8 @@ android {
         applicationId "com.mckimquyen.binaryeye"
         minSdkVersion 21
         targetSdkVersion 34
-        versionCode 20240720
-        versionName '2024.07.20'
+        versionCode 20240824
+        versionName '2024.08.24'
     }
 
 //    signingConfigs {
@@ -118,6 +118,6 @@ dependencies {
     api 'com.github.markusfisch:CameraView:1.9.1'
     api 'com.github.markusfisch:ScalingImageView:1.4.1'
     api 'com.github.markusfisch:zxing-cpp:v2.1.0.0'
-    api 'com.applovin:applovin-sdk:12.5.0'
+    api 'com.applovin:applovin-sdk:12.6.0'
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.14'
 }
