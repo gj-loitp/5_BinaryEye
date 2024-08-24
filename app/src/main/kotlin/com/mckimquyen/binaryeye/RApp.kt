@@ -2,9 +2,9 @@ package com.mckimquyen.binaryeye
 
 import android.app.Application
 import com.mckimquyen.binaryeye.database.Db
+import com.mckimquyen.binaryeye.ext.setupApplovinAd
 import com.mckimquyen.binaryeye.pref.Pref
 
-//TODO ad applovin
 //TODO firebase
 
 //done mckimquyen
@@ -21,6 +21,7 @@ import com.mckimquyen.binaryeye.pref.Pref
 //double tap to exit
 //keystore
 //20 tester
+//ad applovin
 
 val db = Db()
 val prefs = Pref()
@@ -30,5 +31,6 @@ class RApp : Application() {
         super.onCreate()
         db.open(this)
         prefs.init(this)
+        this.setupApplovinAd()
     }
 }

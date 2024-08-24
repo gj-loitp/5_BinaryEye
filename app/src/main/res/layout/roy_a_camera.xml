@@ -45,10 +45,13 @@
                     android:src="@drawable/ic_action_flash" />
             </LinearLayout>
 
-            <LinearLayout
+            <FrameLayout
+                android:id="@+id/flAd"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="#ff0000" />
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp">
+
+            </FrameLayout>
         </LinearLayout>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
