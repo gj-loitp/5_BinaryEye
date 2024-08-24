@@ -17,20 +17,40 @@
 
         <include layout="@layout/roy_v_toolbar" />
 
-        <SeekBar
-            android:id="@+id/zoom"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|start"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="88dp"
-            android:layout_marginBottom="16dp"
-            android:padding="24dp" />
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/flash"
-            style="@style/FAB"
-            android:contentDescription="@string/toggle_flash"
-            android:src="@drawable/ic_action_flash" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="0dp">
+
+                <SeekBar
+                    android:id="@+id/zoom"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom|start"
+                    android:layout_weight="1" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/flash"
+                    style="@style/FAB"
+                    android:contentDescription="@string/toggle_flash"
+                    android:src="@drawable/ic_action_flash" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ff0000" />
+        </LinearLayout>
+
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
 </merge>
