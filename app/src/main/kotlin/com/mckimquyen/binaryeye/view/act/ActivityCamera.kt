@@ -382,7 +382,9 @@ class CameraActivity : AppCompatActivity() {
             }
 
             R.id.history -> {
-                startActivity(ActivityMain.getHistoryIntent(this))
+                showAd {
+                    startActivity(ActivityMain.getHistoryIntent(this))
+                }
                 true
             }
 
