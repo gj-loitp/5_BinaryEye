@@ -34,11 +34,13 @@ fun Context.setupApplovinAd() {
     executor.execute {
         val initConfigBuilder = AppLovinSdkInitializationConfiguration.builder(getString(R.string.SDK_KEY), this)
         initConfigBuilder.mediationProvider = AppLovinMediationProvider.MAX
+
         // Enable test mode by default for the current device. Cannot be run on the main thread.
-        val currentGaid = AdvertisingIdClient.getAdvertisingIdInfo(this).id
-        if (currentGaid != null) {
-            initConfigBuilder.testDeviceAdvertisingIds = Collections.singletonList(currentGaid)
-        }
+//        val currentGaid = AdvertisingIdClient.getAdvertisingIdInfo(this).id
+//        if (currentGaid != null) {
+//            initConfigBuilder.testDeviceAdvertisingIds = Collections.singletonList(currentGaid)
+//        }
+
         // Initialize the AppLovin SDK
         val sdk = AppLovinSdk.getInstance(this)
         sdk.initialize(initConfigBuilder.build()) {

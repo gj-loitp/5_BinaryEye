@@ -8,8 +8,8 @@ android {
         applicationId "com.mckimquyen.binaryeye"
         minSdkVersion 21
         targetSdkVersion 34
-        versionCode 20240824
-        versionName '2024.08.24'
+        versionCode 202401109
+        versionName '2024.11.09'
     }
 
 //    signingConfigs {
