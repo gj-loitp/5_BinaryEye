@@ -8,6 +8,8 @@ import com.mckimquyen.binaryeye.pref.Pref
 //TODO firebase
 
 //done mckimquyen
+//120hz
+//font scale
 //ad id
 //leak canary
 //proguard

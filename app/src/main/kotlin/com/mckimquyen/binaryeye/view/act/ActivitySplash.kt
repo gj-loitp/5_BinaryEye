@@ -2,9 +2,9 @@ package com.mckimquyen.binaryeye.view.act
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+import com.mckimquyen.binaryeye.BaseActivity
 
-class ActivitySplash : AppCompatActivity() {
+class ActivitySplash : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -16,3 +16,4 @@ class ActivitySplash : AppCompatActivity() {
         finish()
     }
 }
+

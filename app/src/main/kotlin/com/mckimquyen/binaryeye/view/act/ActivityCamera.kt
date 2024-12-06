@@ -2,7 +2,6 @@ package com.mckimquyen.binaryeye.view.act
 
 import android.app.Activity
 import android.app.AlertDialog
-import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Matrix
@@ -19,27 +18,25 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.SeekBar
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import com.applovin.mediation.MaxAd
 import com.applovin.mediation.MaxAdListener
 import com.applovin.mediation.MaxError
 import com.applovin.mediation.ads.MaxAdView
 import com.applovin.mediation.ads.MaxInterstitialAd
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.mckimquyen.binaryeye.BaseActivity
 import com.mckimquyen.binaryeye.BuildConfig
 import com.mckimquyen.binaryeye.R
 import com.mckimquyen.binaryeye.adapter.prettifyFormatName
 import com.mckimquyen.binaryeye.database.toScan
 import com.mckimquyen.binaryeye.db
 import com.mckimquyen.binaryeye.ext.app.PERMISSION_CAMERA
-import com.mckimquyen.binaryeye.ext.app.applyLocale
 import com.mckimquyen.binaryeye.ext.app.hasBluetoothPermission
 import com.mckimquyen.binaryeye.ext.app.hasCameraPermission
 import com.mckimquyen.binaryeye.ext.createAdBanner
 import com.mckimquyen.binaryeye.ext.destroyAdBanner
 import com.mckimquyen.binaryeye.ext.moreApp
 import com.mckimquyen.binaryeye.ext.openBrowserPolicy
-import com.mckimquyen.binaryeye.ext.openUrlInBrowser
 import com.mckimquyen.binaryeye.ext.rateApp
 import com.mckimquyen.binaryeye.ext.shareApp
 import com.mckimquyen.binaryeye.prefs
@@ -69,7 +66,7 @@ import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.roundToInt
 
-class CameraActivity : AppCompatActivity() {
+class CameraActivity : BaseActivity() {
     private val frameRoi = Rect()
     private val matrix = Matrix()
 
@@ -211,10 +208,10 @@ class CameraActivity : AppCompatActivity() {
         }
     }
 
-    override fun attachBaseContext(base: Context?) {
-        base?.applyLocale(prefs.customLocale)
-        super.attachBaseContext(base)
-    }
+//    override fun attachBaseContext(base: Context?) {
+//        base?.applyLocale(prefs.customLocale)
+//        super.attachBaseContext(base)
+//    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -813,6 +810,7 @@ class CameraActivity : AppCompatActivity() {
         private const val BULK_MODE = "bulk_mode"
         private const val RESTRICT_FORMAT = "restrict_format"
     }
+
 }
 
 fun Activity.showResult(

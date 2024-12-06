@@ -1,6 +1,5 @@
 package com.mckimquyen.binaryeye.view.act
 
-import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.Matrix
@@ -9,21 +8,20 @@ import android.graphics.RectF
 import android.net.Uri
 import android.os.Bundle
 import android.os.Parcelable
-import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import androidx.appcompat.widget.Toolbar
+import com.mckimquyen.binaryeye.BaseActivity
 import com.mckimquyen.binaryeye.R
-import com.mckimquyen.binaryeye.ext.app.applyLocale
 import com.mckimquyen.binaryeye.prefs
+import com.mckimquyen.binaryeye.view.colorSystemAndToolBars
 import com.mckimquyen.binaryeye.view.graphics.crop
 import com.mckimquyen.binaryeye.view.graphics.fixTransparency
 import com.mckimquyen.binaryeye.view.graphics.loadImageUri
 import com.mckimquyen.binaryeye.view.graphics.mapPosition
-import com.mckimquyen.binaryeye.view.media.releaseToneGenerators
-import com.mckimquyen.binaryeye.view.colorSystemAndToolBars
 import com.mckimquyen.binaryeye.view.initSystemBars
+import com.mckimquyen.binaryeye.view.media.releaseToneGenerators
 import com.mckimquyen.binaryeye.view.recordToolbarHeight
 import com.mckimquyen.binaryeye.view.scanFeedback
 import com.mckimquyen.binaryeye.view.setPaddingFromWindowInsets
@@ -39,7 +37,7 @@ import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.roundToInt
 
-class ActivityPick : AppCompatActivity() {
+class ActivityPick : BaseActivity() {
     private val matrix = Matrix()
     private val parentJob = Job()
     private val scope = CoroutineScope(Dispatchers.IO + parentJob)
@@ -58,10 +56,10 @@ class ActivityPick : AppCompatActivity() {
 
     private var result: Result? = null
 
-    override fun attachBaseContext(base: Context?) {
-        base?.applyLocale(prefs.customLocale)
-        super.attachBaseContext(base)
-    }
+//    override fun attachBaseContext(base: Context?) {
+//        base?.applyLocale(prefs.customLocale)
+//        super.attachBaseContext(base)
+//    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -257,6 +255,7 @@ class ActivityPick : AppCompatActivity() {
             applicationContext.toast(R.string.no_barcode_found)
         }
     }
+
 }
 
 private fun getNormalizedRoi(
