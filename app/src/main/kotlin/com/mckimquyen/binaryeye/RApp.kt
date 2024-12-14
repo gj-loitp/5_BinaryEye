@@ -6,9 +6,9 @@ import com.mckimquyen.binaryeye.ext.setupApplovinAd
 import com.mckimquyen.binaryeye.pref.Pref
 
 //TODO firebase
-//TODO roy93~ review in app
 
 //done mckimquyen
+//review in app
 //120hz
 //font scale
 //ad id
