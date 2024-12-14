@@ -3,11 +3,12 @@ apply plugin: 'kotlin-android'
 
 android {
     namespace 'com.mckimquyen.binaryeye'
-    compileSdk 34
+    compileSdk 35
     defaultConfig {
         applicationId "com.mckimquyen.binaryeye"
         minSdkVersion 21
-        targetSdkVersion 34
+        //noinspection EditedTargetSdkVersion
+        targetSdkVersion 35
         versionCode 202401212
         versionName '2024.12.12'
     }
