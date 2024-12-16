@@ -164,7 +164,7 @@ fun Activity.rateAppInApp(forceRateInApp: Boolean = false) {
 
     val sharedPreferences = getSharedPreferences("app_preferences", Context.MODE_PRIVATE)
     val lastReviewTime = sharedPreferences.getLong("last_review_time", 0L)
-    Log.d("roy93~", "requestReview lastReviewTime $lastReviewTime")
+    Log.d("roy93~", "~~~~~~~~~~~~~~~~~requestReview lastReviewTime $lastReviewTime")
     val currentTime = Calendar.getInstance().timeInMillis
     val daysSinceLastReview = (currentTime - lastReviewTime) / (1000 * 60 * 60 * 24)
     Log.d("roy93~", "requestReview forceRateInApp $forceRateInApp")

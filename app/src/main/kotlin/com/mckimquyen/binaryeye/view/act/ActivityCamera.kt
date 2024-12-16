@@ -38,6 +38,7 @@ import com.mckimquyen.binaryeye.ext.destroyAdBanner
 import com.mckimquyen.binaryeye.ext.moreApp
 import com.mckimquyen.binaryeye.ext.openBrowserPolicy
 import com.mckimquyen.binaryeye.ext.rateApp
+import com.mckimquyen.binaryeye.ext.rateAppInApp
 import com.mckimquyen.binaryeye.ext.shareApp
 import com.mckimquyen.binaryeye.prefs
 import com.mckimquyen.binaryeye.view.bluetooth.sendBluetoothAsync
@@ -270,6 +271,7 @@ class CameraActivity : BaseActivity() {
         if (hasCameraPermission()) {
             openCamera()
         }
+        rateAppInApp(BuildConfig.DEBUG)
     }
 
     private fun updateHints() {

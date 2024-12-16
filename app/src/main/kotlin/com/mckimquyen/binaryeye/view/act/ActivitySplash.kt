@@ -3,8 +3,6 @@ package com.mckimquyen.binaryeye.view.act
 import android.content.Intent
 import android.os.Bundle
 import com.mckimquyen.binaryeye.BaseActivity
-import com.mckimquyen.binaryeye.BuildConfig
-import com.mckimquyen.binaryeye.ext.rateAppInApp
 
 class ActivitySplash : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,11 +14,6 @@ class ActivitySplash : BaseActivity() {
 
         startActivity(Intent(applicationContext, CameraActivity::class.java))
         finish()
-    }
-
-    override fun onResume() {
-        super.onResume()
-        rateAppInApp(BuildConfig.DEBUG)
     }
 }
 

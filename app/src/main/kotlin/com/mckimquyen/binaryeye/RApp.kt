@@ -8,7 +8,7 @@ import com.mckimquyen.binaryeye.pref.Pref
 //TODO firebase
 
 //done mckimquyen
-//review in app
+//review in app bingo
 //120hz
 //font scale
 //ad id
