@@ -9,8 +9,8 @@ android {
         minSdkVersion 21
         //noinspection EditedTargetSdkVersion
         targetSdkVersion 35
-        versionCode 202401218
-        versionName '2024.12.18'
+        versionCode 202401221
+        versionName '2024.12.21'
     }
 
 //    signingConfigs {
