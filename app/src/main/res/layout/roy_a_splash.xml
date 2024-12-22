@@ -1,15 +1,39 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true">
 
-<!--        <androidx.appcompat.widget.AppCompatImageView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            app:srcCompat="@drawable/ic_launcher_round" />-->
+        <!--        <androidx.appcompat.widget.AppCompatImageView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            app:srcCompat="@drawable/ic_launcher_round" />-->
+
+        <!--        <ProgressBar-->
+        <!--            android:id="@+id/circleProgressBar"-->
+        <!--            android:layout_width="48dp"-->
+        <!--            android:layout_height="48dp"-->
+        <!--            android:layout_gravity="center|bottom"-->
+        <!--            android:indeterminate="true"-->
+        <!--            android:indeterminateTint="@color/white" />-->
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_margin="16dp"
+            android:indeterminate="true"
+            app:indicatorColor="@android:color/white"
+            app:indicatorDirectionCircular="clockwise"
+            app:indicatorInset="4dp"
+            app:indicatorSize="56dp"
+            app:trackColor="@android:color/transparent"
+            app:trackCornerRadius="16dp"
+            app:trackThickness="4dp"
+            tools:progress="25" />
+
     </FrameLayout>
 </merge>
