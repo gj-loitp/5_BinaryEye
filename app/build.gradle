@@ -117,7 +117,7 @@ dependencies {
     api 'com.github.markusfisch:CameraView:1.9.1'
     api 'com.github.markusfisch:ScalingImageView:1.4.1'
     api 'com.github.markusfisch:zxing-cpp:v2.1.0.0'
-    api 'com.applovin:applovin-sdk:13.0.1'
+    api 'com.applovin:applovin-sdk:13.1.0'
     implementation("com.google.android.play:review:2.0.2")
     implementation("com.google.android.play:review-ktx:2.0.2")
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.14'
