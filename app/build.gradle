@@ -9,7 +9,8 @@ android {
         minSdkVersion 21
         //noinspection EditedTargetSdkVersion
         targetSdkVersion 35
-        versionCode 20250214
+        //lo tay du so 0 =))
+        versionCode 202500214
         versionName '2025.02.14'
     }
 
